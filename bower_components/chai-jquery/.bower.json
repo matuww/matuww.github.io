@@ -1,0 +1,44 @@
+{
+  "name": "chai-jquery",
+  "description": "jQuery assertions for the Chai assertion library",
+  "keywords": [
+    "test",
+    "assertion",
+    "assert",
+    "testing",
+    "jQuery"
+  ],
+  "authors": [
+    "John Firebaugh <john.firebaugh@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chaijs/chai-jquery"
+  },
+  "main": [
+    "./chai-jquery.js"
+  ],
+  "ignore": [
+    ".git",
+    ".gitignore",
+    ".travis.yml",
+    "test"
+  ],
+  "devDependencies": {
+    "chai": "4",
+    "mocha": "1",
+    "mocha-phantomjs": "3",
+    "jquery": "1.9.1 - 2"
+  },
+  "homepage": "https://github.com/chaijs/chai-jquery",
+  "version": "2.1.0",
+  "_release": "2.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.0",
+    "commit": "53cf5d023f4ac74f7e815a086a01828d2b059798"
+  },
+  "_source": "https://github.com/chaijs/chai-jquery.git",
+  "_target": "*",
+  "_originalSource": "chai-jquery"
+}

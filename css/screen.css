@@ -1,0 +1,122 @@
+table, th, td {
+  border: solid 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+
+thead {
+  text-align: center;
+  font-weight: bold;
+  background-color:#C8C9C7
+}
+
+body {
+  background-color:#DEDEDE;
+}
+
+div.container {
+  overflow: scroll;
+}
+
+/*
+thead tr th:first-child,
+tbody tr td:first-child {
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+}
+*/
+
+* {
+  font-family: Futura;
+}
+
+caption {
+  text-align: left;
+}
+
+/* Class background colour */
+td.Logography{
+  background-color:#676AA7
+}
+
+td.Syllabary{
+  background-color:#9ccc95
+}
+
+td.Abjad{
+  background-color:#ffaa4d
+}
+
+td.Abugida{
+  background-color:#F2F0A1
+}
+
+td.Alphabet{
+  background-color:#FF6F61
+}
+
+/* Shared outline colour */
+#shared{
+  background-color:#DE738B;
+}
+
+#shared1{
+  background-color:#EFC47A;
+}
+
+#shared2{
+  background-color:#F1E669;
+}
+
+#shared3{
+  background-color:#AED5BA;
+}
+
+#shared4{
+  background-color:#B1DADE;
+}
+
+#shared5{
+  background-color:#BBB1CF;
+}
+
+/* Parent Container */
+.content_img{
+   position: relative;
+   width: 125px;
+   height: 125px;
+   float: left;
+   margin-right: 1px;
+   border-radius: 10px;
+   background-color:#FFFFFF;
+}
+
+/* Child Text Container */
+.content_img div{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: black;
+   color: white;
+   margin-bottom: 5px;
+   font-size: 12px;
+   text-align: center;
+   font-family: Futura;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: visibility 0s, opacity 0.5s linear;
+   transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+   cursor: pointer;
+}
+
+.content_img:hover div{
+   width: 125px;
+   padding: 1px 1px;
+   visibility: visible;
+   opacity: 0.7;
+}
