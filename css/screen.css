@@ -81,6 +81,16 @@ td.Alphabet{
   background-color:#BBB1CF;
 }
 
+.transparent_block{
+  position: relative;
+  width: 125px;
+  height: 125px;
+  float: left;
+  margin-right: 1px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
 /* Parent Container */
 .content_img{
    position: relative;
