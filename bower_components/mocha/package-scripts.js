@@ -37,7 +37,7 @@ function test(testName, mochaParams) {
 module.exports = {
   scripts: {
     build: {
-      script: `rollup -c ./rollup.config.js && rollup -c ./rollup_no-ie11.config.js`,
+      script: `rollup -c ./rollup.config.js`,
       description: 'Build browser bundle'
     },
     lint: {
@@ -73,7 +73,7 @@ module.exports = {
       }
     },
     clean: {
-      script: 'rimraf mocha.js mocha.js.map mocha-es2018.js',
+      script: 'rimraf mocha.js mocha.js.map',
       description: 'Clean browser bundle'
     },
     test: {
@@ -121,7 +121,7 @@ module.exports = {
         unit: {
           script: test(
             'unit',
-            '"test/unit/*.spec.js" "test/node-unit/**/*.spec.js" --growl'
+            '"test/unit/*.spec.js" "test/node-unit/**/*.spec.js"'
           ),
           description: 'Run Node.js unit tests'
         },
@@ -142,7 +142,7 @@ module.exports = {
           script: test(
             'requires',
             [
-              '--require coffee-script/register',
+              '--require coffeescript/register',
               '--require test/require/a.js',
               '--require test/require/b.coffee',
               '--require test/require/c.js',
@@ -206,12 +206,12 @@ module.exports = {
       browser: {
         default: {
           script:
-            'nps clean build test.browser.unit test.browser.bdd test.browser.tdd test.browser.qunit test.browser.esm test.browser.requirejs test.browser.webpack',
+            'nps clean build test.browser.unit test.browser.bdd test.browser.tdd test.browser.qunit test.browser.esm test.browser.webpack',
           description: 'Run browser tests'
         },
         unit: {
           script:
-            'cross-env NODE_PATH=. karma start karma_no-ie11.conf.js --single-run --colors && cross-env NODE_PATH=. karma start karma.conf.js --single-run --colors',
+            'cross-env NODE_PATH=. karma start ./karma.conf.js --single-run --colors',
           description: 'Run browser unit tests'
         },
         bdd: {
@@ -232,11 +232,6 @@ module.exports = {
         esm: {
           script: 'cross-env MOCHA_TEST=esm nps test.browser.unit',
           description: 'Run browser ES modules support test',
-          hiddenFromHelp: true
-        },
-        requirejs: {
-          script: 'cross-env MOCHA_TEST=requirejs nps test.browser.unit',
-          description: 'Run RequireJS compat test',
           hiddenFromHelp: true
         },
         webpack: {

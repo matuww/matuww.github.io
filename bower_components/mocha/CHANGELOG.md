@@ -1,3 +1,43 @@
+# 10.0.0 / 2022-05-01
+
+## :boom: Breaking Changes
+
+- [#4845](https://github.com/mochajs/mocha/issues/4845): **Drop Node.js v12.x support** ([**@juergba**](https://github.com/juergba))
+
+- [#4848](https://github.com/mochajs/mocha/issues/4848): Drop Internet-Explorer-11 support ([**@juergba**](https://github.com/juergba))
+
+- [#4857](https://github.com/mochajs/mocha/issues/4857): Drop AMD/RequireJS support ([**@juergba**](https://github.com/juergba))
+
+- [#4866](https://github.com/mochajs/mocha/issues/4866): Drop Growl notification support ([**@juergba**](https://github.com/juergba))
+
+- [#4863](https://github.com/mochajs/mocha/issues/4863): Rename executable `bin/mocha` to `bin/mocha.js` ([**@juergba**](https://github.com/juergba))
+
+- [#4865](https://github.com/mochajs/mocha/issues/4865): `--ignore` option in Windows: upgrade Minimatch ([**@juergba**](https://github.com/juergba))
+
+- [#4861](https://github.com/mochajs/mocha/issues/4861): Remove deprecated `Runner` signature ([**@juergba**](https://github.com/juergba))
+
+## :nut\_and\_bolt: Other
+
+- [#4878](https://github.com/mochajs/mocha/issues/4878): Update production dependencies ([**@juergba**](https://github.com/juergba))
+
+- [#4876](https://github.com/mochajs/mocha/issues/4876): Add Node.js v18 to CI test matrix ([**@outsideris**](https://github.com/outsideris))
+
+- [#4852](https://github.com/mochajs/mocha/issues/4852): Replace deprecated `String.prototype.substr()` ([**@CommanderRoot**](https://github.com/CommanderRoot))
+
+Also thanks to [**@ea2305**](https://github.com/ea2305) and [**@SukkaW**](https://github.com/SukkaW) for improvements to our documentation.
+
+# 9.2.2 / 2022-03-11
+
+## :bug: Fixes
+
+- [#4842](https://github.com/mochajs/mocha/issues/4842): Loading of reporter throws wrong error ([**@juergba**](https://github.com/juergba))
+
+- [#4839](https://github.com/mochajs/mocha/issues/4839): `dry-run`: prevent potential call-stack crash ([**@juergba**](https://github.com/juergba))
+
+## :nut\_and\_bolt: Other
+
+- [#4843](https://github.com/mochajs/mocha/issues/4843): Update production dependencies ([**@juergba**](https://github.com/juergba))
+
 # 9.2.1 / 2022-02-19
 
 ## :bug: Fixes
