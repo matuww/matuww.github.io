@@ -1,0 +1,135 @@
+.flex-container{
+	width: 100%;
+	min-height: 300px;
+	margin: 0 auto;
+	display: -webkit-flex; /* Safari */
+	display: flex; /* Standard syntax */
+}
+
+.black{
+  padding: 10px;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+  color:#fff!important;
+  background-color:#101820!important
+}
+
+.center{
+  text-align:center
+}
+
+.Logography{
+  padding: 10px;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+  color:#fff!important;
+  background-color:#676AA7!important
+}
+
+.Syllabary{
+  padding: 10px;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+  color:#fff!important;
+  background-color:#9ccc95!important
+}
+
+.Abjad{
+  padding: 10px;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+  color:#fff!important;
+  background-color:#ffaa4d!important
+}
+
+.Abugida{
+  padding: 10px;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+  color:#000!important;
+  background-color:#F2F0A1!important
+}
+
+.Alphabet{
+  padding: 10px;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+  color:#fff!important;
+  background-color:#FF6F61!important
+}
+
+.light-grey{
+  padding: 10px;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+  color:#000!important;
+  background-color:#DEDEDE!important
+}
+
+
+
+.map {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.peeps {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  font-family: Futura;
+}
+
+
+/* Parent Container */
+.content_img{
+   position: relative;
+   width: 125px;
+   height: 125px;
+   float: left;
+   margin-right: 1px;
+   border-radius: 10px;
+   background-color:#FFFFFF;
+}
+
+/* Child Text Container */
+.content_img div{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: black;
+   color: white;
+   margin-bottom: 5px;
+   font-size: 12px;
+   text-align: center;
+   font-family: Futura;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: visibility 0s, opacity 0.5s linear;
+   transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+   cursor: pointer;
+}
+
+.content_img:hover div{
+   width: 125px;
+   padding: 1px 1px;
+   visibility: visible;
+   opacity: 0.7;
+}
