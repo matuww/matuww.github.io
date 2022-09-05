@@ -21,12 +21,12 @@
     "karma.*"
   ],
   "homepage": "https://github.com/jashkenas/underscore",
-  "version": "1.13.2",
-  "_release": "1.13.2",
+  "version": "1.13.4",
+  "_release": "1.13.4",
   "_resolution": {
     "type": "version",
-    "tag": "1.13.2",
-    "commit": "08a31429eb3ea30326199c7e2b7399b8e062b295"
+    "tag": "1.13.4",
+    "commit": "90fcba1374c6059f63394baa10533d67ba3e9705"
   },
   "_source": "https://github.com/jashkenas/underscore.git",
   "_target": "*",
