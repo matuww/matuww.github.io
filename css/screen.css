@@ -92,6 +92,7 @@ td.Alphabet{
 }
 
 /* Parent Container */
+/* Normal */
 .content_img{
    position: relative;
    width: 125px;
@@ -125,6 +126,253 @@ td.Alphabet{
 }
 
 .content_img:hover div{
+   width: 125px;
+   padding: 1px 1px;
+   visibility: visible;
+   opacity: 0.7;
+}
+
+
+/* content image long 2*/
+/* Parent Container */
+.content_img_2{
+   position: relative;
+   width: 125px;
+   height: 250px;
+   float: left;
+   margin-right: 1px;
+   border-radius: 10px;
+   background-color:#FFFFFF;
+}
+
+/* Child Text Container */
+.content_img_2 div{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: black;
+   color: white;
+   margin-bottom: 5px;
+   font-size: 12px;
+   text-align: center;
+   font-family: Futura;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: visibility 0s, opacity 0.5s linear;
+   transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img_2:hover{
+   cursor: pointer;
+}
+
+.content_img_2:hover div{
+   width: 125px;
+   padding: 1px 1px;
+   visibility: visible;
+   opacity: 0.7;
+}
+
+/* content image long 4*/
+/* Parent Container */
+.content_img_4{
+   position: relative;
+   width: 125px;
+   height: 500px;
+   float: left;
+   margin-right: 1px;
+   border-radius: 10px;
+   background-color:#FFFFFF;
+}
+
+/* Child Text Container */
+.content_img_4 div{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: black;
+   color: white;
+   margin-bottom: 5px;
+   font-size: 12px;
+   text-align: center;
+   font-family: Futura;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: visibility 0s, opacity 0.5s linear;
+   transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img_4:hover{
+   cursor: pointer;
+}
+
+.content_img_4:hover div{
+   width: 125px;
+   padding: 1px 1px;
+   visibility: visible;
+   opacity: 0.7;
+}
+
+/* content image long 5*/
+/* Parent Container */
+.content_img_5{
+   position: relative;
+   width: 125px;
+   height: 625px;
+   float: left;
+   margin-right: 1px;
+   border-radius: 10px;
+   background-color:#FFFFFF;
+}
+
+/* Child Text Container */
+.content_img_5 div{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: black;
+   color: white;
+   margin-bottom: 5px;
+   font-size: 12px;
+   text-align: center;
+   font-family: Futura;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: visibility 0s, opacity 0.5s linear;
+   transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img_5:hover{
+   cursor: pointer;
+}
+
+.content_img_5:hover div{
+   width: 125px;
+   padding: 1px 1px;
+   visibility: visible;
+   opacity: 0.7;
+}
+
+/* content image long 9*/
+/* Parent Container */
+.content_img_9{
+   position: relative;
+   width: 125px;
+   height: 1080px;
+   float: left;
+   margin-right: 1px;
+   border-radius: 10px;
+   background-color:#FFFFFF;
+}
+
+/* Child Text Container */
+.content_img_9 div{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: black;
+   color: white;
+   margin-bottom: 5px;
+   font-size: 12px;
+   text-align: center;
+   font-family: Futura;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: visibility 0s, opacity 0.5s linear;
+   transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img_9:hover{
+   cursor: pointer;
+}
+
+.content_img_9:hover div{
+   width: 125px;
+   padding: 1px 1px;
+   visibility: visible;
+   opacity: 0.7;
+}
+
+/* content image long 10*/
+/* Parent Container */
+.content_img_10{
+   position: relative;
+   width: 125px;
+   height: 1250px;
+   float: left;
+   margin-right: 1px;
+   border-radius: 10px;
+   background-color:#FFFFFF;
+}
+
+/* Child Text Container */
+.content_img_10 div{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: black;
+   color: white;
+   margin-bottom: 5px;
+   font-size: 12px;
+   text-align: center;
+   font-family: Futura;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: visibility 0s, opacity 0.5s linear;
+   transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img_10:hover{
+   cursor: pointer;
+}
+
+.content_img_10:hover div{
+   width: 125px;
+   padding: 1px 1px;
+   visibility: visible;
+   opacity: 0.7;
+}
+
+/* content image long 13*/
+/* Parent Container */
+.content_img_13{
+   position: relative;
+   width: 125px;
+   height: 1625px;
+   float: left;
+   margin-right: 1px;
+   border-radius: 10px;
+   background-color:#FFFFFF;
+}
+
+/* Child Text Container */
+.content_img_13 div{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: black;
+   color: white;
+   margin-bottom: 5px;
+   font-size: 12px;
+   text-align: center;
+   font-family: Futura;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: visibility 0s, opacity 0.5s linear;
+   transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img_13:hover{
+   cursor: pointer;
+}
+
+.content_img_13:hover div{
    width: 125px;
    padding: 1px 1px;
    visibility: visible;
