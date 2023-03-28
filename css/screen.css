@@ -378,3 +378,27 @@ td.Alphabet{
    visibility: visible;
    opacity: 0.7;
 }
+
+
+
+.map {
+  display: block;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  padding: 50px;
+}
+
+.peeps {
+  display: block;
+  margin: auto;
+  width: 600px;
+  height: 935px;
+  padding: 50px;
+}
+
+.epigraphy {
+  display: block;
+  margin: auto;
+  padding: 50px;
+}
