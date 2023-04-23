@@ -2,6 +2,7 @@ table, th, td {
   border: solid 50px solid black;
   border-collapse: collapse;
   padding: 5px 10px;
+  position: relative;
 }
 
 thead {
@@ -400,5 +401,9 @@ td.Alphabet{
 .epigraphy {
   display: block;
   margin: auto;
-  padding: 50px;
+  padding: 10px;
 }
+
+
+span{ display: inline-block; margin:1em; }
+.flip_H{ transform: scale(-1, 1)}
