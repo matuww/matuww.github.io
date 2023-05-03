@@ -14,8 +14,11 @@
   <title>Main page</title>
   <link rel="stylesheet" href="../css/nicepage.css" media="screen">
   <link rel="stylesheet" href="../css/Main-page.css" media="screen">
+  <link rel="stylesheet" href="../css/modal.css" media="screen">
+
   <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../js/modal.js" defer=""></script>
   <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
   <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
@@ -67,41 +70,334 @@
     </section>
     <section class="u-clearfix u-section-3" id="sec-9a0c">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-default u-text-1">Abecedary<sup>4</sup></h2>
+        <h2 class="u-text u-text-default u-text-1">Abecedary<sup>4</sup></h2> <!-- citation needed for symbol meaning and pronunciation -->
         <!--insert abecedary here-->
         <div class="container">
           <table id="example-advanced">
             <tr>
-              <td><div class="content_img"><img src="../images/Phoenician/P01.png" alt="P01" width="125" height="125"><div>Phoenician letter ʾālep</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P02.png" alt="P02" width="125" height="125"><div>Phoenician letter Bēt</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P03.png" alt="P03" width="125" height="125"><div>Phoenician letter Gīml</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P04.png" alt="P04" width="125" height="125"><div>Phoenician letter Dālet</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P05.png" alt="P05" width="125" height="125"><div>Phoenician letter He</div></div></td>
+              <td>
+                <div class="content_img"><img id="myImg" src="../images/Phoenician/P01.png" alt="P01" width="125" height="125"><div>Phoenician letter ʾālep</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter ʾālep</h3>
+                    <p class="u-text u-text-3">𐤀𐤋𐤐
+                      <br>Ox, head of cattle
+                      <br>ʾ
+                      <br>IPA:[ʔ]
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P02.png" alt="P02" width="125" height="125">
+                <div>Phoenician letter Bēt</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Bēt</h3>
+                    <p class="u-text u-text-3">𐤁𐤕
+                      <br>House
+                      <br>b
+                      <br>IPA:[b]
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P03.png" alt="P03" width="125" height="125"><div>Phoenician letter Gīml</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Gīml</h3>
+                    <p class="u-text u-text-3">𐤂𐤌𐤋
+                      <br>Throwing stick (or camel)
+                      <br>g
+                      <br>IPA:[g]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P04.png" alt="P04" width="125" height="125"><div>Phoenician letter Dālet</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Dālet</h3>
+                    <p class="u-text u-text-3">𐤃𐤋𐤕
+                      <br>Door (or fish)
+                      <br>d
+                      <br>IPA:[d]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P05.png" alt="P05" width="125" height="125"><div>Phoenician letter He</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter He</h3>
+                    <p class="u-text u-text-3">𐤄
+                      <br>Window (or jubilation)
+                      <br>h
+                      <br>IPA:[h]
+                    </p>
+                  </div>
+              </td>
             </tr>
             <tr>
-              <td><div class="content_img"><img src="../images/Phoenician/P06.png" alt="P06" width="125" height="125"><div>Phoenician letter Wāw</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P07.png" alt="P07" width="125" height="125"><div>Phoenician letter Zajin/Zayin</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P08.png" alt="P08" width="125" height="125"><div>Phoenician letter Hēt</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P09.png" alt="P09" width="125" height="125"><div>Phoenician letter Ṭēt</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P10.png" alt="P10" width="125" height="125"><div>Phoenician letter Yod</div></div></td>
+              <td><div class="content_img"><img src="../images/Phoenician/P06.png" alt="P06" width="125" height="125"><div>Phoenician letter Wāw</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Wāw</h3>
+                    <p class="u-text u-text-3">𐤅𐤅
+                      <br>Hook
+                      <br>w
+                      <br>IPA:[w]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P07.png" alt="P07" width="125" height="125"><div>Phoenician letter Zajin/Zayin</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Zajin/Zayin</h3>
+                    <p class="u-text u-text-3">𐤆𐤉𐤍
+                      <br>Weapon (or manacle)
+                      <br>z
+                      <br>IPA:[z]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P08.png" alt="P08" width="125" height="125"><div>Phoenician letter Hēt</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Hēt</h3>
+                    <p class="u-text u-text-3">𐤇𐤕
+                      <br>Courtyard/wall
+                      <br>ḥ
+                      <br>IPA:[ħ]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P09.png" alt="P09" width="125" height="125"><div>Phoenician letter Ṭēt</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Ṭēt</h3>
+                    <p class="u-text u-text-3">𐤈𐤕
+                      <br>Wheel
+                      <br>ṭ
+                      <br>IPA:[tˤ]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P10.png" alt="P10" width="125" height="125"><div>Phoenician letter Yod</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Yod</h3>
+                    <p class="u-text u-text-3">𐤉𐤃
+                      <br>Arm, hand
+                      <br>j
+                      <br>IPA:[j]
+                    </p>
+                  </div>
+              </td>
             </tr>
             <tr>
-              <td><div class="content_img"><img src="../images/Phoenician/P11.png" alt="P11" width="125" height="125"><div>Phoenician letter Kāp</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P12.png" alt="P12" width="125" height="125"><div>Phoenician letter Lāmed</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P13.png" alt="P13" width="125" height="125"><div>Phoenician letter Mēm</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P14.png" alt="P14" width="125" height="125"><div>Phoenician letter Nūn</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P15.png" alt="P15" width="125" height="125"><div>Phoenician letter Śāmek</div></div></td>
+              <td><div class="content_img"><img src="../images/Phoenician/P11.png" alt="P11" width="125" height="125"><div>Phoenician letter Kāp</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Kāp</h3>
+                    <p class="u-text u-text-3">𐤊𐤐
+                      <br>Palm of a hand
+                      <br>k
+                      <br>IPA:[k]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P12.png" alt="P12" width="125" height="125"><div>Phoenician letter Lāmed</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Lāmed</h3>
+                    <p class="u-text u-text-3">𐤋𐤌𐤃
+                      <br>Goad
+                      <br>l
+                      <br>IPA:[l]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P13.png" alt="P13" width="125" height="125"><div>Phoenician letter Mēm</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Mēm</h3>
+                    <p class="u-text u-text-3">𐤌𐤌
+                      <br>Water
+                      <br>m
+                      <br>IPA:[m]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P14.png" alt="P14" width="125" height="125"><div>Phoenician letter Nūn</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Nūn</h3>
+                    <p class="u-text u-text-3">𐤍𐤍
+                      <br>Serpent (or fish)
+                      <br>n
+                      <br>IPA:[n]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P15.png" alt="P15" width="125" height="125"><div>Phoenician letter Śāmek</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Śāmek</h3>
+                    <p class="u-text u-text-3">𐤎𐤌𐤊
+                      <br>Pillar
+                      <br>s
+                      <br>IPA:[s]
+                    </p>
+                  </div>
+              </td>
             </tr>
             <tr>
-              <td><div class="content_img"><img src="../images/Phoenician/P16.png" alt="P16" width="125" height="125"><div>Phoenician letter ʿayin</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P18.png" alt="P18" width="125" height="125"><div>Phoenician letter Pē</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P19.png" alt="P19" width="125" height="125"><div>Phoenician letter Ṩādē</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P20.png" alt="P20" width="125" height="125"><div>Phoenician letter Qōp</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P21.png" alt="P21" width="125" height="125"><div>Phoenician letter Rēs/Resh</div></div></td>
+              <td><div class="content_img"><img src="../images/Phoenician/P16.png" alt="P16" width="125" height="125"><div>Phoenician letter ʿayin</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter ʿayin</h3>
+                    <p class="u-text u-text-3">𐤏𐤉𐤍
+                      <br>Eye
+                      <br>ʿ
+                      <br>IPA:[ʕ]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P18.png" alt="P18" width="125" height="125"><div>Phoenician letter Pē</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Pē</h3>
+                    <p class="u-text u-text-3">𐤐
+                      <br>Mouth (or corner)
+                      <br>p
+                      <br>IPA:[p]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P19.png" alt="P19" width="125" height="125"><div>Phoenician letter Ṩādē</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Ṩādē</h3>
+                    <p class="u-text u-text-3">𐤑𐤃
+                      <br>Papyrus plant/fish hook
+                      <br>ṣ
+                      <br>IPA:[sˤ]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P20.png" alt="P20" width="125" height="125"><div>Phoenician letter Qōp</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Qōp</h3>
+                    <p class="u-text u-text-3">𐤒𐤐
+                      <br>Needle eye
+                      <br>q
+                      <br>IPA:[q]
+                    </p>
+                </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P21.png" alt="P21" width="125" height="125"><div>Phoenician letter Rēs/Resh</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Rēs/Resh</h3>
+                    <p class="u-text u-text-3">𐤓𐤔
+                      <br>Head
+                      <br>r
+                      <br>IPA:[r]
+                    </p>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td><div class="content_img"><img src="../images/Phoenician/P22.png" alt="P22" width="125" height="125"><div>Phoenician letter Šīn</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P24.png" alt="P24" width="125" height="125"><div>Phoenician letter Tāw</div></div></td>
+              <td><div class="content_img"><img src="../images/Phoenician/P22.png" alt="P22" width="125" height="125"><div>Phoenician letter Šīn</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Šīn</h3>
+                    <p class="u-text u-text-3">𐤔𐤍
+                      <br>Tooth (or sun)
+                      <br>š
+                      <br>IPA:[ʃ]
+                    </p>
+                  </div>
+              </td>
+              <td><div class="content_img"><img src="../images/Phoenician/P24.png" alt="P24" width="125" height="125"><div>Phoenician letter Tāw</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption">
+                    <h3 class="u-text u-text-2">Phoenician letter Tāw</h3>
+                    <p class="u-text u-text-3">𐤕𐤅
+                      <br>Mark
+                      <br>t
+                      <br>IPA:[t]
+                    </p>
+                  </div>
+                </div>
+              </td>
               <td></td>
               <td></td>
               <td></td>
@@ -120,9 +416,10 @@
       </div>
     </section>
 
-    <section class="u-align-center u-clearfix u-grey-15 u-section-5" id="sec-5613">
+
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-default u-text-1">Script comparison<sup>4,6-18</sup></h2>
+      </div>
       <!--insert script comparison  here-->
       <div class="container">
       <table id="example-advanced">
@@ -2635,8 +2932,7 @@
       </table>
       </div>
       </div>
-      </div>
-    </section>
+
     <section class="u-clearfix u-grey-5 u-section-6" id="sec-9933">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
@@ -2675,8 +2971,6 @@
       </div>
     </section>
 
-
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-0f53"><div class="u-clearfix u-sheet u-sheet-1"></div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
     <!-- References -->
     <h3 class="u-align-center u-text u-text-default u-text-1">References</h3>

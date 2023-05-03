@@ -40756,21 +40756,27 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-header .u-sheet-1 {
   min-height: 152px;
+  position: relative;
 }
 
 .u-header .u-image-1 {
   width: 64px;
   height: 64px;
-  margin: 22px auto 0 0;
+  margin: 22px 15px 0 0;
+  float: left;
 }
 
 .u-header .u-logo-image-1 {
   width: 100%;
   height: 100%;
+  display: block;
+  margin: auto;
+  position: relative;
 }
 
 .u-header .u-text-1 {
-  margin: -20px auto 0 86px;
+  margin: 20px auto 0 86px
+  position: relative;
 }
 
 .u-header .u-text-2 {
@@ -40778,7 +40784,8 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 @media (max-width: 1199px) {
   .u-header .u-text-1 {
-    margin-top: -54px;
+    bottom: 1px;
+    position: relative;
   }
 }
 
