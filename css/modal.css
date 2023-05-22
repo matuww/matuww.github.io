@@ -97,6 +97,11 @@
   height: 150px;
 }
 
+
+.caption-text {
+  visibility: hidden;
+}
+
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
   animation-name: zoom;
