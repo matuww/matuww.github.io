@@ -14,8 +14,11 @@
   <title>Main page</title>
   <link rel="stylesheet" href="../css/nicepage.css" media="screen">
   <link rel="stylesheet" href="../css/Main-page.css" media="screen">
+  <link rel="stylesheet" href="../css/modal.css" media="screen">
+
   <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../js/modal.js" defer=""></script>
   <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
   <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
@@ -41,16 +44,18 @@
           <div class="u-layout-row" style="">
             <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-white u-layout-cell-1" src="">
               <div class="u-container-layout u-container-layout-1">
-                <h1 class="u-text u-text-1">Geʽez</h1>
-                <h3 class="u-text u-text-2">ግዕዝ</h3>
-                <p class="u-text u-text-3">Abugida<sup>?</sup>
-                  <br>5-6 c. BCE - Present<sup>?</sup>
-                  <br>Left-to-right<sup>?</sup>
+                <h1 class="u-text u-text-1">Meroitic Hieroglyphs</h1>
+                <p class="u-text u-text-3"> Abugida<sup>1</sup>
+                  <br>3 c. BCE - 6 c. CE<sup>1,2</sup></p>
+                <h1 class="u-text u-text-1">Meroitic Hieroglyphs</h1>
+                <p class="u-text u-text-3"> Abugida<sup>1</sup>
+                    <br>?3 c. BCE - 6 c. CE<sup>1,2</sup></p>
+                  <br>Right-to-left<sup>1</sup>
                 </p>
               </div>
             </div>
             <div class="u-align-center u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" src="" data-image-width="500" data-image-height="500">
-              <img src="../images/Maps/Geez.png" alt="Geez" class="map">
+              <img src="../images/Maps/Meroitic.png" alt="Meroitic" class="map">
               <div class="u-container-layout u-valign-middle u-container-layout-2" src=""></div>
             </div>
           </div>
@@ -59,50 +64,740 @@
     </section>
     <section class="u-clearfix u-grey-5 u-section-2" id="sec-12ad">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h3 class="u-text u-text-1"> Languages<sup>?</sup></h3>
-        <p class="u-text u-text-2">Geʽez, Tigrinya, Amharic, Tigre, Guragigna, Harari, Ethio-Eritrean Semitic languages, some Cushitic languages and Nilotic languages, etc.</p>
-        <h3 class="u-text u-text-3">Places<sup>?</sup></h3>
-        <p class="u-text u-text-4">Ethiopia and Eritrea</p>
+        <h3 class="u-text u-text-1"> Languages<sup>1</sup></h3>
+        <p class="u-text u-text-2">Meroitic and possibly Old Nubian</p>
+        <h3 class="u-text u-text-3">Places<sup>1</sup></h3>
+        <p class="u-text u-text-4">Nubia (modern day Sudan)</p>
       </div>
     </section>
+
     <section class="u-clearfix u-section-3" id="sec-9a0c">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-default u-text-1">Halähamä (Abecedary)<sup>?</sup></h2>
+        <h2 class="u-text u-text-default u-text-1">Abecedary<sup>1</sup></h2> <!-- citation needed for symbol meaning and pronunciation -->
         <!--insert abecedary here-->
         <div class="container">
+          <h2 class="u-text u-text-default u-text-1">Meroitic Hieroglyphs</h2>
           <table id="example-advanced">
             <tr>
-              <td><div class="content_img"><img src="../images/Phoenician/P01.png" alt="P01" width="125" height="125"><div>Phoenician letter ʾālep</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P02.png" alt="P02" width="125" height="125"><div>Phoenician letter Bēt</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P03.png" alt="P03" width="125" height="125"><div>Phoenician letter Gīml</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P04.png" alt="P04" width="125" height="125"><div>Phoenician letter Dālet</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P05.png" alt="P05" width="125" height="125"><div>Phoenician letter He</div></div></td>
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH34.png" alt="MH34" width="125" height="125">
+                  <div>Meroitic hieroglyph letter A</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH34">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter A</h3>
+                    <h3 class="u-text u-text-2">𐦀</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH35.png" alt="MH35" width="125" height="125">
+                  <div>Meroitic hieroglyph letter E</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH35">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter E</h3>
+                    <h3 class="u-text u-text-2">𐦁</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH01.png" alt="MH01" width="125" height="125">
+                  <div>Meroitic hieroglyph letter O</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH01">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter O</h3>
+                    <h3 class="u-text u-text-2">𐦃</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH36.png" alt="MH36" width="125" height="125">
+                  <div>Meroitic hieroglyph letter I</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH36">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter I</h3>
+                    <h3 class="u-text u-text-2">𐦂</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH37.png" alt="MH37" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Ya</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH37">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ya</h3>
+                    <h3 class="u-text u-text-2">𐦄</h3>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td><div class="content_img"><img src="../images/Phoenician/P06.png" alt="P06" width="125" height="125"><div>Phoenician letter Wāw</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P07.png" alt="P07" width="125" height="125"><div>Phoenician letter Zajin/Zayin</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P08.png" alt="P08" width="125" height="125"><div>Phoenician letter Hēt</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P09.png" alt="P09" width="125" height="125"><div>Phoenician letter Ṭēt</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P10.png" alt="P10" width="125" height="125"><div>Phoenician letter Yod</div></div></td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH38.png" alt="MH38" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Wa</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH38">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Wa</h3>
+                    <h3 class="u-text u-text-2">𐦅</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH39.png" alt="MH39" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Ba</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH39">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ba</h3>
+                    <h3 class="u-text u-text-2">𐦆</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH41.png" alt="MH41" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Pa</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH41">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Pa</h3>
+                    <h3 class="u-text u-text-2">𐦈</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH42.png" alt="MH42" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Ma</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH42">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ma</h3>
+                    <h3 class="u-text u-text-2">𐦉</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH13.png" alt="MH13" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Na</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH13">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Na</h3>
+                    <h3 class="u-text u-text-2">𐦊</h3>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td><div class="content_img"><img src="../images/Phoenician/P11.png" alt="P11" width="125" height="125"><div>Phoenician letter Kāp</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P12.png" alt="P12" width="125" height="125"><div>Phoenician letter Lāmed</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P13.png" alt="P13" width="125" height="125"><div>Phoenician letter Mēm</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P14.png" alt="P14" width="125" height="125"><div>Phoenician letter Nūn</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P15.png" alt="P15" width="125" height="125"><div>Phoenician letter Śāmek</div></div></td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH43.png" alt="MH43" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Ne</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH43">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ne</h3>
+                    <h3 class="u-text u-text-2">𐦌</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH18.png" alt="MH18" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Ra</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH18">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ra</h3>
+                    <h3 class="u-text u-text-2">𐦎</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH44.png" alt="MH44" width="125" height="125">
+                  <div>Meroitic hieroglyph letter La</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH44">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter La</h3>
+                    <h3 class="u-text u-text-2">𐦐</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH45.png" alt="MH45" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Kha</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH45">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Kha</h3>
+                    <h3 class="u-text u-text-2">𐦑</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH46.png" alt="MH46" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Hha</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH46">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Hha</h3>
+                    <h3 class="u-text u-text-2">𐦒</h3>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td><div class="content_img"><img src="../images/Phoenician/P16.png" alt="P16" width="125" height="125"><div>Phoenician letter ʿayin</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P18.png" alt="P18" width="125" height="125"><div>Phoenician letter Pē</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P19.png" alt="P19" width="125" height="125"><div>Phoenician letter Ṩādē</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P20.png" alt="P20" width="125" height="125"><div>Phoenician letter Qōp</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P21.png" alt="P21" width="125" height="125"><div>Phoenician letter Rēs/Resh</div></div></td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH47a.png" alt="MH47a" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Se</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH47a">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Se</h3>
+                    <h3 class="u-text u-text-2">𐦕</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH25.png" alt="MH25" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Sa</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH25">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Sa</h3>
+                    <h3 class="u-text u-text-2">𐦓</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH48.png" alt="MH48" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Ka</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH48">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ka</h3>
+                    <h3 class="u-text u-text-2">𐦖</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH49.png" alt="MH49" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Qa</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH49">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Qa</h3>
+                    <h3 class="u-text u-text-2">𐦗</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH50.png" alt="MH50" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Ta</div></div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH50">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ta</h3>
+                    <h3 class="u-text u-text-2">𐦘</h3>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td><div class="content_img"><img src="../images/Phoenician/P22.png" alt="P22" width="125" height="125"><div>Phoenician letter Šīn</div></div></td>
-              <td><div class="content_img"><img src="../images/Phoenician/P24.png" alt="P24" width="125" height="125"><div>Phoenician letter Tāw</div></div></td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH52.png" alt="MH52" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Te</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH52">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Te</h3>
+                    <h3 class="u-text u-text-2">𐦚</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH54.png" alt="MH54" width="125" height="125">
+                  <div>Meroitic hieroglyph letter To</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH54">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter To</h3>
+                    <h3 class="u-text u-text-2">𐦜</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH55.png" alt="MH55" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Da</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MH55">
+                    <h3 class="u-text u-text-2">Meroitic hieroglyph letter Da</h3>
+                    <h3 class="u-text u-text-2">𐦝</h3>
+                  </div>
+                </div>
+              </td>
               <td></td>
+            </tr>
+          </table>
+
+          <h2 class="u-text u-text-default u-text-1">Meroitic Cursive</h2>
+          <table id="example-advanced">
+            <tr>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC34.png" alt="MC34" width="125" height="125">
+                  <div>Meroitic cursive letter A</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC34">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter A</h3>
+                    <h3 class="u-text u-text-2">𐦠</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC35.png" alt="MC35" width="125" height="125">
+                  <div>Meroitic cursive letter E</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC35">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter E</h3>
+                    <h3 class="u-text u-text-2">𐦡</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC01.png" alt="MC01" width="125" height="125">
+                  <div>Meroitic cursive letter O</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC01">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter O</h3>
+                    <h3 class="u-text u-text-2">𐦣</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC36.png" alt="MC36" width="125" height="125">
+                  <div>Meroitic cursive letter I</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC36">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter I</h3>
+                    <h3 class="u-text u-text-2">𐦢</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC37.png" alt="MC37" width="125" height="125">
+                  <div>Meroitic cursive letter Ya</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC37">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Ya</h3>
+                    <h3 class="u-text u-text-2">𐦤</h3>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC38.png" alt="MC38" width="125" height="125">
+                  <div>Meroitic cursive letter Wa</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC38">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Wa</h3>
+                    <h3 class="u-text u-text-2">𐦥</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC39.png" alt="MC39" width="125" height="125">
+                  <div>Meroitic cursive letter Ba</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC39">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Ba</h3>
+                    <h3 class="u-text u-text-2">𐦦</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC41.png" alt="MC41" width="125" height="125">
+                  <div>Meroitic cursive letter Pa</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC41">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Pa</h3>
+                    <h3 class="u-text u-text-2">𐦧</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC42.png" alt="MC42" width="125" height="125">
+                  <div>Meroitic cursive letter Ma</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC42">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Ma</h3>
+                    <h3 class="u-text u-text-2">𐦨</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC13.png" alt="MC13" width="125" height="125">
+                  <div>Meroitic cursive letter Na</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC13">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Na</h3>
+                    <h3 class="u-text u-text-2">𐦩</h3>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC43.png" alt="MC43" width="125" height="125">
+                  <div>Meroitic cursive letter Ne</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC43">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Ne</h3>
+                    <h3 class="u-text u-text-2">𐦪</h3>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC18.png" alt="MC18" width="125" height="125">
+                  <div>Meroitic cursive letter Ra</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC18">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Ra</h3>
+                    <h3 class="u-text u-text-2">𐦫</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC44.png" alt="MC44" width="125" height="125">
+                  <div>Meroitic cursive letter La</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC44">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter La</h3>
+                    <h3 class="u-text u-text-2">𐦬</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC45.png" alt="MC45" width="125" height="125">
+                  <div>Meroitic cursive letter Kha</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC45">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Kha</h3>
+                    <h3 class="u-text u-text-2">𐦭</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC46.png" alt="MC46" width="125" height="125">
+                  <div>Meroitic cursive letter Hha</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC46">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Hha</h3>
+                    <h3 class="u-text u-text-2">𐦮</h3>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC47a.png" alt="MC47a" width="125" height="125">
+                <div>Meroitic hieroglyph letter Se</div>
+              </div>
+              <div id="myModal" class="modal"><!-- The Modal -->
+                <span class="close">&times;</span><!-- The Close Button -->
+                <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+                <div class="caption-text" id="MC47a">
+                  <h3 class="u-text u-text-2">Meroitic cursive letter Se</h3>
+                  <h3 class="u-text u-text-2">𐦱</h3>
+                </div>
+              </div>
+              </td>
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC25.png" alt="MC25" width="125" height="125">
+                  <div>Meroitic cursive letter Sa</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC25">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Sa</h3>
+                    <h3 class="u-text u-text-2">𐦯</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC48.png" alt="MC48" width="125" height="125">
+                  <div>Meroitic cursive letter Ka</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC48">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Ka</h3>
+                    <h3 class="u-text u-text-2">𐦲</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC49.png" alt="MC49" width="125" height="125">
+                  <div>Meroitic cursive letter Qa</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC49">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Qa</h3>
+                    <h3 class="u-text u-text-2">𐦳</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC50.png" alt="MC50" width="125" height="125">
+                  <div>Meroitic cursive letter Ta</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC50">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Ta</h3>
+                    <h3 class="u-text u-text-2">𐦴</h3>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC52.png" alt="MC52" width="125" height="125">
+                  <div>Meroitic cursive letter Te</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC52">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Te</h3>
+                    <h3 class="u-text u-text-2">𐦵</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC54.png" alt="MC54" width="125" height="125">
+                  <div>Meroitic cursive letter To</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC54">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter To</h3>
+                    <h3 class="u-text u-text-2">𐦶</h3>
+                  </div>
+                </div>
+              </td>
+              <td><div class="content_img">
+                <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC55.png" alt="MC55" width="125" height="125">
+                  <div>Meroitic cursive letter Da</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC55">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Da</h3>
+                    <h3 class="u-text u-text-2">𐦷</h3>
+                  </div>
+                </div>
+              </td>
               <td></td>
               <td></td>
             </tr>
@@ -113,867 +808,1603 @@
 
     <section class="u-align-center u-clearfix u-palette-5-light-3 u-section-4" id="sec-8d4b">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-default u-text-1">Epigraphy<sup>?</sup></h2>
+        <h2 class="u-text u-text-default u-text-1">Epigraphy</h2>
         <!--insert epigraphy here-->
-        <img src="../images/Phoenician/P_01.jpg" alt="Mesha Stele" class="epigraphy" width="900" height="1389">
-        <p class="u-text u-text-3">???<sup>?</sup></p>
+        <h3 class="u-text u-text-2">Meroitic Hieroglyphs</h3>
+        <img src="../images/Meroitic_Hieroglyphs/MH_Epi01.jpg" alt="REM 0416" class="epigraphy" width="900" height="771">
+        <p class="u-text u-text-3">Fragment with Meroitic hieroglyphs; REM 0416<sup>3</sup></p>
+        <h3 class="u-text u-text-2">Meroitic Cursive</h3>
+        <img src="../images/Meroitic_Cursive/MC_Epi01.jpg" alt="REM 1195" class="epigraphy" width="900" height="771">
+        <p class="u-text u-text-3">Meroitische Inschrift, Meroe, 1. Jh. n. Chr., Sandstein (München, ÄS 2624; REM 1195)<sup>4</sup></p>
       </div>
     </section>
 
     <section class="u-align-center u-clearfix u-grey-15 u-section-5" id="sec-5613">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-default u-text-1">Script comparison<sup>???</sup></h2>
+        <h2 class="u-text u-text-default u-text-1">Script comparison<sup>1,2,5-8</sup></h2>
+    </section>
       <!--insert script comparison  here-->
       <div class="container">
       <table id="example-advanced">
+
         <thead>
           <tr>
             <!-- 00 -->
             <td colspan="2"><strong>Writing Script</strong></td>
             <!-- 01.0 -->
             <td>Head of ox</td>
-            <!-- 01.1 -->
-            <td> </td>
-            <!-- 02.0 -->
-            <td>House plan</td>
-            <!-- 02.1 -->
-            <td> </td>
-            <!-- 03.0 -->
-            <td>Throw stick</td>
-            <!-- 03.1 -->
-            <td> </td>
-            <!-- 04.0 -->
-            <td>Nile tilapia</td>
-            <!-- 04.1 -->
-            <td> </td>
-            <!-- 04.2 -->
-            <td> </td>
-            <!-- 05.0 -->
-            <td>Man with arms raised</td>
-            <!-- 05.1 -->
-            <td> </td>
-            <!-- 05.2 -->
-            <td> </td>
-            <!-- 05.3 -->
-            <td> </td>
-            <!-- 06.0 -->
-            <td>Pear shaped mace</td>
-            <!-- 06.1 -->
-            <td> </td>
-            <!-- 06.2 -->
-            <td> </td>
-            <!-- 06.3 -->
-            <td> </td>
-            <!-- 07 -->
-            <td>Two diagonal strokes</td>
-            <!-- 08.0 -->
-            <td>Plan of rectangular enclosure</td>
-            <!-- 08.1 -->
-            <td> </td>
-            <!-- 09.0 -->
-            <td>Heart and trachea</td>
-            <!-- 09.1 -->
-            <td> </td>
-            <!-- 10.0 -->
-            <td>Arm with downward facing palm</td>
-            <!-- 010.1 -->
-            <td> </td>
-            <!-- 11 -->
-            <td>Hand</td>
-            <!-- 12 -->
-            <td>Crook</td>
             <!-- 13 -->
             <td>Water ripple</td>
-            <!-- 14 -->
-            <td>Cobra</td>
-            <!-- 15.0 -->
-            <td>Reed column</td>
-            <!-- 15.1 -->
-            <td> </td>
-            <!-- 16 -->
-            <td>Eye</td>
-            <!-- 17 -->
-            <td>Wick</td>
             <!-- 18 -->
             <td>Mouth</td>
-            <!-- 19.0 -->
-            <td>Rush with shoots</td>
-            <!-- 19.1 -->
-            <td> </td>
-            <!-- 19.2 -->
-            <td> </td>
-            <!-- 20 -->
-            <td>Cord on stick</td>
-            <!-- 21 -->
-            <td>Head</td>
-            <!-- 22.0 -->
-            <td>Bow</td>
-            <!-- 22.1 -->
-            <td> </td>
-            <!-- 22.2 -->
-            <td> </td>
-            <!-- 22.3 -->
-            <td> </td>
-            <!-- 23.0 -->
-            <td>Basket of fruit or grain</td>
-            <!-- 23.1 -->
-            <td> </td>
-            <!-- 24.0 -->
-            <td>Crossed sticks</td>
-            <!-- 24.1 -->
-            <td> </td>
-            <!-- 24.2 -->
-            <td> </td>
-            <!-- 24.3 -->
-            <td> </td>
-            <!-- 24.4 -->
-            <td> </td>
             <!-- 25 -->
+            <td>Pool with lilies</td>
+            <!-- 34 -->
+            <td>Seated man</td>
+            <!-- 35 -->
+            <td>Feather</td>
+            <!-- 36 -->
+            <td>Man beckoning</td>
+            <!-- 37 -->
+            <td>Two reeds</td>
+            <!-- 38 -->
+            <td>Lasso</td>
+            <!-- 39 -->
+            <td>Ram</td>
+            <!-- 40 -->
+            <td>Foot</td>
+            <!-- 41 -->
+            <td>Stool</td>
+            <!-- 42 -->
+            <td>Owl</td>
+            <!-- 43 -->
+            <td>Two rushes</td>
+            <!-- 44 -->
+            <td>Recumbent Lion</td>
+            <!-- 45 -->
+            <td>?Placenta</td>
+            <!-- 46 -->
+            <td>Ring stand</td>
+            <!-- 47 -->
+            <td>Door bolt</td>
+            <!-- 48 -->
+            <td>Goose</td>
+            <!-- 49 -->
+            <td>Sandy slope</td>
+            <!-- 50 -->
+            <td>Tethering rope</td>
+            <!-- 51 -->
+            <td>Flat land with grain</td>
+            <!-- 52 -->
+            <td>Flat land with grain & Reed shelter</td>
+            <!-- 53 -->
+            <td>Reed shelter</td>
+            <!-- 54 -->
+            <td>Tongue of land</td>
+            <!-- 55 -->
+            <td>Eye with paint</td>
+            <!-- 56 -->
+            <td>Sandal strap</td>
           </tr>
         </thead>
 
-        <!-- Egyptian Hieroglyphs-->
+        <!-- PARENT Egyptian Hieroglyphs-->
         <tr>
-          <td class="Logography"><div style="width: 300px"><strong>Egyptian&nbsp;Hieroglyphs</strong></div></td>
+          <td class="Logography"><div style="width: 300px"><strong>Egyptian&nbsp;Hieroglyphs&nbsp;(Parent)</strong></div></td>
           <td class="Logography"><div style="width: 150px"><pre>Logography
           <br><i>32 c. BCE - 4 c. CE</i></pre></div></td>
           <!-- 01.0 -->
           <td>
             <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH01.png" alt="EH01" width="125" height="125">
+            <img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH01.png" alt="EH01" width="125" height="125">
             <div>Egyptian Hieroglyph Gardiner's Sign No. F1</div>
             </div>
-          </td>
-          <!-- 01.1 -->
-          <td> </td>
-          <!-- 02.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH02.png" alt="EH02" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. O1</div>
-            </div>
-          </td>
-          <!-- 02.1 -->
-          <td> </td>
-          <!-- 03.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH03.png" alt="EH03" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. T14</div>
-            </div>
-          </td>
-          <!-- 03.1 -->
-          <td> </td>
-          <!-- 04.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH04.png" alt="EH04" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. K1</div>
-            </div>
-          </td>
-          <!-- 04.1 -->
-          <td> </td>
-          <!-- 04.2 -->
-          <td> </td>
-          <!-- 05.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH05.png" alt="EH05" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. A28</div>
-            </div>
-          </td>
-          <!-- 05.1 -->
-          <td> </td>
-          <!-- 05.2 -->
-          <td> </td>
-          <!-- 05.3 -->
-          <td> </td>
-          <!-- 06.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH06.png" alt="EH06" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. T3</div>
-            </div>
-          </td>
-          <!-- 06.1 -->
-          <td> </td>
-          <!-- 06.2 -->
-          <td> </td>
-          <!-- 06.3 -->
-          <td> </td>
-          <!-- 07 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH07.png" alt="EH07" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. Z4</div>
-            </div>
-          </td>
-          <!-- 08.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH08.png" alt="EH08" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. 06</div>
-            </div>
-          </td>
-          <!-- 08.1 -->
-          <td> </td>
-          <!-- 09.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH09.png" alt="EH09" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. F35</div>
-            </div>
-          </td>
-          <!-- 09.1 -->
-          <td> </td>
-          <!-- 10.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH10.png" alt="EH10" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. D42</div>
-            </div>
-          </td>
-          <!-- 010.1 -->
-          <td> </td>
-          <!-- 11 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH11.png" alt="EH11" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. D46</div>
-            </div>
-          </td>
-          <!-- 12 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH12.png" alt="EH12" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. S39</div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH01">
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. F1</h3>
+                <h3 class="u-text u-text-2">𓃾</h3>
+                <p class="u-text u-text-3">Head of Ox
+                  <br>
+                  <br>Ideogram for: kꜣ “cattle”
+                  <br>Reconstructed Old Egyptian pronunciation: /kaʀ/
+                  <br>Reconstructed Middle Egyptian pronunciation: /kaʀ/
+                  <br>Reconstructed Late Egyptian pronunciation: /kaʔ/
+                  <br>Modern Egyptological pronunciation: /kɑ/
+                  <br>Conventional Anglicisation: ka
+                </p>
+              </div>
             </div>
           </td>
           <!-- 13 -->
           <td>
             <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH13.png" alt="EH13" width="125" height="125">
+            <img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH13.png" alt="EH13" width="125" height="125">
             <div>Egyptian Hieroglyph Gardiner's Sign No. N35</div>
             </div>
-          </td>
-          <!-- 14 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH14.png" alt="EH14" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. I10</div>
-            </div>
-          </td>
-          <!-- 15.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH15.png" alt="EH15" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. R11</div>
-            </div>
-          </td>
-          <!-- 15.1 -->
-          <td> </td>
-          <!-- 16 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH16.png" alt="EH16" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. D4</div>
-            </div>
-          </td>
-          <!-- 17 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH17.png" alt="EH17" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. V28</div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH13"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. N35</h3>
+                <h3 class="u-text u-text-2">𓈖</h3>
+                <p class="u-text u-text-3">Water ripple
+                  <br>
+                  <br>Phonogram <i>n</i>
+                  <br>Reconstructed Old Egyptian pronunciation: /n/
+                  <br>Reconstructed Middle Egyptian pronunciation: /n/
+                  <br>Reconstructed Late Egyptian pronunciation: /n/, /l/
+                  <br>Modern Egyptological pronunciation: /n/
+                </p>
+              </div>
             </div>
           </td>
           <!-- 18 -->
           <td>
             <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH18.png" alt="EH18" width="125" height="125">
+            <img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH18.png" alt="EH18" width="125" height="125">
             <div>Egyptian Hieroglyph Gardiner's Sign No. D21</div>
             </div>
-          </td>
-          <!-- 19.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH19.png" alt="EH19" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. M22</div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH18"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. D21</h3>
+                <h3 class="u-text u-text-2">𓂋</h3>
+                <p class="u-text u-text-3">Mouth
+                  <br>
+                  <br>Phonogram <i>r</i>
+                  <br>Ideogram for: r “mouth”
+                  <br>Reconstructed Old Egyptian pronunciation: /ɾ/, /l/
+                  <br>Reconstructed Middle Egyptian pronunciation: /ɾ/, /l/, /ʔ/, /j/
+                  <br>Reconstructed Late Egyptian pronunciation: /ɾ/, /l/, /ʔ/, /j/, ∅
+                  <br>Modern Egyptological pronunciation: /r/
+                </p>
+              </div>
             </div>
           </td>
-          <!-- 19.1 -->
-          <td> </td>
-          <!-- 19.2 -->
-          <td> </td>
-          <!-- 20 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH20.png" alt="EH20" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. V24</div>
-            </div>
-          </td>
-          <!-- 21 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH21.png" alt="EH21" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. D1</div>
-            </div>
-          </td>
-          <!-- 22.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH22.png" alt="EH22" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. T9a</div>
-            </div>
-          </td>
-          <!-- 22.1 -->
-          <td> </td>
-          <!-- 22.2 -->
-          <td> </td>
-          <!-- 22.3 -->
-          <td> </td>
-          <!-- 23.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH23.png" alt="EH23" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. M39</div>
-            </div>
-          </td>
-          <!-- 23.1 -->
-          <td> </td>
-          <!-- 24.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Egyptian_Hieroglyphs/EH24.png" alt="EH24" width="125" height="125">
-            <div>Egyptian Hieroglyph Gardiner's Sign No. Z9</div>
-            </div>
-          </td>
-          <!-- 24.1 -->
-          <td> </td>
-          <!-- 24.2 -->
-          <td> </td>
-          <!-- 24.3 -->
-          <td> </td>
-          <!-- 24.4 -->
-          <td> </td>
           <!-- 25 -->
+          <td>
+            <div class="content_img">
+            <img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH25.png" alt="EH25" width="125" height="125">
+            <div>Egyptian Hieroglyph Gardiner's Sign No. M8</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH25"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. M8</h3>
+                <h3 class="u-text u-text-2">𓆷</h3>
+                <p class="u-text u-text-3">Pool with lilies
+                  <br>
+                  <br>Phonogram <i>šꜣ</i> for: šꜣ “marsh”
+                  <br>Modern Egyptological pronunciation: /ʃɑ/
+                  <br>Conventional Anglicisation: sha
+                  <br>
+                  <br>Ideogram for: ꜣḫt “Inundation”
+                  <br>Modern Egyptological pronunciation: /ɑxɛt/
+                  <br>Conventional Anglicisation: akhet
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 34 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH34.png" alt="EH34" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. A1</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH34"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. A1</h3>
+                <h3 class="u-text u-text-2">𓀀</h3>
+                <p class="u-text u-text-3">Seated man
+                  <br>
+                  <br>Determinative for: z “man”
+                  <br>Reconstructed Old Egyptian pronunciation: /zuʀ/
+                  <br>Reconstructed Middle Egyptian pronunciation: /suʀ/
+                  <br>Reconstructed Medio-Late Egyptian pronunciation: /suʔ/
+                  <br>Reconstructed Late Egyptian pronunciation: /søʔ/
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 35 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH35.png" alt="EH35" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. H6</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH35"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. H6</h3>
+                <h3 class="u-text u-text-2">𓆄</h3>
+                <p class="u-text u-text-3">Feather
+                  <br>
+                  <br>Phonogram <i>šw</i>
+                  <br>Ideogram for: šwt “feather”
+                  <br>Modern Egyptological pronunciation: /ʃuːt/
+                  <br>Conventional Anglicisation: shut
+                  <br>
+                  <br>Determinative & ideogram for: mꜣꜥt “truth”
+                  <br>Reconstructed Old Egyptian pronunciation: /ˈmuʀʕat/
+                  <br>Reconstructed Middle Egyptian pronunciation: /ˈmuʀʕaʔ/
+                  <br>Reconstructed Medio-Late Egyptian pronunciation: /ˈmuːʕaʔ/
+                  <br>Reconstructed Late Egyptian pronunciation: /ˈmeːʕə/
+                  <br>Modern Egyptological pronunciation: /mɑʔɑːt/
+                  <br>Conventional Anglicisation: maat
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 36 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH36.png" alt="EH36" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. A26</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH36"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. A26</h3>
+                <h3 class="u-text u-text-2">𓀞</h3>
+                <p class="u-text u-text-3">Man beckoning
+                  <br>
+                  <br>Determinative for: nis “call”
+                  <br>Ideogram for: vocative i “Oh!”
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 37 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH37.png" alt="EH37" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. M17A</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH37"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. M17A</h3>
+                <h3 class="u-text u-text-2">𓇌</h3>
+                <p class="u-text u-text-3">Two reeds
+                  <br>
+                  <br>Phonogram <i>y</i>
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 38 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH38.png" alt="EH38" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. V4</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH38"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. V4</h3>
+                <h3 class="u-text u-text-2">𓍯</h3>
+                <p class="u-text u-text-3">Lasso
+                  <br>
+                  <br>Phonogram <i>wꜣ</i> for: wꜣḥ ”endure”
+                  <br>Reconstructed Old Egyptian pronunciation: /ˈwaːʀaħ/
+                  <br>Reconstructed Middle Egyptian pronunciation: /ˈwaːʀaħ/
+                  <br>Reconstructed Late Egyptian pronunciation: /ˈwoːʔəħ/
+                  <br>Modern Egyptological pronunciation: /wɑħ/
+                  <br>Conventional Anglicisation: wah
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 39 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH39.png" alt="EH39" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. E11</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH39"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. E11</h3>
+                <h3 class="u-text u-text-2">𓃞</h3>
+                <p class="u-text u-text-3">Ram
+                  <br>
+                  <br>Determinative for: bꜣ “ram”
+                  <br>Reconstructed Old Egyptian pronunciation: /biʀ/
+                  <br>Reconstructed Middle Egyptian pronunciation: /biʀ/
+                  <br>Reconstructed Late Egyptian pronunciation: /βej/
+                  <br>Modern Egyptological pronunciation: /bɑ/
+                  <br>Conventional Anglicisation: ba
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 40 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH40.png" alt="EH40" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. D58</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH40"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. D58</h3>
+                <h3 class="u-text u-text-2">𓃀</h3>
+                <p class="u-text u-text-3">Foot
+                  <br>
+                  <br>Phonogram <i>b</i>
+                  <br>Ideogram for: bw “place”
+                  <br>Modern Egyptological pronunciation: /buː/
+                  <br>Conventional Anglicisation: bu
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 41 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH41.png" alt="EH41" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. Q3</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH41"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. Q3</h3>
+                <h3 class="u-text u-text-2">𓊪</h3>
+                <p class="u-text u-text-3">Stool
+                  <br>
+                  <br>Phonogram <i>p</i>
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 42 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH42.png" alt="EH42" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. G17</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH42"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. G17</h3>
+                <h3 class="u-text u-text-2">𓅓</h3>
+                <p class="u-text u-text-3">Owl
+                  <br>
+                  <br>Phonogram <i>m</i>
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 43 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH43.png" alt="EH43" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. M22A</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH43"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. M22A</h3>
+                <h3 class="u-text u-text-2">𓇒</h3>
+                <p class="u-text u-text-3">Two rushes
+                  <br>
+                  <br>Phonogram <i>nn</i>
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 44 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH44.png" alt="EH44" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. E23</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH44"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. E23</h3>
+                <h3 class="u-text u-text-2">𓃭</h3>
+                <p class="u-text u-text-3">Recumbent Lion
+                  <br>
+                  <br>Phonogram <i>rw</i>
+                  <br>Determinative or ideogram for: rw “lion”
+                  <br>Modern Egyptological pronunciation: /ruː/
+                  <br>Conventional Anglicisation: ru
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 45 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH45.png" alt="EH45" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. Aa1</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH45"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. Aa1</h3>
+                <h3 class="u-text u-text-2">𓐍</h3>
+                <p class="u-text u-text-3">?Placenta
+                  <br>
+                  <br>Phonogram <i>ḫ</i>
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 46 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH46.png" alt="EH46" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. W11</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH46"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. W11</h3>
+                <h3 class="u-text u-text-2">𓎼</h3>
+                <p class="u-text u-text-3">Ring stand
+                  <br>
+                  <br>Phonogram <i>g</i>
+                  <br>Determinative or ideogram for: nst “throne”
+                  <br>Modern Egyptological pronunciation: /nɛsɛt/
+                  <br>Conventional Anglicisation: nest
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 47 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH47.png" alt="EH47" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. O34</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH47"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. O34</h3>
+                <h3 class="u-text u-text-2">𓊃</h3>
+                <p class="u-text u-text-3">Door bolt
+                  <br>
+                  <br>Phonogram <i>s</i> for: s “bolt”
+                  <br>Modern Egyptological pronunciation: /zɛ/, /zɑ/
+                  <br>Conventional Anglicisation: ze, za
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 48 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH48.png" alt="EH48" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. G38</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH48"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. G38</h3>
+                <h3 class="u-text u-text-2">𓅬</h3>
+                <p class="u-text u-text-3">Goose
+                  <br>
+                  <br>Phonogram <i>gb</i> for: gbb “Geb (the god)”
+                  <br>Reconstructed Old Egyptian pronunciation: /ˈkʼuːbab/
+                  <br>Reconstructed Middle Egyptian pronunciation: /ˈkʼuːbab/
+                  <br>Reconstructed Late Egyptian pronunciation: /kʼeːβ/
+                  <br>Modern Egyptological pronunciation: /ɡɛbɛb/
+                  <br>Conventional Anglicisation: gebeb
+                  <br>
+                  <br>Determinative for: ḥtm “perish”
+                  <br>Modern Egyptological pronunciation: /ħɛtɛm/
+                  <br>Conventional Anglicisation: hetem
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 49 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH49.png" alt="EH49" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. N29</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH49"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. E29</h3>
+                <h3 class="u-text u-text-2">𓈎</h3>
+                <p class="u-text u-text-3">Sandy slope
+                  <br>
+                  <br>Phonogram <i>q</i>
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 50 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH50.png" alt="EH50" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. V13</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH50"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. V13</h3>
+                <h3 class="u-text u-text-2">𓍿</h3>
+                <p class="u-text u-text-3">Tethering rope
+                  <br>
+                  <br>Phonogram <i>ṯ</i>
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 51 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH51.png" alt="EH51" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. N16</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH51"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. N16</h3>
+                <h3 class="u-text u-text-2">𓇾</h3>
+                <p class="u-text u-text-3">Flat land with grain
+                  <br>
+                  <br>Phonogram <i>tꜣ</i> for: tꜣ “land, earth”
+                  <br>Reconstructed Old Egyptian pronunciation: /taʀ/
+                  <br>Reconstructed Middle Egyptian pronunciation: /taʀ/
+                  <br>Reconstructed Late Egyptian pronunciation: /taʔ/
+                  <br>Modern Egyptological pronunciation: /tɑ/
+                  <br>Conventional Anglicisation: ta
+                  <br>
+                  <br>Determinative for: ḏt “eternity”
+                  <br>Reconstructed Old Egyptian pronunciation: /ˈcʼajtuw/
+                  <br>Reconstructed Middle Egyptian pronunciation: /ˈt͡ʃʼajtuw/
+                  <br>Reconstructed Medio-Late Egyptian pronunciation: /ˈt͡ʃʼajtəʔ/
+                  <br>Reconstructed Late Egyptian pronunciation: /t͡ʃʼajt/
+                  <br>Modern Egyptological pronunciation: /d͡ʒɛt/
+                  <br>Conventional Anglicisation: djet
+                </p>
+              </div>
+          </td>
+          <!-- 52 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH52.png" alt="EH52" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. N16 & O4</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH52"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign N16 & O4</h3>
+                <h3 class="u-text u-text-2">𓇾</h3>
+                <h3 class="u-text u-text-2">𓉔</h3>
+            </div>
+          </td>
+          <!-- 53 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH53.png" alt="EH53" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. O4</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH53"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. O4</h3>
+                <h3 class="u-text u-text-2">𓉔</h3>
+                <p class="u-text u-text-3">Reed shelter
+                  <br>
+                  <br>Phonogram <i>h</i>
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 54 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH54.png" alt="EH54" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. N21</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH54"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. N21</h3>
+                <h3 class="u-text u-text-2">𓈅</h3>
+                <p class="u-text u-text-3">Tongue of land
+                  <br>
+                  <br>Ideogram for: jdb “bank”
+                  <br>Modern Egyptological pronunciation: /idɛb/
+                  <br>Conventional Anglicisation: ideb
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 55 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH55.png" alt="EH55" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. D6</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH55"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. D6</h3>
+                <h3 class="u-text u-text-2">𓁻</h3>
+                <p class="u-text u-text-3">Eye with paint
+                  <br>
+                  <br>Determinative for actions or conditions of the eye:
+                  <br>dgi “look”
+                  <br>šp “blind”
+                </p>
+              </div>
+            </div>
+          </td>
+          <!-- 56 -->
+          <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Egyptian_Hieroglyphs/EH56.png" alt="EH56" width="125" height="125"><div>Egyptian Hieroglyph Gardiner's Sign No. S34</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="EH56"><!-- ID -->
+                <h3 class="u-text u-text-2">Egyptian Hieroglyph Gardiner's Sign No. S34</h3>
+                <h3 class="u-text u-text-2">𓋹</h3>
+                <p class="u-text u-text-3">Sandal strap
+                  <br>
+                  <br>Phonogram <i>ꜥnḫ</i> ʿnḫ “live”
+                  <br>Reconstructed Old Egyptian pronunciation: /ˈʕaːnaχ/
+                  <br>Reconstructed Middle Egyptian pronunciation: /ˈʕaːnaχ/
+                  <br>Reconstructed Medio-Late Egyptian pronunciation: /ˈʕaːnəχ/
+                  <br>Reconstructed Late Egyptian pronunciation: /ˈʕoːnəχ/
+                  <br>Modern Egyptological pronunciation: /ɑːnx/
+                  <br>Conventional Anglicisation: ankh
+                </p>
+              </div>
+            </div>
+          </td>
         </tr>
 
-        <!-- PARENT Epigraphic South Arabian-->
+        <!-- SELF Meroitic Hieroglyphs-->
         <tr>
-          <!-- 00 -->
-          <td class="Abugida"><strong>Epigraphic&nbsp;South&nbsp;Arabian (Parent)</strong>
-              <td class="Abugida"><pre>Abugida
-              <br><i>9 c. BCE - 7 c. CE</i></pre></td>
-          </td>
+          <td class="Abugida"><strong>Meroitic&nbsp;Hieroglyphs</strong></td>
+          <td class="Abugida"><br>Abugida
+          <br><i>3 c. BCE - 6 c. CE CE</i></pre></td>
           <!-- 01.0 -->
           <td>
             <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA01.png" alt="ESA01" width="125" height="125">
-            <div>Epigraphic South Arabian letter Alef</div>
+              <img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH01.png" alt="MH01" width="125" height="125">
+              <div>Meroitic hieroglyph letter O</div>
             </div>
-          </td>
-          <!-- 01.1 -->
-          <td> </td>
-          <!-- 02.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA02.png" alt="ESA02" width="125" height="125">
-            <div>Epigraphic South Arabian letter Beth</div>
-            </div>
-          </td>
-          <!-- 02.1 -->
-          <td> </td>
-          <!-- 03.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA03.png" alt="ESA03" width="125" height="125">
-            <div>Epigraphic South Arabian letter Gimel</div>
-            </div>
-          </td>
-          <!-- 03.1 -->
-          <td> </td>
-          <!-- 04.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA04.0.png" alt="ESA04.0" width="125" height="125">
-            <div>Epigraphic South Arabian letter Daleth</div>
-            </div>
-          </td>
-          <!-- 04.1 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA04.1.png" alt="ESA04.1" width="125" height="125">
-            <div>Epigraphic South Arabian letter Dhaleth</div>
-            </div>
-          </td>
-          <!-- 04.2 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA04.2.png" alt="ESA04.2" width="125" height="125">
-            <div>Epigraphic South Arabian letter Dhadhe</div>
-            </div>
-          </td>
-          <!-- 05.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA05.png" alt="ESA05" width="125" height="125">
-            <div>Epigraphic South Arabian letter He</div>
-            </div>
-          </td>
-          <!-- 05.1 -->
-          <td> </td>
-          <!-- 05.2 -->
-          <td> </td>
-          <!-- 05.3 -->
-          <td> </td>
-          <!-- 06.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA06.png" alt="ESA06" width="125" height="125">
-            <div>Epigraphic South Arabian letter Waw</div>
-            </div>
-          </td>
-          <!-- 06.1 -->
-          <td> </td>
-          <!-- 06.2 -->
-          <td> </td>
-          <!-- 06.3 -->
-          <td> </td>
-          <!-- 07 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA07.png" alt="ESA07" width="125" height="125">
-            <div>Epigraphic South Arabian letter Zayn</div>
-            </div>
-          </td>
-          <!-- 08.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA08.0.png" alt="ESA08.0" width="125" height="125">
-            <div>Epigraphic South Arabian letter Heth</div>
-            </div>
-          </td>
-          <!-- 08.1 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA08.1.png" alt="ESA08.1" width="125" height="125">
-            <div>Epigraphic South Arabian letter Kheth</div>
-            </div>
-          </td>
-          <!-- 09.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA09.0.png" alt="ESA09.0" width="125" height="125">
-            <div>Epigraphic South Arabian letter Teth</div>
-            </div>
-          </td>
-          <!-- 09.1 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA09.1.png" alt="ESA09.1" width="125" height="125">
-            <div>Epigraphic South Arabian letter Theth</div>
-            </div>
-          </td>
-          <!-- 10.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA10.png" alt="ESA10" width="125" height="125">
-            <div>Epigraphic South Arabian letter Yodh</div>
-            </div>
-          </td>
-          <!-- 010.1 -->
-          <td> </td>
-          <!-- 11 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA11.png" alt="ESA11" width="125" height="125">
-            <div>Epigraphic South Arabian letter Kaph</div>
-            </div>
-          </td>
-          <!-- 12 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA12.png" alt="ESA12" width="125" height="125">
-            <div>Epigraphic South Arabian letter Lamedh</div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH01">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter O</h3>
+                <h3 class="u-text u-text-2">𐦃</h3>
+              </div>
             </div>
           </td>
           <!-- 13 -->
           <td>
             <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA13.png" alt="ESA13" width="125" height="125">
-            <div>Epigraphic South Arabian letter Mem</div>
+              <img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH13.png" alt="MH13" width="125" height="125">
+              <div>Meroitic hieroglyph letter Na</div>
             </div>
-          </td>
-          <!-- 14 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA14.png" alt="ESA14" width="125" height="125">
-            <div>Epigraphic South Arabian letter Nun</div>
-            </div>
-          </td>
-          <!-- 15.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA15.0.png" alt="ESA15.0" width="125" height="125">
-            <div>Epigraphic South Arabian letter Samekh</div>
-            </div>
-          </td>
-          <!-- 15.1 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA15.1.png" alt="ESA15.1" width="125" height="125">
-            <div>Epigraphic South Arabian letter Sat</div>
-            </div>
-          </td>
-          <!-- 16 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA16.png" alt="ESA16" width="125" height="125">
-            <div>Epigraphic South Arabian letter Ayn</div>
-            </div>
-          </td>
-          <!-- 17 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA17.png" alt="ESA17" width="125" height="125">
-            <div>Epigraphic South Arabian letter Ghayn</div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH13">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Na</h3>
+                <h3 class="u-text u-text-2">𐦊</h3>
+              </div>
             </div>
           </td>
           <!-- 18 -->
           <td>
             <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA18.png" alt="ESA18" width="125" height="125">
-            <div>Epigraphic South Arabian letter Fe</div>
+              <img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH18.png" alt="MH18" width="125" height="125">
+              <div>Meroitic hieroglyph letter Ra</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH18">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ra</h3>
+                <h3 class="u-text u-text-2">𐦎</h3>
+              </div>
             </div>
           </td>
-          <!-- 19.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA19.png" alt="ESA19" width="125" height="125">
-            <div>Epigraphic South Arabian letter Sadhe</div>
-            </div>
-          </td>
-          <!-- 19.1 -->
-          <td> </td>
-          <!-- 19.2 -->
-          <td> </td>
-          <!-- 20 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA20.png" alt="ESA20" width="125" height="125">
-            <div>Epigraphic South Arabian letter Qoph</div>
-            </div>
-          </td>
-          <!-- 21 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA21.png" alt="ESA21" width="125" height="125">
-            <div>Epigraphic South Arabian letter Resh</div>
-            </div>
-          </td>
-          <!-- 22.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA22.png" alt="ESA22" width="125" height="125">
-            <div>Epigraphic South Arabian letter Shin</div>
-            </div>
-          </td>
-          <!-- 22.1 -->
-          <td> </td>
-          <!-- 22.2 -->
-          <td> </td>
-          <!-- 22.3 -->
-          <td> </td>
-          <!-- 23.0 -->
-          <td> </td>
-          <!-- 23.1 -->
-          <td> </td>
-          <!-- 24.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Epigraphic_South_Arabian/ESA24.png" alt="ESA24" width="125" height="125">
-            <div>Epigraphic South Arabian letter Taw</div>
-            </div>
-          </td>
-          <!-- 24.1 -->
-          <td> </td>
-          <!-- 24.2 -->
-          <td> </td>
-          <!-- 24.3 -->
-          <td> </td>
-          <!-- 24.4 -->
-          <td> </td>
           <!-- 25 -->
-          <td> </td>
-          <!-- 26 -->
-          <td> </td>
-          <!-- 27 -->
-          <td> </td>
-          <!-- 28 -->
-          <td> </td>
-          <!-- 29 -->
-          <td> </td>
-          <!-- 30 -->
-          <td> </td>
-          <!-- 31.0 -->
-          <td> </td>
-          <!-- 31.1 -->
-          <td> </td>
-          <!-- 31.2 -->
-          <td> </td>
+          <td>
+            <div class="content_img">
+              <img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH25.png" alt="MH25" width="125" height="125">
+              <div>Meroitic hieroglyph letter Sa</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH25">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Sa</h3>
+                <h3 class="u-text u-text-2">𐦓</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 34 -->
+          <td>
+            <div class="content_img">
+              <img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH34.png" alt="MH34" width="125" height="125">
+              <div>Meroitic hieroglyph letter A</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH34">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter A</h3>
+                <h3 class="u-text u-text-2">𐦀</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 35 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH35.png" alt="MH35" width="125" height="125">
+              <div>Meroitic hieroglyph letter E</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH35">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter E</h3>
+                <h3 class="u-text u-text-2">𐦁</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 36 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH36.png" alt="MH36" width="125" height="125">
+              <div>Meroitic hieroglyph letter I</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH36">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter I</h3>
+                <h3 class="u-text u-text-2">𐦂</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 37 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH37.png" alt="MH37" width="125" height="125">
+              <div>Meroitic hieroglyph letter Ya</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH37">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ya</h3>
+                <h3 class="u-text u-text-2">𐦄</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 38 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH38.png" alt="MH38" width="125" height="125">
+              <div>Meroitic hieroglyph letter Wa</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH38">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Wa</h3>
+                <h3 class="u-text u-text-2">𐦅</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 39 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH39.png" alt="MH39" width="125" height="125">
+              <div>Meroitic hieroglyph letter Ba</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH39">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ba</h3>
+                <h3 class="u-text u-text-2">𐦆</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 40 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH40.png" alt="MH40" width="125" height="125">
+              <div>Meroitic hieroglyph letter Ba</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH40">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ba</h3>
+                <h3 class="u-text u-text-2">𐦇</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 41 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH41.png" alt="MH41" width="125" height="125">
+              <div>Meroitic hieroglyph letter Pa</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH41">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Pa</h3>
+                <h3 class="u-text u-text-2">𐦈</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 42 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH42.png" alt="MH42" width="125" height="125">
+              <div>Meroitic hieroglyph letter Ma</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH42">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ma</h3>
+                <h3 class="u-text u-text-2">𐦉</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 43 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH43.png" alt="MH43" width="125" height="125">
+              <div>Meroitic hieroglyph letter Ne</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH43">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ne</h3>
+                <h3 class="u-text u-text-2">𐦌</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 44 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH44.png" alt="MH44" width="125" height="125">
+              <div>Meroitic hieroglyph letter La</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH44">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter La</h3>
+                <h3 class="u-text u-text-2">𐦐</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 45 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH45.png" alt="MH45" width="125" height="125">
+              <div>Meroitic hieroglyph letter Kha</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH45">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Kha</h3>
+                <h3 class="u-text u-text-2">𐦑</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 46 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH46.png" alt="MH46" width="125" height="125">
+              <div>Meroitic hieroglyph letter Hha</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH46">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Hha</h3>
+                <h3 class="u-text u-text-2">𐦒</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 47 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH47.png" alt="MH47" width="125" height="125">
+              <div>Meroitic hieroglyph letter Sa</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH47">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Sa</h3>
+                <h3 class="u-text u-text-2">𐦔</h3>
+              </div>
+            </div>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH47a.png" alt="MH47a" width="125" height="125">
+              <div>Meroitic hieroglyph letter Se</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH47a">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Se</h3>
+                <h3 class="u-text u-text-2">𐦕</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 48 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH48.png" alt="MH48" width="125" height="125">
+              <div>Meroitic hieroglyph letter Ka</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH48">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ka</h3>
+                <h3 class="u-text u-text-2">𐦖</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 49 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH49.png" alt="MH49" width="125" height="125">
+              <div>Meroitic hieroglyph letter Qa</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH49">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Qa</h3>
+                <h3 class="u-text u-text-2">𐦗</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 50 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH50.png" alt="MH50" width="125" height="125">
+              <div>Meroitic hieroglyph letter Ta</div></div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH50">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ta</h3>
+                <h3 class="u-text u-text-2">𐦘</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 51 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH51.png" alt="MH51" width="125" height="125">
+              <div>Meroitic hieroglyph letter Ta</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH51">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Ta</h3>
+                <h3 class="u-text u-text-2">𐦙</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 52 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH52.png" alt="MH52" width="125" height="125">
+              <div>Meroitic hieroglyph letter Te</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH52">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Te</h3>
+                <h3 class="u-text u-text-2">𐦚</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 53 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH53.png" alt="MH53" width="125" height="125">
+              <div>Meroitic hieroglyph letter Te</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH53">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Te</h3>
+                <h3 class="u-text u-text-2">𐦛</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 54 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH54.png" alt="MH54" width="125" height="125">
+              <div>Meroitic hieroglyph letter To</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH54">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter To</h3>
+                <h3 class="u-text u-text-2">𐦜</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 55 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH55.png" alt="MH55" width="125" height="125">
+              <div>Meroitic hieroglyph letter Da</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH55">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Da</h3>
+                <h3 class="u-text u-text-2">𐦝</h3>
+              </div>
+            </div>
+          </td>
+          <!-- 56 -->
+          <td>
+            <div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Hieroglyphs/MH56.png" alt="MH56" width="125" height="125">
+              <div>Meroitic hieroglyph letter Vidj</div>
+            </div>
+            <div id="myModal" class="modal"><!-- The Modal -->
+              <span class="close">&times;</span><!-- The Close Button -->
+              <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <div class="caption-text" id="MH56">
+                <h3 class="u-text u-text-2">Meroitic hieroglyph letter Vidj</h3>
+                <h3 class="u-text u-text-2">𐦞</h3>
+              </div>
+            </div>
+          </td>
         </tr>
 
-        <!-- SELF Ge'ez-->
-        <tr>
-          <!-- 00 -->
-          <td class="Abugida"><strong>Ge’ez</strong></td>
-              <td class="Abugida">Abugida
-              <br><i>5-6 c. BCE - Present</i></pre></td>
-          </td>
-          <!-- 01.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge01.png" alt="Ge01" width="125" height="125">
-            <div>Ge'ez letter ʼÄlf</div>
-            </div>
-          </td>
-          <!-- 01.1 -->
-          <td> </td>
-          <!-- 02.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge02.png" alt="Ge02" width="125" height="125">
-            <div>Ge'ez letter Bet</div>
-            </div>
-          </td>
-          <!-- 02.1 -->
-          <td> </td>
-          <!-- 03.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge03.png" alt="Ge03" width="125" height="125">
-            <div>Ge'ez letter Gäml</div>
-            </div>
-          </td>
-          <!-- 03.1 -->
-          <td> </td>
-          <!-- 04.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge04.0.png" alt="Ge04.0" width="125" height="125">
-            <div>Ge'ez letter Dänt</div>
-            </div>
-          </td>
-          <!-- 04.1 -->
-          <td> </td>
-          <!-- 04.2 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge04.2.png" alt="Ge04.2" width="125" height="125">
-            <div>Ge'ez letter Ṣ́äppä</div>
-            </div>
-          </td>
-          <!-- 05.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge05.png" alt="Ge05" width="125" height="125">
-            <div>Ge'ez letter Hoy</div>
-            </div>
-          </td>
-          <!-- 05.1 -->
-          <td> </td>
-          <!-- 05.2 -->
-          <td> </td>
-          <!-- 05.3 -->
-          <td> </td>
-          <!-- 06.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge06.png" alt="Ge06" width="125" height="125">
-            <div>Ge'ez letter Wäwe</div>
-            </div>
-          </td>
-          <!-- 06.1 -->
-          <td> </td>
-          <!-- 06.2 -->
-          <td> </td>
-          <!-- 06.3 -->
-          <td> </td>
-          <!-- 07 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge07.png" alt="Ge07" width="125" height="125">
-            <div>Ge'ez letter Zäy</div>
-            </div>
-          </td>
-          <!-- 08.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge08.0.png" alt="Ge08.0" width="125" height="125">
-            <div>Ge'ez letter Ḥäwt</div>
-            </div>
-          </td>
-          <!-- 08.1 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge08.1.png" alt="Ge08.1" width="125" height="125">
-            <div>Ge'ez letter Ḫarm</div>
-            </div>
-          </td>
-          <!-- 09.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge09.png" alt="Ge09" width="125" height="125">
-            <div>Ge'ez letter Ṭäyt</div>
-            </div>
-          </td>
-          <!-- 09.1 -->
-          <td> </td>
-          <!-- 10.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge10.png" alt="Ge10" width="125" height="125">
-            <div>Ge'ez letter Yämän</div>
-            </div>
-          </td>
-          <!-- 010.1 -->
-          <td> </td>
-          <!-- 11 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge11.png" alt="Ge11" width="125" height="125">
-            <div>Ge'ez letter Kaf</div>
-            </div>
-          </td>
-          <!-- 12 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge12.png" alt="Ge12" width="125" height="125">
-            <div>Ge'ez letter Läwe</div>
-            </div>
-          </td>
-          <!-- 13 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge13.png" alt="Ge13" width="125" height="125">
-            <div>Ge'ez letter May</div>
-            </div>
-          </td>
-          <!-- 14 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge14.png" alt="Ge14" width="125" height="125">
-            <div>Ge'ez letter Nähas</div>
-            </div>
-          </td>
-          <!-- 15.0 -->
-          <td> </td>
-          <!-- 15.1 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge15.1.png" alt="Ge15.1" width="125" height="125">
-            <div>Ge'ez letter Sat</div>
-            </div>
-          </td>
-          <!-- 16 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge16.png" alt="Ge16" width="125" height="125">
-            <div>Ge'ez letter ʽÄyn</div>
-            </div>
-          </td>
-          <!-- 17 -->
-          <td> </td>
-          <!-- 18 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge18.png" alt="Ge18" width="125" height="125">
-            <div>Ge'ez letter Äf</div>
-            </div>
-          </td>
-          <!-- 19.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge19.png" alt="Ge19" width="125" height="125">
-            <div>Ge'ez letter Ṣädäy</div>
-            </div>
-          </td>
-          <!-- 19.1 -->
-          <td> </td>
-          <!-- 19.2 -->
-          <td> </td>
-          <!-- 20 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge20.png" alt="Ge20" width="125" height="125">
-            <div>Ge'ez letter Ḳaf</div>
-            </div>
-          </td>
-          <!-- 21 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge21.png" alt="Ge21" width="125" height="125">
-            <div>Ge'ez letter Rəʾs</div>
-            </div>
-          </td>
-          <!-- 22.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge22.png" alt="Ge22" width="125" height="125">
-            <div>Ge'ez letter Śäwt</div>
-            </div>
-          </td>
-          <!-- 22.1 -->
-          <td> </td>
-          <!-- 22.2 -->
-          <td> </td>
-          <!-- 22.3 -->
-          <td> </td>
-          <!-- 23.0 -->
-          <td> </td>
-          <!-- 23.1 -->
-          <td> </td>
-          <!-- 24.0 -->
-          <td>
-            <div class="content_img">
-            <img src="../images/Geez/Ge24.png" alt="Ge24" width="125" height="125">
-            <div>Ge'ez letter Täwe</div>
-            </div>
-          </td>
-          <!-- 24.1 -->
-          <td> </td>
-          <!-- 24.2 -->
-          <td> </td>
-          <!-- 24.3 -->
-          <td> </td>
-          <!-- 24.4 -->
-          <td> </td>
-          <!-- 25 -->
-          <td> </td>
-          <!-- 26 -->
-          <td> </td>
-          <!-- 27 -->
-          <td> </td>
-          <!-- 28 -->
-          <td> </td>
-          <!-- 29 -->
-          <td> </td>
-          <!-- 30 -->
-          <td> </td>
-          <!-- 31 -->
-          <td> </td>
-          <!-- 32 -->
-          <td> </td>
-          <!-- 33 -->
-          <td> </td>
-        </tr>
+            <!-- PARENT Demotic Egyptian-->
+            <tr>
+              <td class="Logography"><strong>Demotic&nbsp;Egyptian&nbsp;(Parent)</strong></td>
+              <td class="Logography"><pre>Logography
+              <br><i>650 BCE - 5 c. CE</i></pre></td>
+              <!-- 01.0 -->
+              <td> </td>
+              <!-- 12 -->
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Demotic_Egyptian/DE12.png" alt="DE12" width="125" height="125">
+                  <div>Demotic Egyptian Gardiner's Sign No. S39</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="DE12"><!-- ID -->
+                    <h3 class="u-text u-text-2">Demotic Egyptian Gardiner's Sign No. S39</h3>
+                    <p class="u-text u-text-3">Crook
+                      <br>
+                      <br>Phonogram <i>ꜥwt</i> for: ꜥwt “flock”
+                      <br>Modern Egyptological pronunciation: /ɑːuːt/
+                      <br>Conventional Anglicisation: aut
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <!-- 13 -->
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Demotic_Egyptian/DE13.png" alt="DE13" width="125" height="125">
+                  <div>Demotic Egyptian Gardiner's Sign No. N35</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="DE13"><!-- ID -->
+                    <h3 class="u-text u-text-2">Demotic Egyptian Gardiner's Sign No. N35</h3>
+                    <p class="u-text u-text-3">Water ripple
+                      <br>
+                      <br>Phonogram <i>n</i>
+                      <br>Reconstructed Old Egyptian pronunciation: /n/
+                      <br>Reconstructed Middle Egyptian pronunciation: /n/
+                      <br>Reconstructed Late Egyptian pronunciation: /n/, /l/
+                      <br>Modern Egyptological pronunciation: /n/
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <!-- 18 -->
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Demotic_Egyptian/DE18.png" alt="DE18" width="125" height="125">
+                  <div>Demotic Egyptian Gardiner's Sign No. D21</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="DE18"><!-- ID -->
+                    <h3 class="u-text u-text-2">Demotic Egyptian Gardiner's Sign No. D21</h3>
+                    <p class="u-text u-text-3">Mouth
+                      <br>
+                      <br>Phonogram <i>r</i>
+                      <br>Ideogram for: r “mouth”
+                      <br>Reconstructed Old Egyptian pronunciation: /ɾ/, /l/
+                      <br>Reconstructed Middle Egyptian pronunciation: /ɾ/, /l/, /ʔ/, /j/
+                      <br>Reconstructed Late Egyptian pronunciation: /ɾ/, /l/, /ʔ/, /j/, ∅
+                      <br>Modern Egyptological pronunciation: /r/
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <!-- 25 -->
+              <td>
+                <div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Demotic_Egyptian/DE25.png" alt="DE25" width="125" height="125">
+                  <div>Demotic Egyptian Gardiner's Sign No. M8</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="DE25"><!-- ID -->
+                    <h3 class="u-text u-text-2">Demotic Egyptian Gardiner's Sign No. M8</h3>
+                    <p class="u-text u-text-3">Pool with lilies
+                      <br>
+                      <br>Phonogram <i>šꜣ</i> for: šꜣ “marsh”
+                      <br>Modern Egyptological pronunciation: /ʃɑ/
+                      <br>Conventional Anglicisation: sha
+                      <br>
+                      <br>Ideogram for: ꜣḫt “Inundation”
+                      <br>Modern Egyptological pronunciation: /ɑxɛt/
+                      <br>Conventional Anglicisation: akhet
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
 
+              <!-- SELF Meroitic Cursive-->
+              <tr>
+                <td class="Abugida"><strong>Meroitic&nbsp;Cursive</strong></td>
+                <td class="Abugida"><pre>Abugida
+                <br><i>3 c. BCE - 6 c. CE</i></pre></td>
+                <!-- 01.0 -->
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC01.png" alt="MC01" width="125" height="125">
+                    <div>Meroitic cursive letter O</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC01">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter O</h3>
+                      <h3 class="u-text u-text-2">𐦣</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 13 -->
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC13.png" alt="MC13" width="125" height="125">
+                    <div>Meroitic cursive letter Na</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC13">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Na</h3>
+                      <h3 class="u-text u-text-2">𐦩</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 18 -->
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC18.png" alt="MC18" width="125" height="125">
+                    <div>Meroitic cursive letter Ra</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC18">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Ra</h3>
+                      <h3 class="u-text u-text-2">𐦫</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 25 -->
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC25.png" alt="MC25" width="125" height="125">
+                    <div>Meroitic cursive letter Sa</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC25">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Sa</h3>
+                      <h3 class="u-text u-text-2">𐦯</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 34 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC34.png" alt="MC34" width="125" height="125">
+                    <div>Meroitic cursive letter A</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC34">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter A</h3>
+                      <h3 class="u-text u-text-2">𐦠</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 35 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC35.png" alt="MC35" width="125" height="125">
+                    <div>Meroitic cursive letter E</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC35">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter E</h3>
+                      <h3 class="u-text u-text-2">𐦡</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 36 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC36.png" alt="MC36" width="125" height="125">
+                    <div>Meroitic cursive letter I</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC36">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter I</h3>
+                      <h3 class="u-text u-text-2">𐦢</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 37 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC37.png" alt="MC37" width="125" height="125">
+                    <div>Meroitic cursive letter Ya</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC37">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Ya</h3>
+                      <h3 class="u-text u-text-2">𐦤</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 38 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC38.png" alt="MC38" width="125" height="125">
+                    <div>Meroitic cursive letter Wa</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC38">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Wa</h3>
+                      <h3 class="u-text u-text-2">𐦥</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 39 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC39.png" alt="MC39" width="125" height="125">
+                    <div>Meroitic cursive letter Ba</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC39">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Ba</h3>
+                      <h3 class="u-text u-text-2">𐦦</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 40 -->
+                <td> </td>
+                <!-- 41 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC41.png" alt="MC41" width="125" height="125">
+                    <div>Meroitic cursive letter Pa</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC41">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Pa</h3>
+                      <h3 class="u-text u-text-2">𐦧</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 42 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC42.png" alt="MC42" width="125" height="125">
+                    <div>Meroitic cursive letter Ma</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC42">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Ma</h3>
+                      <h3 class="u-text u-text-2">𐦨</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 43 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC43.png" alt="MC43" width="125" height="125">
+                    <div>Meroitic cursive letter Ne</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC43">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Ne</h3>
+                      <h3 class="u-text u-text-2">𐦪</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 44 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC44.png" alt="MC44" width="125" height="125">
+                    <div>Meroitic cursive letter La</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC44">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter La</h3>
+                      <h3 class="u-text u-text-2">𐦬</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 45 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC45.png" alt="MC45" width="125" height="125">
+                    <div>Meroitic cursive letter Kha</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC45">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Kha</h3>
+                      <h3 class="u-text u-text-2">𐦭</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 46 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC46.png" alt="MC46" width="125" height="125">
+                    <div>Meroitic cursive letter Hha</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC46">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Hha</h3>
+                      <h3 class="u-text u-text-2">𐦮</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 47 -->
+                <td><div class="content_img"><img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC47a.png" alt="MC47a" width="125" height="125">
+                  <div>Meroitic hieroglyph letter Se</div>
+                </div>
+                <div id="myModal" class="modal"><!-- The Modal -->
+                  <span class="close">&times;</span><!-- The Close Button -->
+                  <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                  <div class="caption-text" id="MC47a">
+                    <h3 class="u-text u-text-2">Meroitic cursive letter Se</h3>
+                    <h3 class="u-text u-text-2">𐦱</h3>
+                  </div>
+                </div>
+                </td>
+                <!-- 48 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC48.png" alt="MC48" width="125" height="125">
+                    <div>Meroitic cursive letter Ka</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC48">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Ka</h3>
+                      <h3 class="u-text u-text-2">𐦲</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 49 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC49.png" alt="MC49" width="125" height="125">
+                    <div>Meroitic cursive letter Qa</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC49">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Qa</h3>
+                      <h3 class="u-text u-text-2">𐦳</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 50 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC50.png" alt="MC50" width="125" height="125">
+                    <div>Meroitic cursive letter Ta</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC50">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Ta</h3>
+                      <h3 class="u-text u-text-2">𐦴</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 51 -->
+                <td> </td>
+                <!-- 52 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC52.png" alt="MC52" width="125" height="125">
+                    <div>Meroitic cursive letter Te</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC52">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Te</h3>
+                      <h3 class="u-text u-text-2">𐦵</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 53 -->
+                <td> </td>
+                <!-- 54 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC54.png" alt="MC54" width="125" height="125">
+                    <div>Meroitic cursive letter To</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC54">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter To</h3>
+                      <h3 class="u-text u-text-2">𐦶</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 55 -->
+                <td><div class="content_img">
+                  <img class="myImages" id="myImg" src="../images/Meroitic_Cursive/MC55.png" alt="MC55" width="125" height="125">
+                    <div>Meroitic cursive letter Da</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="MC55">
+                      <h3 class="u-text u-text-2">Meroitic cursive letter Da</h3>
+                      <h3 class="u-text u-text-2">𐦷</h3>
+                    </div>
+                  </div>
+                </td>
+                <!-- 56 -->
+                <td> </td>
+              </tr>
 
       </table>
       </div>
       </div>
-      </div>
-    </section>
+
     <section class="u-clearfix u-grey-5 u-section-6" id="sec-9933">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
@@ -981,19 +2412,19 @@
             <div class="u-layout-row" style="">
               <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
                 <div class="u-container-layout u-container-layout-1">
-                  <h3 class="u-align-center u-text u-text-default u-text-1">Lineage<sup>?</sup></h3>
+                  <h3 class="u-align-center u-text u-text-default u-text-1">Lineage<sup>1,2</sup></h3>
                   <p class="u-align-left u-text">
-                    <br>Egyptian Hieroglyphs
-                    <br>↳&ensp;Hieratic Egyptian
-                    <br>&emsp;&ensp;↳Proto-Sinaitic
-                    <br>&emsp;&ensp;&ensp;↳Epigraphic South Arabian
-                    <br>&emsp;&ensp;&ensp;&ensp;↳<b>Ge'ez</b>
+                    <br><a href="../script_info/Egyptian.html">Egyptian Hieroglyphs</a>
+                    <br>&ensp;↳<a href="../script_info/Egyptian.html">Hieratic Egyptian</a>
+                    <br>&emsp;&ensp;↳<a href="../script_info/Egyptian.html">Demotic Egyptian</a>
+                    <br>&emsp;&emsp;&ensp;↳<b>Meroitic Cursive</b>
+                    <br>&ensp;↳<b>Meroitic Hieroglyphs</b>
                   </p>
                 </div>
               </div>
               <div class="u-align-center u-container-style u-image u-image-contain u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" src="" >
                 <div class="u-container-layout u-valign-middle u-container-layout-2" src="">
-                <!--<img src="../images/Peeps/Egyptian.png" alt="Egyptian" class="peeps">-->
+                <img src="../images/Peeps/Meroitic.png" alt="Meroitic" class="peeps">
                 </div>
               </div>
             </div>
@@ -1002,15 +2433,18 @@
       </div>
     </section>
 
-
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-0f53">
-      <div class="u-clearfix u-sheet u-sheet-1"></div>
-    </footer>
     <section class="u-backlink u-clearfix u-grey-80">
     <!-- References -->
-    <h3 class="u-align-center u-text u-text-default u-text-1">References</h3>
+    <h3 class="u-align-center u-text u-text-default u-text-1"> References</h3>
     <p class="u-align-left">
-      <br>1.
+      <br>1. Claude Rilly (2011). Recent Research on Meroitic, the Ancient Language of Sudan. http://www.ityopis.org/Issues-1_files/ITYOPIS-I-Rilly.pdf
+      <br>2. Claude, Rilly (2016). Arnekhamani's sistrum. New Insights on the Appearance of the Meroitic script. 12th Conference for Meroitic Studies.
+      <br>3. Anonymous. (3 c. CE). Fragment with Meroitic hieroglyphs; REM 0416. University College London, London, United Kingdom. Retrieved June 20, 2023, from https://www.ucl.ac.uk/museums-static/digitalegypt//nubia/uc44173.html
+      <br>4. Anonymous. (Unknown). Meroitische Inschrift, Meroe, 1. Jh. n. Chr., Sandstein (München, ÄS 2624; REM 1195). Staatliches Museum Ägyptischer Kunst, Munich, Germany. Retrieved June 20, 2023, from https://en.wikipedia.org/wiki/File:Meroitische_Inschrift,_Meroe_1._Jh._n._Chr.,_Aegyptisches_Museum,_Muenchen-1.jpg
+      <br>5. Colless, Brian E (1990). "The proto-alphabetic inscriptions of Sinai". Abr-Nahrain / Ancient Near Eastern Studies. 28: 1–52. doi:10.2143/anes.28.0.525711
+      <br>6. Colless, Brian E (1991). "The proto-alphabetic inscriptions of Canaan". Abr-Nahrain / Ancient Near Eastern Studies. 29: 18–66. doi:10.2143/anes.29.0.525718
+      <br>7. The Demotic Palaeographical Database Project (DPDP). (2021). Retrieved July 15, 2022, from 5.162 website: http://129.206.5.162/beta/index.html
+      <br>8. The demotic dictionary of the Oriental Institute of the University of Chicago. (n.d.). uchicago.edu. Retrieved September 2, 2022, from https://oi.uchicago.edu/research/publications/demotic-dictionary-oriental-institute-university-chicago
     </p>
     </section>
 
