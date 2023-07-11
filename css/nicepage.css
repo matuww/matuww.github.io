@@ -6823,6 +6823,11 @@ img.u-image,
   background-repeat: repeat;
   background-position: top left !important;
 }
+.u-sheet img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
 section.u-image:not(.u-hover-box),
 .u-sheet.u-image:not(.u-hover-box),
 .u-group.u-image:not(.u-hover-box),
