@@ -2,7 +2,7 @@
 <html style="font-size: 16px;" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Celtiberian</title>
+  <title>Southeastern_Iberian</title>
   <link rel="icon" href="../images/logo-modified.png">
   <link rel="stylesheet" href="../css/screen.css" media="screen" />
   <link rel="stylesheet" href="../css/jquery.treetable.css" />
@@ -19,6 +19,42 @@
   <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../js/modal.js" defer=""></script>
+  <style>
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  </style>
   <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
   <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
@@ -44,16 +80,16 @@
           <div class="u-layout-row" style="">
             <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-white u-layout-cell-1" src="">
               <div class="u-container-layout u-container-layout-1">
-                <h1 class="u-text u-text-1">Celtiberian</h1>
+                <h1 class="u-text u-text-1">Southeastern Iberian</h1>
                 <h3 class="u-text u-text-2"></h3>
                 <p class="u-text u-text-3"> Semi-syllabary<sup>1</sup>
-                  <br>?7 c. BCE - ???<sup>1</sup></p>
-                  <br>Boustrophedon, right-to-left, and left-to-right<sup>2</sup>
+                  <br>4 c. BCE - 1 c. CE<sup>1</sup></p>
+                  <br>Right-to-left and left-to-right<sup>1</sup>
                 </p>
               </div>
             </div>
             <div class="u-align-center u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" src="" data-image-width="500" data-image-height="500">
-              <img src="../images/Maps/Southwestern_Paleohispanic.png" alt="Southwestern Paleohispanic" class="map">
+              <img src="../images/Maps/Southeastern_Iberian.png" alt="Southeastern Iberian" class="map">
               <div class="u-container-layout u-valign-middle u-container-layout-2" src=""></div>
             </div>
           </div>
@@ -63,15 +99,15 @@
     <section class="u-clearfix u-grey-5 u-section-2" id="sec-12ad">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h3 class="u-text u-text-1"> Languages<sup>1</sup></h3>
-        <p class="u-text u-text-2">Unknown (?Tartessian)</p>
-        <h3 class="u-text u-text-3"> Places<sup>1,2</sup></h3>
-        <p class="u-text u-text-4">Southwestern Iberian peninsula</p>
+        <p class="u-text u-text-2">Iberian</p>
+        <h3 class="u-text u-text-3"> Places<sup>1</sup></h3>
+        <p class="u-text u-text-4">Southeastern Iberian peninsula</p>
       </div>
     </section>
 
     <section class="u-clearfix u-section-3" id="sec-9a0c">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-default u-text-1">Abecedary<sup>2</sup></h2> <!-- citation needed for symbol meaning and pronunciation -->
+        <h2 class="u-text u-text-default u-text-1">Abecedary<sup>1</sup></h2> <!-- citation needed for symbol meaning and pronunciation -->
         <!--insert abecedary here-->
         <div class="container">
           <h3 class="u-text u-text-default u-text-1">Vowel signs</h3>
@@ -79,16 +115,16 @@
               <tr>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP01.png" alt="SWP01" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter A</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI01.png" alt="SEI01" width="125" height="125">
+                    <div>Southeastern Iberian letter A</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP01">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter A</h3>
+                    <div class="caption-text" id="SEI01">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter A</h3>
                       <h3 class="u-text u-text-2"></h3>
                       <p class="u-text u-text-3">a</p>
                     </div>
@@ -96,16 +132,16 @@
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP16.png" alt="SWP16" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter E</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI16.png" alt="SEI16" width="125" height="125">
+                    <div>Southeastern Iberian letter E</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP16">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter E</h3>
+                    <div class="caption-text" id="SEI16">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter E</h3>
                       <h3 class="u-text u-text-2"></h3>
                       <p class="u-text u-text-3">e</p>
                     </div>
@@ -113,16 +149,16 @@
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP10.png" alt="SWP10" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter I</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI10.png" alt="SEI10" width="125" height="125">
+                    <div>Southeastern Iberian letter I</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP10">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter I</h3>
+                    <div class="caption-text" id="SEI10">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter I</h3>
                       <h3 class="u-text u-text-2"></h3>
                       <p class="u-text u-text-3">i</p>
                     </div>
@@ -130,16 +166,16 @@
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP01a.png" alt="SWP01a" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter O</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI01a.png" alt="SEI01a" width="125" height="125">
+                    <div>Southeastern Iberian letter O</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP01a">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter O</h3>
+                    <div class="caption-text" id="SEI01a">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter O</h3>
                       <h3 class="u-text u-text-2"></h3>
                       <p class="u-text u-text-3">o</p>
                     </div>
@@ -147,184 +183,20 @@
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP06.png" alt="SWP06" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter U</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI06.png" alt="SEI06" width="125" height="125">
+                    <div>Southeastern Iberian letter U</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP06">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter U</h3>
+                    <div class="caption-text" id="SEI06">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter U</h3>
                       <h3 class="u-text u-text-2"></h3>
                       <p class="u-text u-text-3">u</p>
                     </div>
                   </div>
-                </td>
-              </tr>
-            </table>
-
-
-          <h3 class="u-text u-text-default u-text-1">Non-stop consonant signs</h3>
-            <table id="example-advanced">
-              <tr>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP15.png" alt="SWP15" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter S</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP15">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter S</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">s</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP22.png" alt="SWP22" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Ś</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP22">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Ś</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ś</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP_e01.png" alt="SWP_e01" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter ?Z</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP_e01">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter ?Z</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">?z</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP08.png" alt="SWP08" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter ?H</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP08">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter ?H</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">?h</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP_e02.png" alt="SWP_e02" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter ?Ŕ</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP_e02">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter ?Ŕ</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">?ŕ</p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP14.png" alt="SWP14" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter N</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP14">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter N</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">n</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP13.png" alt="SWP13" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter M</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP13">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter M</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">m</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP12.png" alt="SWP12" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter L</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP12">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter L</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">l</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP21.png" alt="SWP21" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter R</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP21">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter R</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">r</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
                 </td>
               </tr>
             </table>
@@ -334,156 +206,69 @@
               <tr>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP01_03.png" alt="SWP01_03" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Ka</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI03.png" alt="SEI03" width="125" height="125">
+                    <div>Southeastern Iberian letter Ga/Ka</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP01_03">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Ka</h3>
+                    <div class="caption-text" id="SEI03">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Ga/Ka</h3>
                       <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ka</p>
+                      <p class="u-text u-text-3">ga/ka</p>
                     </div>
                   </div>
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP16_11.png" alt="SWP16_11" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Ke</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI11.png" alt="SEI11" width="125" height="125">
+                    <div>Southeastern Iberian letter Ge/Ke</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP16_11">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Ke</h3>
+                    <div class="caption-text" id="SEI11">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Ge/Ke</h3>
                       <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ke</p>
+                      <p class="u-text u-text-3">ge/ke</p>
                     </div>
                   </div>
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP10_20.png" alt="SWP10_20" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Ki</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI20.png" alt="SEI20" width="125" height="125">
+                    <div>Southeastern Iberian letter Gi/Ki</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP10_20">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Ki</h3>
+                    <div class="caption-text" id="SEI20">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Gi/Ki</h3>
                       <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ki</p>
+                      <p class="u-text u-text-3">gi/ki</p>
                     </div>
                   </div>
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP01a_e03.png" alt="SWP01a_e03" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Ko</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI_e02.png" alt="SEI_e02" width="125" height="125">
+                    <div>Southeastern Iberian letter Go/Ko</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP01a_e03">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Ko</h3>
+                    <div class="caption-text" id="SEI_e02">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Go/Ko</h3>
                       <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ko</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP06_e04.png" alt="SWP06_e04" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Ku</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP06_e04">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Ku</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ku</p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP01_05.png" alt="SWP01_05" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Pa</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP01_05">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Pa</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">pa</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP16_02.png" alt="SWP16_02" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Pe</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP16_02">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Pe</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">pe</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP10_e05.png" alt="SWP10_e05" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter ?Pi</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP10_e05">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter ?Pi</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">?pi</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP01a_18.png" alt="SWP01a_18" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Po</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="SWP01a_18">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Po</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">po</p>
+                      <p class="u-text u-text-3">go/ko</p>
                     </div>
                   </div>
                 </td>
@@ -493,91 +278,280 @@
               <tr>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP01_24.png" alt="SWP01_24" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Ta</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI02.png" alt="SEI02" width="125" height="125">
+                    <div>Southeastern Iberian letter Ba</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP01_24">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Ta</h3>
+                    <div class="caption-text" id="SEI02">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Ba</h3>
                       <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ta</p>
+                      <p class="u-text u-text-3">ba</p>
                     </div>
                   </div>
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP16_e06.png" alt="SWP16_e06" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Te</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI05.png" alt="SEI05" width="125" height="125">
+                    <div>Southeastern Iberian letter Be</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP16_e06">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Te</h3>
+                    <div class="caption-text" id="SEI05">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Be</h3>
                       <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">te</p>
+                      <p class="u-text u-text-3">be</p>
                     </div>
                   </div>
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP10_09.png" alt="SWP10_09" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Ti</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI_e04.png" alt="SEI_e04" width="125" height="125">
+                    <div>Southeastern Iberian letter Bi</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP10_09">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Ti</h3>
+                    <div class="caption-text" id="SEI_e04">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Bi</h3>
                       <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ti</p>
+                      <p class="u-text u-text-3">bi</p>
                     </div>
                   </div>
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP01a_e07.png" alt="SWP01a_e07" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter To</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI_e01.png" alt="SEI_e01" width="125" height="125">
+                    <div>Southeastern Iberian letter Bo</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP01a_e07">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter To</h3>
+                    <div class="caption-text" id="SEI_e01">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Bo</h3>
                       <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">to</p>
+                      <p class="u-text u-text-3">bo</p>
                     </div>
                   </div>
                 </td>
                 <td>
                   <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Southwestern_Paleohispanic/SWP06_04.png" alt="SWP06_04" width="125" height="125">
-                    <div>Southwestern Paleohispanic letter Tu</div>
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI18.png" alt="SEI18" width="125" height="125">
+                    <div>Southeastern Iberian letter Bu</div>
                   </div>
                   <div id="myModal" class="modal"><!-- The Modal -->
                     <span class="close">&times;</span><!-- The Close Button -->
                     <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
                     <!-- Modal Caption (Image Text) -->
                     <div id="caption"></div>
-                    <div class="caption-text" id="SWP06_04">
-                      <h3 class="u-text u-text-2">Southwestern Paleohispanic letter Tu</h3>
+                    <div class="caption-text" id="SEI18">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Bu</h3>
                       <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">tu</p>
+                      <p class="u-text u-text-3">bu</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI24.png" alt="SEI24" width="125" height="125">
+                    <div>Southeastern Iberian letter Da/Ta</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="SEI24">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Da/Ta</h3>
+                      <h3 class="u-text u-text-2"></h3>
+                      <p class="u-text u-text-3">da/ta</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI_e03.png" alt="SEI_e03" width="125" height="125">
+                    <div>Southeastern Iberian letter De/Te</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="SEI_e03">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter De/Te</h3>
+                      <h3 class="u-text u-text-2"></h3>
+                      <p class="u-text u-text-3">de/te</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI09.png" alt="SEI09" width="125" height="125">
+                    <div>Southeastern Iberian letter Di/Ti</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="SEI09">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Di/Ti</h3>
+                      <h3 class="u-text u-text-2"></h3>
+                      <p class="u-text u-text-3">di/ti</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                </td>
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI04.png" alt="SEI04" width="125" height="125">
+                    <div>Southeastern Iberian letter Du/Tu</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="SEI04">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Du/Tu</h3>
+                      <h3 class="u-text u-text-2"></h3>
+                      <p class="u-text u-text-3">du/tu</p>
                     </div>
                   </div>
                 </td>
               </tr>
             </table>
+
+          <h3 class="u-text u-text-default u-text-1">Non-stop consonant signs</h3>
+            <table id="example-advanced">
+              <tr>
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI15.png" alt="SEI15" width="125" height="125">
+                    <div>Southeastern Iberian letter S</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="SEI15">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter S</h3>
+                      <h3 class="u-text u-text-2"></h3>
+                      <p class="u-text u-text-3">s</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI22.png" alt="SEI22" width="125" height="125">
+                    <div>Southeastern Iberian letter Ś</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="SEI22">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Ś</h3>
+                      <h3 class="u-text u-text-2"></h3>
+                      <p class="u-text u-text-3">ś</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI_e05.png" alt="SEI_e05" width="125" height="125">
+                    <div>Southeastern Iberian letter R</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="SEI_e05">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter R</h3>
+                      <h3 class="u-text u-text-2"></h3>
+                      <p class="u-text u-text-3">r</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI21.png" alt="SEI21" width="125" height="125">
+                    <div>Southeastern Iberian letter Ŕ</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="SEI21">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter Ŕ</h3>
+                      <h3 class="u-text u-text-2"></h3>
+                      <p class="u-text u-text-3">ŕ</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI14.png" alt="SEI14" width="125" height="125">
+                    <div>Southeastern Iberian letter N</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="SEI14">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter N</h3>
+                      <h3 class="u-text u-text-2"></h3>
+                      <p class="u-text u-text-3">n</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="content_img">
+                    <img class="myImages" id="myImg" src="../images/Southeastern_Iberian/SEI12.png" alt="SEI12" width="125" height="125">
+                    <div>Southeastern Iberian letter L</div>
+                  </div>
+                  <div id="myModal" class="modal"><!-- The Modal -->
+                    <span class="close">&times;</span><!-- The Close Button -->
+                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption-text" id="SEI12">
+                      <h3 class="u-text u-text-2">Southeastern Iberian letter L</h3>
+                      <h3 class="u-text u-text-2"></h3>
+                      <p class="u-text u-text-3">l</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+            </table>
+
 
           </div>
         </div>
@@ -587,8 +561,14 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-default u-text-1">Epigraphy<sup>3</sup></h2>
         <!--insert epigraphy here-->
-        <img src="../images/Southwestern_Paleohispanic/SWP_Epi01.jpg" alt="SWP_Epi01" class="epigraphy" width="900" height="1196">
-        <p class="u-text u-text-3">Stele of Abóbada (description and English translation - <a href="https://www.academia.edu/11832858/Decipherment_of_Ab%C3%B3bada_Warrior_Stele_into_Finnish">here</a>)</p>
+        <table>
+          <tr>
+            <td><img src="../images/Southeastern_Iberian/SEI_Epi01.jpg" alt="SEI_Epi01" class="epigraphy" width="425" height="425"></td>
+            <td><img src="../images/Southeastern_Iberian/SEI_Epi02.jpg" alt="SEI_Epi02" class="epigraphy" width="425" height="425"></td>
+          </tr>
+        </table>
+        <p class="u-text u-text-3">Bronze coin dating 150-100 BCE, depicting a Horseman and the word "ikalesken".
+          <br>(English description and transliteration - <a href="https://monedaiberica.org/v3/type/2079?lang=lg-eng">here</a>)</p>
       </div>
     </section>
 
@@ -1823,10 +1803,10 @@
             <td> </td>
           </tr>
 
-          <!-- Southwestern Paleohispanic-->
+          <!-- SIBLING Southwestern Paleohispanic-->
           <tr>
             <!-- 00 -->
-            <td class="Syllabary"><strong>Southwestern Paleohispanic</strong></td>
+            <td class="Syllabary"><a href="../script_info/Southwestern_Paleohispanic.html"><strong>Southwestern Paleohispanic (Sibling)</strong></a></td>
             <td class="Syllabary"><br>Semi-syllabary
             <br><i>?7 c. BCE - 1 c. CE</i></pre></td>
             <!-- 01.0 -->
@@ -2295,12 +2275,12 @@
             <td> </td>
           </tr>
 
-          <!-- SIBLING Southeastern Iberian-->
+          <!-- Southeastern Iberian-->
           <tr>
             <!-- 00 -->
-            <td class="Syllabary"><strong>Southeastern&nbsp;Iberian (Sibling)</strong></td>
+            <td class="Syllabary"><strong>Southeastern&nbsp;Iberian</strong></td>
             <td class="Syllabary"><br>Semi-syllabary
-            <br><i>?5 c. BCE - 1 c. CE</i></pre></td>
+            <br><i>4 c. BCE - 1 c. CE</i></pre></td>
             <!-- 01.0 -->
             <td>
               <div class="content_img">
@@ -2733,7 +2713,7 @@
             <div class="u-layout-row" style="">
               <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
                 <div class="u-container-layout u-container-layout-1">
-                  <h3 class="u-align-center u-text u-text-default u-text-1">Lineage<sup>1,4,5,7,8s</sup></h3>
+                  <h3 class="u-align-center u-text u-text-default u-text-1">Lineage<sup>1,4,5,7,8</sup></h3>
                   <p class="u-align-left u-text">
                     <br><a href="../script_info/Egyptian.html">Egyptian Hieroglyphs</a>
                     <br>&emsp;↳<a href="../script_info/Egyptian.html">Hieratic Egyptian</a>
@@ -2743,8 +2723,8 @@
                     <br>&emsp;&emsp;&emsp;&emsp;&emsp;Paleohispanic script</i>
                     <br>&emsp;&emsp;&emsp;&emsp;&emsp;↳<i>Hypothetical Original
                     <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Southern Paleohispanic script</i>
-                    <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↳<b>Southwestern Paleohispanic</b>
-                    <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↳Southeastern Iberian
+                    <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↳<a href="../script_info/Southwestern_Paleohispanic.html">Southwestern Paleohispanic</a>
+                    <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↳<b>Southeastern Iberian</b>
                     <br>&emsp;&emsp;&emsp;&emsp;&emsp;↳<i>Hypothetical Original
                     <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Northeastern Iberian script</i>
                     <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↳Dual Northeastern Iberian
@@ -2767,8 +2747,8 @@
     <h3 class="u-align-center u-text u-text-default u-text-1"> References</h3>
     <p class="u-align-left">
       <br>1. Sinner, A. G., & Velaza, J. (Eds.). (2019). Palaeohispanic languages and epigraphies. Oxford University Press. Retrieved July 29, 2023, from https://diposit.ub.edu/dspace/bitstream/2445/145739/1/Chapter_4._Palaeohispanic_writing_syste.pdf
-      <br>2. Valério, M. (2009). Origin and development of the Paleohispanic scripts: the orthography and phonology of the Southwestern alphabet. Revista Portugesa de Arqueologia, 12(2), 177–189. https://www.patrimoniocultural.gov.pt/media/uploads/revistaportuguesadearqueologia/11.2/5_6_7_8/06_p.107-138.pdf
-      <br>3. Anonymous. (Bronze Age). Stele of Abóbada.	Museu da Escrita do Sudoeste, Almodôvar, Portugal. Retrieved July 29, 2023, from https://twitter.com/AEMAP_UoW/status/443386405960433664/photo/1
+      <br>2. MIB 154/07, in P.P. Ripollès, M. Gozalbes (ed.), Moneda Ibérica (MIB), Valencia, https://monedaiberica.org/v3/type/2079?lang=lg-eng [accesed 09/09/2023]
+      <br>3. Valério, M. (2009). Origin and development of the Paleohispanic scripts: the orthography and phonology of the Southwestern alphabet. Revista Portugesa de Arqueologia, 12(2), 177–189. https://www.patrimoniocultural.gov.pt/media/uploads/revistaportuguesadearqueologia/11.2/5_6_7_8/06_p.107-138.pdf
       <br>4. Colless, Brian E (1990). "The proto-alphabetic inscriptions of Sinai". Abr-Nahrain / Ancient Near Eastern Studies. 28: 1–52. doi:10.2143/anes.28.0.525711
       <br>5. Colless, Brian E (1991). "The proto-alphabetic inscriptions of Canaan". Abr-Nahrain / Ancient Near Eastern Studies. 29: 18–66. doi:10.2143/anes.29.0.525718
       <br>6. Phoenician. (2022). unicode.org. https://www.unicode.org/charts/PDF/U10900.pdf

@@ -19,6 +19,42 @@
   <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../js/modal.js" defer=""></script>
+  <style>
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  </style>
   <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
   <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
@@ -74,8 +110,9 @@
         <h2 class="u-text u-text-default u-text-1">Abecedary<sup>1</sup></h2> <!-- citation needed for symbol meaning and pronunciation -->
         <!--insert abecedary here-->
         <div class="container">
-          <h3 class="u-text u-text-default u-text-1">Monumental script (musnad)</h3>
-            <table id="example-advanced">
+          <button class="collapsible">Monumental script (musnad)</button>
+            <div class="content">
+              <table id="example-advanced">
               <tr>
                 <td>
                   <div class="content_img">
@@ -668,8 +705,11 @@
                 <td></td>
               </tr>
             </table>
-          <h3 class="u-text u-text-default u-text-1">Miniscule script (zabūr)</h3>
-            <table id="example-advanced">
+            </div>
+
+          <button class="collapsible">Miniscule script (zabūr)</button>
+            <div class="content">
+              <table id="example-advanced">
               <tr>
                 <td>
                   <div class="content_img">
@@ -1262,6 +1302,24 @@
                 <td> </td>
               </tr>
             </table>
+            </div>
+
+          <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              }
+            });
+          }
+          </script>
         </div>
       </div>
     </section>
@@ -7414,7 +7472,9 @@
                     <br>&emsp;&emsp;&emsp;↳<a href="../script_info/Phoenician.html">Phoenician</a>
                     <br>&emsp;&emsp;&emsp;↳<b>Ancient South Arabian</b>
                     <br>&emsp;&emsp;&emsp;&emsp;↳<a href="../script_info/Geez.html">Ge'ez</a>
-                    <br>&emsp;&emsp;&emsp;↳<a href="../script_info/Old_North_Arabian.html">Ancient North Arabian</a>
+                    <br>&emsp;&emsp;&emsp;↳*<a href="../script_info/Old_North_Arabian.html">Ancient North Arabian</a>
+                  </p>
+                  <p>The lineage of Ancient North Arabian is contested, whether it is derived from Ancient South Arabian or shares a common ancestor with it.<sup>15</sup>
                   </p>
                 </div>
               </div>

@@ -19,6 +19,42 @@
   <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../js/modal.js" defer=""></script>
+  <style>
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  </style>
   <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
   <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
@@ -72,10 +108,12 @@
     <section class="u-clearfix u-section-3" id="sec-9a0c">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-default u-text-1">Abecedary<sup>1</sup></h2> <!-- citation needed for symbol meaning and pronunciation -->
+        <p>Old North Arabian is a collection of scripts.<sup>3</sup></p>
         <!--insert abecedary here-->
         <div class="container">
-          <h3 class="u-text u-text-default u-text-1">Dandantic</h3>
-          <table id="example-advanced">
+          <button class="collapsible">Dandantic</button>
+            <div class="content">
+            <table id="example-advanced">
             <tr>
               <td>
                 <div class="content_img">
@@ -696,9 +734,11 @@
               <td></td>
             </tr>
           </table>
+            </div>
 
-          <h3 class="u-text u-text-default u-text-1">Safaitic</h3>
-          <table id="example-advanced">
+          <button class="collapsible">Safaitic</button>
+            <div class="content">
+            <table id="example-advanced">
             <tr>
               <td>
                 <div class="content_img">
@@ -1291,9 +1331,11 @@
               <td></td>
             </tr>
           </table>
+            </div>
 
-          <h3 class="u-text u-text-default u-text-1">Taymanitic</h3>
-          <table id="example-advanced">
+          <button class="collapsible">Taymanitic</button>
+            <div class="content">
+            <table id="example-advanced">
             <tr>
               <td>
                 <div class="content_img">
@@ -1886,9 +1928,11 @@
               <td></td>
             </tr>
           </table>
+            </div>
 
-          <h3 class="u-text u-text-default u-text-1">Hismaic</h3>
-          <table id="example-advanced">
+          <button class="collapsible">Hismaic</button>
+            <div class="content">
+            <table id="example-advanced">
             <tr>
               <td>
                 <div class="content_img">
@@ -2481,7 +2525,24 @@
               <td></td>
             </tr>
           </table>
+            </div>
 
+          <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              }
+            });
+          }
+          </script>
         </div>
       </div>
     </section>
@@ -2492,10 +2553,10 @@
         <!--insert epigraphy here-->
         <h3 class="u-text u-text-2">Dandantic</h3>
         <img src="../images/Old_North_Arabian/ONA_Epi01.jpg" alt="ONA_Epi01" class="epigraphy" width="900" height="234">
-        <p class="u-text u-text-3">Inscription in relief on a stone block reemployed as a door lintel in the village of al-ʿUlā (Saudi Arabia).<sup>3</sup> (descriptiion and English translation - <a href="https://mnamon.sns.it/index.php?page=Esempi&id=66&lang=en#458">here</a>)</p>
+        <p class="u-text u-text-3">Inscription in relief on a stone block reemployed as a door lintel in the village of al-ʿUlā (Saudi Arabia).<sup>4</sup> (descriptiion and English translation - <a href="https://mnamon.sns.it/index.php?page=Esempi&id=66&lang=en#458">here</a>)</p>
         <h3 class="u-text u-text-2">Safaitic</h3>
         <img src="../images/Old_North_Arabian/ONA_Epi02.jpg" alt="ONA_Epi02" class="epigraphy" width="900" height="1045">
-        <p class="u-text u-text-3">Inscription on rock from al-ʿIsawi, near Namāra (southeastern Siria).<sup>4</sup> (descriptiion and English translation - <a href="https://mnamon.sns.it/index.php?page=Esempi&id=66&lang=en#452">here</a>)</p>
+        <p class="u-text u-text-3">Inscription on rock from al-ʿIsawi, near Namāra (southeastern Siria).<sup>3</sup> (descriptiion and English translation - <a href="https://mnamon.sns.it/index.php?page=Esempi&id=66&lang=en#452">here</a>)</p>
         <h3 class="u-text u-text-2">Taymanitic</h3>
         <img src="../images/Old_North_Arabian/ONA_Epi03.jpg" alt="ONA_Epi03" class="epigraphy" width="900" height="573">
         <p class="u-text u-text-3">Inscription engraved on rock, from the area of al-Khabu al-Sharqi, some km southwest of Taymāʾ (Saudi Arabia).<sup>5</sup> (descriptiion and English translation - <a href="https://mnamon.sns.it/index.php?page=Esempi&id=66&lang=en#442">here</a>)</p>
@@ -8205,7 +8266,10 @@
                     <br>&emsp;&emsp;&emsp;↳<a href="../script_info/Ugaritic.html">Ugaritic</a>
                     <br>&emsp;&emsp;&emsp;↳<a href="../script_info/Phoenician.html">Phoenician</a>
                     <br>&emsp;&emsp;&emsp;↳<a href="../script_info/Epigraphic_South_Arabian.html">Ancient South Arabian</a>
-                    <br>&emsp;&emsp;&emsp;↳<b>Ancient North Arabian</b>
+                    <br>&emsp;&emsp;&emsp;↳*<b>Ancient North Arabian</b>
+                  </p>
+                  <p>The lineage of Ancient North Arabian is contested, whether it is derived from Ancient South Arabian or shares a common ancestor with it.<sup>19</sup>
+                    <br>It is also unclear if all Ancient North Arabian scripts share a common ancestor.<sup>19</sup>
                   </p>
                 </div>
               </div>
@@ -8226,8 +8290,8 @@
     <p class="u-align-left">
       <br>1. Everson, M., & Macdonald, M. (2010). Proposal to encode the Old North Arabian script in the SMP of the UCS. https://escholarship.org/uc/item/6jv5g061
       <br>2. Woodard, R. D. (Ed.). (2004). The Cambridge encyclopedia of the world’s ancient languages. Cambridge, England: Cambridge University Press.
-      <br>3. Jaussen, A. J., & Savignac, R. M. (1914). Mission archéologique en Arabie. II. El-ʿEla, d’Hégra à Teima, Harrah de Tebouk (Publications de la Société française des fouilles archéologiques, 2).
-      <br>4. Macdonald, M. C. A., Al-Mu’azzin, M., & Nehmé, L. (1996). Les inscriptions safaïtiques de Syrie, cent quarante ans après leur découverte. Comptes-Rendus Des Séances de l Année - Académie Des Inscriptions et Belles-Lettres, 140(1), 435–494. https://doi.org/10.3406/crai.1996.15598
+      <br>3. Macdonald, M. C. A., Al-Mu’azzin, M., & Nehmé, L. (1996). Les inscriptions safaïtiques de Syrie, cent quarante ans après leur découverte. Comptes-Rendus Des Séances de l Année - Académie Des Inscriptions et Belles-Lettres, 140(1), 435–494. https://doi.org/10.3406/crai.1996.15598
+      <br>4. Jaussen, A. J., & Savignac, R. M. (1914). Mission archéologique en Arabie. II. El-ʿEla, d’Hégra à Teima, Harrah de Tebouk (Publications de la Société française des fouilles archéologiques, 2).
       <br>5. Eskoubi, K. M. (1999). Dirāsa taḥlīlīya muqārina li-n-nuqūš min minṭaqat (Ramm) ǧanūb ġarb Taymāʾ, al-Riyāḍ: Wazārat al-maʿārif (wakālat al-āṯār wa-l-matāḥif), p. 115
       <br>6. Hayajneh, H. (2009). Ancient North Arabian-Nabataean bilingual inscriptions from southern Jordan. Proceedings of the Seminar for Arabian Studies, 39, 203–222.
       <br>7. Stein, P. (2013). Palaeography of the Ancient South Arabian script. New evidence for an absolute chronology. Arabian Archaeology and Epigraphy, 24(2), 186–195. https://doi.org/10.1111/aae.12024

@@ -19,6 +19,42 @@
   <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="../js/modal.js" defer=""></script>
+  <style>
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  </style>
   <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
   <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
@@ -74,435 +110,436 @@
         <h2 class="u-text u-text-default u-text-1">Abecedary<sup>2</sup></h2> <!-- citation needed for symbol meaning and pronunciation -->
         <!--insert abecedary here-->
         <div class="container">
-          <h3 class="u-text u-text-default u-text-1">Horizontal variants</h3>
-            <table id="example-advanced">
-              <tr>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB02.png" alt="LB02" width="125" height="125">
-                    <div>Libyco-Berber letter B (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB02">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter B (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">b
-                      </p>
+          <button class="collapsible">Horizontal variants</button>
+            <div class="content">
+              <table id="example-advanced">
+                <tr>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB02.png" alt="LB02" width="125" height="125">
+                      <div>Libyco-Berber letter B (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h03.png" alt="LB_h03" width="125" height="125">
-                    <div>Libyco-Berber letter G (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h03">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter G (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">g
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB02">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter B (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">b
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h04.png" alt="LB_h04" width="125" height="125">
-                    <div>Libyco-Berber letter D (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h04">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter D (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">d
-                      </p>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h03.png" alt="LB_h03" width="125" height="125">
+                      <div>Libyco-Berber letter G (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h06.png" alt="LB_h06" width="125" height="125">
-                    <div>Libyco-Berber letter U (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h06">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter U (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">u
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h03">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter G (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">g
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h07.png" alt="LB_h07" width="125" height="125">
-                    <div>Libyco-Berber letter Ż (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h07">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter Ż (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ż
-                      </p>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h04.png" alt="LB_h04" width="125" height="125">
+                      <div>Libyco-Berber letter D (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB07.png" alt="LB07" width="125" height="125">
-                    <div>Libyco-Berber letter Ẓ (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB07">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter Ẓ (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ẓ
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h04">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter D (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">d
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB07a.png" alt="LB07a" width="125" height="125">
-                    <div>Libyco-Berber letter Z (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB07a">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter Z (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">z
-                      </p>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h06.png" alt="LB_h06" width="125" height="125">
+                      <div>Libyco-Berber letter U (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h09.png" alt="LB_h09" width="125" height="125">
-                    <div>Libyco-Berber letter Ṭ (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h09">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter Ṭ (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ṭ
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h06">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter U (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">u
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h10.png" alt="LB_h10" width="125" height="125">
-                    <div>Libyco-Berber letter I (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h10">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter I (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">i
-                      </p>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h07.png" alt="LB_h07" width="125" height="125">
+                      <div>Libyco-Berber letter Ż (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h11.png" alt="LB_h11" width="125" height="125">
-                    <div>Libyco-Berber letter K (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h11">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter K (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">k
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h07">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter Ż (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">ż
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v06.png" alt="LB_h12" width="125" height="125">
-                    <div>Libyco-Berber letter L (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h12">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter L (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">l
-                      </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB07.png" alt="LB07" width="125" height="125">
+                      <div>Libyco-Berber letter Ẓ (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h13.png" alt="LB_h13" width="125" height="125">
-                    <div>Libyco-Berber letter M (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h13">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter M (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">m
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB07">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter Ẓ (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">ẓ
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB14.png" alt="LB14" width="125" height="125">
-                    <div>Libyco-Berber letter N (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB14">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter N (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">n
-                      </p>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB07a.png" alt="LB07a" width="125" height="125">
+                      <div>Libyco-Berber letter Z (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB15.png" alt="LB15" width="125" height="125">
-                    <div>Libyco-Berber letter S (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB15">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter S (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">s
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB07a">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter Z (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">z
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h18.png" alt="LB_h18" width="125" height="125">
-                    <div>Libyco-Berber letter F (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h18">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter F (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">f
-                      </p>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h09.png" alt="LB_h09" width="125" height="125">
+                      <div>Libyco-Berber letter Ṭ (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h19.png" alt="LB_h19" width="125" height="125">
-                    <div>Libyco-Berber letter Ç (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h19">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter Ç (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">ç
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h09">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter Ṭ (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">ṭ
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h20.png" alt="LB_h20" width="125" height="125">
-                    <div>Libyco-Berber letter Q (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h20">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter Q (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">q
-                      </p>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h10.png" alt="LB_h10" width="125" height="125">
+                      <div>Libyco-Berber letter I (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB21.png" alt="LB21" width="125" height="125">
-                    <div>Libyco-Berber letter R (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB21">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter R (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">r
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h10">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter I (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">i
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h22.png" alt="LB_h22" width="125" height="125">
-                    <div>Libyco-Berber letter Š (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h22">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter Š (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">š
-                      </p>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h11.png" alt="LB_h11" width="125" height="125">
+                      <div>Libyco-Berber letter K (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB24.png" alt="LB24" width="125" height="125">
-                    <div>Libyco-Berber letter T (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB24">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter T (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">t
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h11">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter K (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">k
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h24.png" alt="LB_h24" width="125" height="125">
-                    <div>Libyco-Berber letter T<sub>1</sub> (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB_h24">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter T<sub>1</sub>  (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">t<sub>1</sub>
-                      </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v06.png" alt="LB_h12" width="125" height="125">
+                      <div>Libyco-Berber letter L (horizontal variant)</div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="content_img">
-                    <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB08.png" alt="LB08" width="125" height="125">
-                    <div>Libyco-Berber letter H (horizontal variant)</div>
-                  </div>
-                  <div id="myModal" class="modal"><!-- The Modal -->
-                    <span class="close">&times;</span><!-- The Close Button -->
-                    <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
-                    <div class="caption-text" id="LB08">
-                      <h3 class="u-text u-text-2">Libyco-Berber letter H (horizontal variant)</h3>
-                      <h3 class="u-text u-text-2"></h3>
-                      <p class="u-text u-text-3">h
-                      </p>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h12">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter L (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">l
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                </td>
-              </tr>
-            </table>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h13.png" alt="LB_h13" width="125" height="125">
+                      <div>Libyco-Berber letter M (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h13">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter M (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">m
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB14.png" alt="LB14" width="125" height="125">
+                      <div>Libyco-Berber letter N (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB14">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter N (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">n
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB15.png" alt="LB15" width="125" height="125">
+                      <div>Libyco-Berber letter S (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB15">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter S (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">s
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h18.png" alt="LB_h18" width="125" height="125">
+                      <div>Libyco-Berber letter F (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h18">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter F (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">f
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h19.png" alt="LB_h19" width="125" height="125">
+                      <div>Libyco-Berber letter Ç (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h19">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter Ç (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">ç
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h20.png" alt="LB_h20" width="125" height="125">
+                      <div>Libyco-Berber letter Q (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h20">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter Q (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">q
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB21.png" alt="LB21" width="125" height="125">
+                      <div>Libyco-Berber letter R (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB21">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter R (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">r
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h22.png" alt="LB_h22" width="125" height="125">
+                      <div>Libyco-Berber letter Š (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h22">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter Š (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">š
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB24.png" alt="LB24" width="125" height="125">
+                      <div>Libyco-Berber letter T (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB24">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter T (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">t
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h24.png" alt="LB_h24" width="125" height="125">
+                      <div>Libyco-Berber letter T<sub>1</sub> (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB_h24">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter T<sub>1</sub>  (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">t<sub>1</sub>
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="content_img">
+                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB08.png" alt="LB08" width="125" height="125">
+                      <div>Libyco-Berber letter H (horizontal variant)</div>
+                    </div>
+                    <div id="myModal" class="modal"><!-- The Modal -->
+                      <span class="close">&times;</span><!-- The Close Button -->
+                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                      <!-- Modal Caption (Image Text) -->
+                      <div id="caption"></div>
+                      <div class="caption-text" id="LB08">
+                        <h3 class="u-text u-text-2">Libyco-Berber letter H (horizontal variant)</h3>
+                        <h3 class="u-text u-text-2"></h3>
+                        <p class="u-text u-text-3">h
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+              </table>
 
-            <h4 class="u-text u-text-default u-text-1">Letter variants</h4>
+              <h4 class="u-text u-text-default u-text-1">Letter variants</h4>
               <h5 class="u-text u-text-default u-text-1">Letter M</h5>
                 <table id="example-advanced">
                   <tr>
@@ -585,388 +622,390 @@
                     </td>
                   </tr>
                 </table>
+            </div>
 
-            <h3 class="u-text u-text-default u-text-1">Vertical variants</h3>
-              <table id="example-advanced">
-                <tr>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB02.png" alt="LB02" width="125" height="125">
-                      <div>Libyco-Berber letter B (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB02">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter B (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">b
-                        </p>
+            <button class="collapsible">Vertical variants</button>
+              <div class="content">
+                <table id="example-advanced">
+                  <tr>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB02.png" alt="LB02" width="125" height="125">
+                        <div>Libyco-Berber letter B (vertical variant)</div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v03.png" alt="LB_v03" width="125" height="125">
-                      <div>Libyco-Berber letter G (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v03">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter G (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">g
-                        </p>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB02">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter B (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">b
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v04.png" alt="LB_v04" width="125" height="125">
-                      <div>Libyco-Berber letter D (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v04">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter D (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">d
-                        </p>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v03.png" alt="LB_v03" width="125" height="125">
+                        <div>Libyco-Berber letter G (vertical variant)</div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v06.png" alt="LB_v06" width="125" height="125">
-                      <div>Libyco-Berber letter U (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v06">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter U (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">u
-                        </p>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v03">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter G (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">g
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v07.png" alt="LB_v07" width="125" height="125">
-                      <div>Libyco-Berber letter Ẓ (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v07">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter Ẓ (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">ẓ
-                        </p>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v04.png" alt="LB_v04" width="125" height="125">
+                        <div>Libyco-Berber letter D (vertical variant)</div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB07a.png" alt="LB07a" width="125" height="125">
-                      <div>Libyco-Berber letter Z (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB07a">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter Z (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">z
-                        </p>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v04">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter D (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">d
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v09.png" alt="LB_v09" width="125" height="125">
-                      <div>Libyco-Berber letter Ṭ (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v09">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter Ṭ (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">ṭ
-                        </p>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v06.png" alt="LB_v06" width="125" height="125">
+                        <div>Libyco-Berber letter U (vertical variant)</div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v10.png" alt="LB_v10" width="125" height="125">
-                      <div>Libyco-Berber letter I (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v010">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter I (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">i
-                        </p>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v06">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter U (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">u
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v11.png" alt="LB_v11" width="125" height="125">
-                      <div>Libyco-Berber letter K (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v11">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter K (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">k
-                        </p>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v07.png" alt="LB_v07" width="125" height="125">
+                        <div>Libyco-Berber letter Ẓ (vertical variant)</div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h06.png" alt="LB_v12" width="125" height="125">
-                      <div>Libyco-Berber letter L (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v12">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter L (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">l
-                        </p>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v07">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter Ẓ (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">ẓ
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v13.png" alt="LB_v13" width="125" height="125">
-                      <div>Libyco-Berber letter M (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v13">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter M (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">m
-                        </p>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB07a.png" alt="LB07a" width="125" height="125">
+                        <div>Libyco-Berber letter Z (vertical variant)</div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB14.png" alt="LB14" width="125" height="125">
-                      <div>Libyco-Berber letter N (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB14">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter N (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">n
-                        </p>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB07a">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter Z (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">z
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB15.png" alt="LB15" width="125" height="125">
-                      <div>Libyco-Berber letter S (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB15">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter S (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">s
-                        </p>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v09.png" alt="LB_v09" width="125" height="125">
+                        <div>Libyco-Berber letter Ṭ (vertical variant)</div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v18.png" alt="LB_v18" width="125" height="125">
-                      <div>Libyco-Berber letter F (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v18">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter F (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">f
-                        </p>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v09">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter Ṭ (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">ṭ
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v19.png" alt="LB_v19" width="125" height="125">
-                      <div>Libyco-Berber letter Ç (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v19">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter Ç (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">ç
-                        </p>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v10.png" alt="LB_v10" width="125" height="125">
+                        <div>Libyco-Berber letter I (vertical variant)</div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB21.png" alt="LB21" width="125" height="125">
-                      <div>Libyco-Berber letter R (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB21">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter R (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">r
-                        </p>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v010">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter I (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">i
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v22.png" alt="LB_v22" width="125" height="125">
-                      <div>Libyco-Berber letter Š (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v22">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter Š (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">š
-                        </p>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v11.png" alt="LB_v11" width="125" height="125">
+                        <div>Libyco-Berber letter K (vertical variant)</div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB24.png" alt="LB24" width="125" height="125">
-                      <div>Libyco-Berber letter T (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB24">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter T (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">t
-                        </p>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v11">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter K (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">k
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                  </td>
-                  <td>
-                  </td>
-                  <td>
-                  </td>
-                  <td>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                  </td>
-                  <td>
-                    <div class="content_img">
-                      <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v08.png" alt="LB_v08" width="125" height="125">
-                      <div>Libyco-Berber letter H (vertical variant)</div>
-                    </div>
-                    <div id="myModal" class="modal"><!-- The Modal -->
-                      <span class="close">&times;</span><!-- The Close Button -->
-                      <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                      <div class="caption-text" id="LB_v08">
-                        <h3 class="u-text u-text-2">Libyco-Berber letter H (vertical variant)</h3>
-                        <h3 class="u-text u-text-2"></h3>
-                        <p class="u-text u-text-3">h
-                        </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_h06.png" alt="LB_v12" width="125" height="125">
+                        <div>Libyco-Berber letter L (vertical variant)</div>
                       </div>
-                    </div>
-                  </td>
-                  <td>
-                  </td>
-                  <td>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-              </table>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v12">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter L (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">l
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v13.png" alt="LB_v13" width="125" height="125">
+                        <div>Libyco-Berber letter M (vertical variant)</div>
+                      </div>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v13">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter M (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">m
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB14.png" alt="LB14" width="125" height="125">
+                        <div>Libyco-Berber letter N (vertical variant)</div>
+                      </div>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB14">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter N (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">n
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB15.png" alt="LB15" width="125" height="125">
+                        <div>Libyco-Berber letter S (vertical variant)</div>
+                      </div>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB15">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter S (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">s
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v18.png" alt="LB_v18" width="125" height="125">
+                        <div>Libyco-Berber letter F (vertical variant)</div>
+                      </div>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v18">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter F (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">f
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v19.png" alt="LB_v19" width="125" height="125">
+                        <div>Libyco-Berber letter Ç (vertical variant)</div>
+                      </div>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v19">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter Ç (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">ç
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB21.png" alt="LB21" width="125" height="125">
+                        <div>Libyco-Berber letter R (vertical variant)</div>
+                      </div>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB21">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter R (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">r
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v22.png" alt="LB_v22" width="125" height="125">
+                        <div>Libyco-Berber letter Š (vertical variant)</div>
+                      </div>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v22">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter Š (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">š
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB24.png" alt="LB24" width="125" height="125">
+                        <div>Libyco-Berber letter T (vertical variant)</div>
+                      </div>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB24">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter T (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">t
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    </td>
+                    <td>
+                      <div class="content_img">
+                        <img class="myImages" id="myImg" src="../images/Libyco-Berber/LB_v08.png" alt="LB_v08" width="125" height="125">
+                        <div>Libyco-Berber letter H (vertical variant)</div>
+                      </div>
+                      <div id="myModal" class="modal"><!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+                        <img class="modal-content" id="img01"><!-- Modal Content (The Image) -->
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <div class="caption-text" id="LB_v08">
+                          <h3 class="u-text u-text-2">Libyco-Berber letter H (vertical variant)</h3>
+                          <h3 class="u-text u-text-2"></h3>
+                          <p class="u-text u-text-3">h
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                </table>
 
-              <h4 class="u-text u-text-default u-text-1">Letter variants</h4>
+                <h4 class="u-text u-text-default u-text-1">Letter variants</h4>
                 <h5 class="u-text u-text-default u-text-1">Letter Ẓ</h5>
                   <table id="example-advanced">
                     <tr>
@@ -1176,7 +1215,24 @@
                         </td>
                       </tr>
                     </table>
+              </div>
 
+          <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight){
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              }
+            });
+          }
+          </script>
         </div>
       </div>
     </section>
