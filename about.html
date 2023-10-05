@@ -2,34 +2,29 @@
 <html style="font-size: 16px;" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>maˈtʼuww</title>
-  <link rel="icon" href="images/logo-modified.png">
-  <link rel="stylesheet" href="css/screen.css" media="screen" />
-  <link rel="stylesheet" href="css/jquery.treetable.css" />
-  <link rel="stylesheet" href="css/jquery.treetable.theme.default.css" />
-  <link rel="stylesheet" href="css/modal.css" media="screen">
+  <title>About</title>
+  <link rel="icon" href="./images/logo-modified.png">
+  <link rel="stylesheet" href="./css/screen.css" media="screen" />
+  <link rel="stylesheet" href="./css/jquery.treetable.css" />
+  <link rel="stylesheet" href="./css/jquery.treetable.theme.default.css" />
+  <!-- sidenav -->
+  <link rel="stylesheet" href="./css/side_navigation.css" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <meta name="keywords" content="Script name, Epigraphy, Script comparison">
   <meta name="description" content="">
+  <link rel="stylesheet" href="./css/nicepage.css" media="screen">
+  <link rel="stylesheet" href="./css/Main-page.css" media="screen">
+  <link rel="stylesheet" href="./css/modal.css" media="screen">
 
-  <link rel="stylesheet" href="css/nicepage.css" media="screen">
-  <link rel="stylesheet" href="css/Main-page.css" media="screen">
-  <script class="u-script" type="text/javascript" src="js/modal.js" defer=""></script>
-  <!-- THIS LINE BELOW IS CAUSING THE EXPAND COLLAPSE BUG -->
-  <!-- <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script> -->
-  <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="./js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="./js/nicepage.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="./js/modal.js" defer=""></script>
+  <!-- sidenav -->
+  <script type="text/javascript" src="./js/side_navigation.js" defer=""></script>
   <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
   <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-
-
-  <script type="application/ld+json">{
-	"@context": "http://schema.org",
-	"@type": "Organization",
-	"name": "",
-	"logo": "/images/logo-modified.png"
-  }</script>
 
   <meta name="theme-color" content="#478ac9">
   <meta property="og:title" content="Main page">
@@ -41,17 +36,113 @@
   <body class="u-body u-xl-mode" data-lang="en">
     <header class="u-black u-clearfix u-header u-sticky u-sticky-b53d u-header" id="sec-f7ff">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <a href="index.html" class="u-image u-logo u-image-1" data-image-width="20" data-image-height="20" title="Home">
-          <img src="images/logo-modified.png" class="u-logo-image u-logo-image-1" width="100" height="100">
+        <a href="./index.html" class="u-image u-logo u-image-1" data-image-width="560" data-image-height="560" title="Home">
+          <img src="./images/logo-modified.png" class="u-logo-image u-logo-image-1">
         </a>
         <h2 class="u-text u-text-default u-text-1"> maˈtʼuww</h2>
         <h4 class="u-text u-text-default u-text-2"> Writing Scripts Descended from Egyptian Hieroglyphs</h4>
       </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./about.html">About</a>
+      </div>
+      <!-- Use any element to open the sidenav -->
+      <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
     </header>
 
-<!-- Text here? -->
+    <!-- 2021 -->
+    <section class="u-align-center u-clearfix u-palette-5-light-3 u-section-4" id="sec-8d4b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">About</h2>
+        <p align="justify">Maˈtʼuww is a project involving linguistics, history, and art to show how connected we are as humans by featuring Egyptian hieroglyphs, which almost all of today's writing scripts are descended from.</p>
+        <p align="justify">The goal of maˈtʼuww is to portray the phylogenetic relationship of Egyptian hieroglyphs and her descendant scripts, and allow a visual comparison between letters, while backing this up with evidence wherever possible.</p>
+        <p align="justify">Although maˈtʼuww is not the first project to attempt writing script comparison, it attempts to do so holistically as the nature of academia promotes specialisation that limits the broader picture of this area of interest.</p>
+        <p align="justify">We hope to provide a visually informative experience that not only just educates, but also inspires curious minds that are eager to learn more.</p>
+      </div>
+    </section>
 
-<!-- Contributors -->
+    <!-- Contributors -->
+    <section class="u-align-center u-clearfix u-palette-5-light-3 u-section-4" id="sec-8d4b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">Contributors</h2>
+          <div class="row">
+              <div class="column">
+                <h4 class="u-text u-text-default u-text-1">Jeremy</h4>
+                <table>
+                  <tr><td>
+                  <div class="content_img"><img src="./images/Egyptian_Hieroglyphs/EH16.png" alt="EH16" width="125" height="125"></div>
+                  </td></tr>
+                </table>
+                <p align="left">Project founder, research, coding,
+                  <br>and illustrations (maps and peeps).</p>
+              </div>
+              <div class="column">
+                <h4 class="u-text u-text-default u-text-1">KC</h4>
+                <table>
+                  <tr><td>
+                  <div class="content_img"><img src="./images/Libyco-Berber/LB02.png" alt="LB.02" width="125" height="125"></div>
+                  </td></tr>
+                </table>
+                <p align="left">Coding and feedback.</p>
+              </div>
+            </div>
+            <div class="row">
+            <div class="column">
+              <h4 class="u-text u-text-default u-text-1">Harry</h4>
+              <table>
+                <tr><td>
+                <div class="content_img"><img src="./images/Latin/L08.png" alt="L08" width="125" height="125"></div>
+                </td></tr>
+              </table>
+              <p align="left">Illustrations (peeps).</p>
+            </div>
+            <div class="column">
+              <h4 class="u-text u-text-default u-text-1">Bishoy</h4>
+              <table>
+                <tr><td>
+                <div class="content_img"><img src="./images/Coptic/C27.png" alt="C27" width="125" height="125"></div>
+                </td></tr>
+              </table>
+              <p align="left">Coptic expertise and voice sample.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
 
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-0f53"><div class="u-clearfix u-sheet u-sheet-1"></div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
@@ -119,6 +210,7 @@
 
         return false;
       });
+
     </script>
 
 </body>
