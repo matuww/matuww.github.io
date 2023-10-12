@@ -48,6 +48,27 @@
       </div>
       <!-- Use any element to open the sidenav -->
       <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      </style>
     </header>
 
     <section class="u-clearfix u-section-1" id="sec-a1ec">
@@ -4428,14 +4449,24 @@
         <h2 class="u-text u-text-default u-text-1">Epigraphy<sup>4</sup></h2>
         <!--insert epigraphy here-->
         <h3 class="u-text u-text-3">Article 1 of the Universal Declaration of Human Rights in Amharic</h3>
-        <p class="u-text u-text-4 u-align-left">የሰው፡ልጅ፡ሁሉ፡ሲወለድ፡ነጻና፡በክብርና፡በመብትም፡እኩልነት፡ያለው፡ነው።፡
-          <br>የተፈጥሮ፡ማስተዋልና፡ሕሊና፡ስላለው፡አንዱ፡ሌላውን፡በወንድማማችነት፡መንፈስ፡መመልከት፡ይገባዋል።</p>
-        <h3 class="u-text u-text-3">Transliteration</h3>
-        <p class="u-text u-text-4 u-align-left">yesewi፡liji፡hulu፡sīweledi፡nets’ana፡bekibirina፡bemebitimi፡ikulineti፡yalewi፡newi።፡
-          <br>yetefet’iro፡masitewalina፡ḥilīna፡silalewi፡ānidu፡lēlawini፡bewenidimamachineti፡menifesi፡memeliketi፡yigebawali።</p>
-        <h3 class="u-text u-text-3">Translation</h3>
-        <p class="u-text u-text-4 u-align-left">All human beings are born free and equal in dignity and rights.
-          <br>They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.</p>
+
+        <div class="row">
+          <div class="column" style="background-color:#B1B3B3;">
+            <h3>Amharic</h3>
+            <p class="u-text u-text-4 u-align-left">የሰው፡ልጅ፡ሁሉ፡ሲወለድ፡ነጻና፡በክብርና፡በመብትም፡እኩልነት፡ያለው፡ነው።፡
+              <br>የተፈጥሮ፡ማስተዋልና፡ሕሊና፡ስላለው፡አንዱ፡ሌላውን፡በወንድማማችነት፡መንፈስ፡መመልከት፡ይገባዋል።</p>
+          </div>
+          <div class="column" style="background-color:#B1B3B3;">
+            <h3>Transliteration</h3>
+            <p class="u-text u-text-4 u-align-left">yesewi፡liji፡hulu፡sīweledi፡nets’ana፡bekibirina፡bemebitimi፡ikulineti፡yalewi፡newi።፡
+              <br>yetefet’iro፡masitewalina፡ḥilīna፡silalewi፡ānidu፡lēlawini፡bewenidimamachineti፡menifesi፡memeliketi፡yigebawali።</p>
+          </div>
+          <div class="column" style="background-color:#B1B3B3;">
+            <h3>Translation</h3>
+            <p class="u-text u-text-4 u-align-left">All human beings are born free and equal in dignity and rights.
+              <br>They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.</p>
+          </div>
+        </div>
       </div>
     </section>
 
