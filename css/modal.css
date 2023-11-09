@@ -72,7 +72,7 @@
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 20%;
   max-width: 300px;
   top: 200px;
   right: 250px;
@@ -116,7 +116,7 @@
 /* The Close Button */
 .close {
   position: absolute;
-  top: 150px;
+  top: 200px;
   right: 35px;
   color: #ccc;
   font-size: 40px;
