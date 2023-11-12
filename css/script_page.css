@@ -140,3 +140,11 @@ img.peeps {
    visibility: visible;
    opacity: 0.7;
 }
+
+.row {
+  display: table; /* Make the container element behave like a table */
+}
+
+.column {
+  display: table-cell; /* Make elements inside the container behave like table cells */
+}
