@@ -142,9 +142,11 @@ img.peeps {
 }
 
 .row {
-  display: table; /* Make the container element behave like a table */
+  display: flex; /* Equal Height and Width using Flexbox */
+  width: 100%; /* https://www.w3schools.com/howto/howto_css_equal_height.asp */
 }
 
 .column {
-  display: table-cell; /* Make elements inside the container behave like table cells */
+  flex: 1;
+    padding: 16px;
 }
