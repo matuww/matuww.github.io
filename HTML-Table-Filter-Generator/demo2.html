@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Table Filter Generator script by Max Guglielmi | Examples, Demos</title>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This script adds to any html table a filter by column feature that enables users to filter and limit the data displayed within a long data table" />
+	<meta name="keywords" content="html table filter, table filter script, filtering table script, table filters, max guglielmi" />
+	<meta name="robots" content="index,follow" />
+	<meta name="author" content="Max Guglielmi" />
+	<style type="text/css" media="screen, projection">
+		@import "includes/common.css";
+	</style>
+
+	<script src="TableFilter/tablefilter_all.js" language="javascript" type="text/javascript"></script>
+
+	<!--##########################################################################
+		BEGIN WARNING:
+		DO NOT COPY CODE BELOW: COMPLETELY USELESS!!!
+		SCRIPTS BELOW DO NOT BELONG TO HTML TABLE FILTER SCRIPT
+	###########################################################################-->
+ <!-- Do not copy script below: personal tracking code -->
+	<script src="includes/trackcode.js" language="javascript" type="text/javascript"></script>
+	<!-- end -->
+ 
+	<!-- Syntax Highlighter - doesn't belong to table filter script - do not copy -->
+	<link rel="stylesheet" type="text/css" href="includes/SyntaxHighlighter/Styles/SyntaxHighlighter.css" />
+	<script src="includes/SyntaxHighlighter/Scripts/shCore.js" language="javascript" type="text/javascript"></script>
+	<script src="includes/SyntaxHighlighter/Scripts/shBrushJScript.js" language="javascript" type="text/javascript"></script>
+	<script src="includes/SyntaxHighlighter/Scripts/shBrushXml.js" language="javascript" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript"> 
+	//<![CDATA[
+		function initHighlighter()
+		{
+			dp.SyntaxHighlighter.ClipboardSwf = "includes/SyntaxHighlighter/Scripts/clipboard.swf";  
+			dp.SyntaxHighlighter.HighlightAll("code"); 
+		}
+		if(window['tf_AddEvent']){ tf_AddEvent(window,'load',initHighlighter); }
+		else{ window.onload = initHighlighter }
+	//]]>
+	</script>
+	<!-- -->
+	
+	<!--##########################################################################
+		END WARNING
+	###########################################################################-->
+	
+	
+	<style type="text/css" media="screen">
+		div#navmenu li a#lnk02{
+			color:#333; font-weight:bold;
+			border-top:2px solid #ff9900;
+			background:#fff;
+		}
+	</style>
+</head>
+
+<body>
+    <p>Add a drop-down filter, define its first option, sort it and remove a filter</p>
+<table id="table2" cellpadding="0" cellspacing="0">
+  <tr>
+    <th>World Regions</th>
+    <th>Population ( 2007 Est.)</th>
+    <th>Population % of World</th>
+    <th>% Population ( Penetration )</th>
+    <th>Usage % of World</th>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>933,448,292</td>
+    <td>14.2 %</td>
+    <td>3.5 %</td>
+    <td>3.0 %</td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>3,712,527,624</td>
+    <td>56.5 %</td>
+    <td>10.5 %</td>
+    <td>35.6 %</td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>809,624,686</td>
+    <td>12.3 %</td>
+    <td>38.6 %</td>
+    <td>28.6 %</td>
+  </tr>
+  <tr>
+    <td>Middle East</td>
+    <td>193,452,727</td>
+    <td>2.9 %</td>
+    <td>10.0 %</td>
+    <td>1.8 %</td>
+  </tr>
+  <tr>
+    <td>North America</td>
+    <td>334,538,018</td>
+    <td>5.1 %</td>
+    <td>69.4 %</td>
+    <td>21.2 %</td>
+  </tr>
+  <tr>
+    <td>Latin America / Caribbean</td>
+    <td>556,606,627</td>
+    <td>8.5 %</td>
+    <td>16.0 %</td>
+    <td>8.1 %</td>
+  </tr>
+  <tr>
+    <td>Oceania / Australia</td>
+    <td>34,468,443</td>
+    <td>0.5 %</td>
+    <td>53.5 %</td>
+    <td>1.7 %</td>
+  </tr>
+</table>
+<script language="javascript" type="text/javascript">  
+//<![CDATA[  
+    var table2_Props =  {  
+                    col_0: "select",  
+                    col_4: "none",  
+                    display_all_text: " [ Show all ] ",  
+                    sort_select: true  
+                };  
+    var tf2 = setFilterGrid( "table2",table2_Props );  
+//]]>  
+</script>  
+
+</body>
+</html>
