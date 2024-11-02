@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/jquery.treetable.css" />
   <link rel="stylesheet" href="css/jquery.treetable.theme.default.css" />
   <link rel="stylesheet" href="css/modal.css" media="screen">
+  <link rel="stylesheet" href="css/slideshow.css" media="screen">
   <!-- sidenav -->
   <link rel="stylesheet" href="./css/side_navigation.css" />
 
@@ -19,10 +20,47 @@
   <link rel="stylesheet" href="css/nicepage.css" media="screen">
   <link rel="stylesheet" href="css/Main-page.css" media="screen">
   <script class="u-script" type="text/javascript" src="js/modal.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="js/slideshow.js" defer=""></script>
   <script src="js/Main-page.js"></script>
   <!-- THIS LINE BELOW IS CAUSING THE EXPAND COLLAPSE BUG -->
   <!-- <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script> -->
   <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
+  <style>
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .tutorial_content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  </style>
 
   <!-- sidenav -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,21 +102,103 @@
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./about.html">About</a>
+        <a href="./glossary.html">Glossary</a>
+        <a href="./credits.html">Credits</a>
       </div>
       <!-- Use any element to open the sidenav -->
       <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
     </header>
 
+    <div class="container">
+      <button class="collapsible">How to use this site</button>
+        <div class="tutorial_content">
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <br>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="./images/Tutorial/Tutorial1.png" alt="Tutorial1" class="tutorial" width="600" height="400" onclick="plusSlides(+1)">
+              <br>
+              <div class="text" style="text-align:center">Click the triangles next to the writing script names on the leftmost column to reveal or hide its children scripts.
+                <br>When expanded, the names of writing scripts are indented in a phylogenetic manner
+                <br>to show a hierarchical relationship regarding ancestry.
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./images/Tutorial/Tutorial2.png" alt="Tutorial_placement2" class="tutorial" width="600" height="400" onclick="plusSlides(+1)">
+              <br>
+              <div class="text" style="text-align:center">The <i>Expand all</i> and <i>Collapse all</i> buttons reveal and hide the whole phylogenetic tree respectively.</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./images/Tutorial/Tutorial3.png" alt="Tutorial3" class="tutorial" width="600" height="400" onclick="plusSlides(+1)">
+              <br>
+              <div class="text" style="text-align:center">Hover over a letter to see its full name. Click on it for more information.
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./images/Tutorial/Tutorial4.png" alt="Tutorial4" class="tutorial" width="600" height="400" onclick="plusSlides(+1)">
+              <br>
+              <div class="text" style="text-align:center">For more information on each writing script, click its name (when available).</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./images/Tutorial/Tutorial5.png" alt="Tutorial5" class="tutorial" width="600" height="400" onclick="plusSlides(+1)">
+              <br>
+              <div class="text" style="text-align:center">Don't forget to check the side navigation bar for more information regarding this project.
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./images/Tutorial/Tutorial6.png" alt="Tutorial6" class="tutorial" width="600" height="400" onclick="plusSlides(+1)">
+              <br>
+              <div class="text" style="text-align:center">Enjoy learning!</div>
+            </div>
+
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+
+      <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+      </script>
+
+    </div>
+      <br>
+      <caption style="text-align:right">
+        &emsp;<a href="#" onclick="jQuery('#example-advanced').treetable('expandAll'); return false;">Expand all</a>
+        &emsp;<a href="#" onclick="jQuery('#example-advanced').treetable('collapseAll'); return false;">Collapse all</a>
+        <br>
+        <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">-->
+      </caption>
+    <br>
+
       <!--insert table here-->
       <div class="container">
         <table id="example-advanced">
-
-        <caption>
-          <a href="#" onclick="jQuery('#example-advanced').treetable('expandAll'); return false;">Expand all</a>
-          <a href="#" onclick="jQuery('#example-advanced').treetable('collapseAll'); return false;">Collapse all</a>
-          <br>
-          <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">-->
-        </caption>
 
         <!-- Row 0: Headings and logographic meaning of glyphs -->
             <thead>
