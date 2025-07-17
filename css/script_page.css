@@ -203,3 +203,7 @@ writing-mode: tb-lr;
 text-justify: inter-ideograph;
 text-align:right;
 }
+
+.nomen-sacrum {
+	text-decoration-line: overline;
+}
