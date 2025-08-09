@@ -11328,3 +11328,23 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('button[data-target]');
+    const contents = document.querySelectorAll('.toggle-content');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+
+        contents.forEach(c => c.classList.remove('active'));
+
+        const targetContent = document.getElementById(targetId);
+        if (targetContent) {
+          targetContent.classList.add('active');
+        }
+      });
+    });
+  });
