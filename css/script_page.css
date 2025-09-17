@@ -87,7 +87,7 @@ img.peeps {
   margin-right: auto;
 }
 
-* {
+*, h1, h2, h3, h4, h5, p {
   font-family: Futura;
 }
 
@@ -247,3 +247,7 @@ text-align:right;
 .collapsible-style::after {
   content: none !important;
 }
+
+
+@font-face { font-family: FormeraLight; src: url('../Fonts/FormeraLight.ttf'); }
+@font-face { font-family: FuturaCyrillicMedium; src: url('../Fonts/FuturaCyrillicMedium.ttf'); }
