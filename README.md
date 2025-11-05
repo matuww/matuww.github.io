@@ -1,4 +1,11 @@
-# 𓌃𓂧𓅱𓏛𓏥 matuww
+# 𓌃𓂧𓅱𓏛𓏥 
+ __    __     ______     ______   __  __     __     __     __     __    
+/\ "-./  \   /\  __ \   /\__  _\ /\ \/\ \   /\ \  _ \ \   /\ \  _ \ \   
+\ \ \-./\ \  \ \  __ \  \/_/\ \/ \ \ \_\ \  \ \ \/ ".\ \  \ \ \/ ".\ \  
+ \ \_\ \ \_\  \ \_\ \_\    \ \_\  \ \_____\  \ \__/".~\_\  \ \__/".~\_\ 
+  \/_/  \/_/   \/_/\/_/     \/_/   \/_____/   \/_/   \/_/   \/_/   \/_/ 
+                                                                        
+                                                   
 Writing Scripts Descended from Egyptian Hieroglyphs
 
 Matuww is a project involving linguistics, history, and art to show how connected we are as humans by featuring Egyptian hieroglyphs, which almost all of today's writing scripts are descended from.
