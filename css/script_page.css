@@ -252,3 +252,14 @@ text-align:right;
 @font-face { font-family: FormeraLight; src: url('../Fonts/FormeraLight.ttf'); }
 @font-face { font-family: FuturaCyrillicMedium; src: url('../Fonts/FuturaCyrillicMedium.ttf'); }
 @font-face { font-family: GreekFuturaLDR; src: url('../Fonts/GreekFuturaLDR.ttf'); }
+
+@font-face { font-family: ANGULARUncial; src: url('../Fonts/ANGULARUncial.ttf'); }
+@font-face { font-family: BIBLICALUncial; src: url('../Fonts/BIBLICALUncial.ttf'); }
+@font-face { font-family: COPTICUncial; src: url('../Fonts/COPTICUncial.ttf'); }
+@font-face { font-family: Minuscule_IX; src: url('../Fonts/Minuscule_IX.ttf'); }
+@font-face { font-family: Minuscule_XI; src: url('../Fonts/Minuscule_XI.ttf'); }
+@font-face { font-family: Minuscule_XV; src: url('../Fonts/Minuscule_XV.ttf'); }
+@font-face { font-family: PAPYRUSUncial; src: url('../Fonts/PAPYRUSUncial.ttf'); }
+@font-face { font-family: ROUNDUncial; src: url('../Fonts/ROUNDUncial.ttf'); }
+@font-face { font-family: SLAVONICUncial; src: url('../Fonts/SLAVONICUncial.ttf'); }
+@font-face { font-family: SLOPINGUncial; src: url('../Fonts/SLOPINGUncial.ttf'); }
