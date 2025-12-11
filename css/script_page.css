@@ -248,6 +248,11 @@ text-align:right;
   content: none !important;
 }
 
+.flipHorizontal {
+            display: inline-block;
+            transform: scaleX(-1);
+        }
+
 
 @font-face { font-family: FormeraLight; src: url('../Fonts/FormeraLight.ttf'); }
 @font-face { font-family: FuturaCyrillicMedium; src: url('../Fonts/FuturaCyrillicMedium.ttf'); }
