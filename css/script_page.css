@@ -253,6 +253,26 @@ text-align:right;
             transform: scaleX(-1);
         }
 
+/* in line text colours */
+span.blue {
+	color:#676AA7;
+}
+
+span.green {
+	color:#9ccc95;
+}
+
+span.orange {
+	color:#ffaa4d;
+}
+
+span.yellow {
+	color:#F2F0A1;
+}
+
+span.red {
+	color:#FF6F61;
+}
 
 @font-face { font-family: FormeraLight; src: url('../Fonts/FormeraLight.ttf'); }
 @font-face { font-family: FuturaCyrillicMedium; src: url('../Fonts/FuturaCyrillicMedium.ttf'); }
