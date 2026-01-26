@@ -288,3 +288,16 @@ span.red {
 @font-face { font-family: ROUNDUncial; src: url('../Fonts/ROUNDUncial.ttf'); }
 @font-face { font-family: SLAVONICUncial; src: url('../Fonts/SLAVONICUncial.ttf'); }
 @font-face { font-family: SLOPINGUncial; src: url('../Fonts/SLOPINGUncial.ttf'); }
+
+@font-face { font-family: CapitalisElegans; src: url('../Fonts/CapitalisElegans.ttf'); }
+@font-face { font-family: CapitalisRustica; src: url('../Fonts/CapitalisRustica.ttf'); }
+@font-face { font-family: AntiquaCursivaRomana; src: url('../Fonts/AntiquaCursivaRomana.ttf'); }
+@font-face { font-family: NovaCursivaRomana; src: url('../Fonts/NovaCursivaRomana.ttf'); }
+@font-face { font-family: Uncialis; src: url('../Fonts/Uncialis.ttf'); }
+@font-face { font-family: Semiuncialis; src: url('../Fonts/Semiuncialis.ttf'); }
+@font-face { font-family: Visigothica; src: url('../Fonts/Visigothica.ttf'); }
+@font-face { font-family: Beneventana; src: url('../Fonts/Beneventana.ttf'); }
+@font-face { font-family: Luxoviensis; src: url('../Fonts/Luxoviensis.ttf'); }
+@font-face { font-family: InsularisMajuscula; src: url('../Fonts/InsularisMajuscula.ttf'); }
+@font-face { font-family: InsularisMinuscula; src: url('../Fonts/InsularisMinuscula.ttf'); }
+@font-face { font-family: CarolinaMinuscula; src: url('../Fonts/CarolinaMinuscula.ttf'); }

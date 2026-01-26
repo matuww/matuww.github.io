@@ -79,6 +79,7 @@
   <meta property="og:title" content="Main page">
   <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
+
 </head>
 
   <body data-home-page="Script-Page-Template.html" data-home-page-title="Script Page Template" class="u-body u-xl-mode" data-lang="en">
@@ -3961,23 +3962,6 @@
               </div>
             <br>
           </div>
-
-          <script>
-          var coll = document.getElementsByClassName("collapsible");
-          var i;
-
-          for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var content = this.nextElementSibling;
-              if (content.style.maxHeight){
-                content.style.maxHeight = null;
-              } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-              }
-            });
-          }
-          </script>
 
           <!--Diacritics-->
           <h3 class="u-text u-text-default u-text-1">Diacritics</h3>
@@ -16258,13 +16242,13 @@
 
                    <!-- Full-width images with number and caption text -->
                    <div class="mySlides fade">
-                     <img src="../images/Peeps/Assyrian_Modern.png" alt="Assyrian_Modern" class="peeps" width="449" height="700" loading="lazy" onclick="plusSlides(+1)">
+                     <img src="../images/Peeps/Assyrian_Modern.png" alt="Assyrian_Modern" class="peeps" width="449" height="700" loading="lazy" onclick="plusSlides(this, +1)">
                      <div class="text" style="text-align:center">Commission artwork by Claud Kamalie (Fiverr page - <a href="https://www.fiverr.com/claudkamalie">here</a>)
                      </div>
                    </div>
 
                    <div class="mySlides fade">
-                     <img src="../images/Peeps/Sogdian.png" alt="Sogdian" class="peeps" width="449" height="700" loading="lazy" onclick="plusSlides(+1)">
+                     <img src="../images/Peeps/Sogdian.png" alt="Sogdian" class="peeps" width="449" height="700" loading="lazy" onclick="plusSlides(this, +1)">
                    </div>
                  </div>
 
@@ -16274,8 +16258,8 @@
 
                    <!-- The dots/circles -->
                    <div style="text-align:center">
-                     <span class="dot" onclick="currentSlide(1)"></span>
-                     <span class="dot" onclick="currentSlide(2)"></span>
+                     <span class="dot" onclick="currentSlide(this, 1)"></span>
+                     <span class="dot" onclick="currentSlide(this, 2)"></span>
                    </div>
                    <br>
                  </div>

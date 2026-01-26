@@ -111,15 +111,125 @@ function _data(){return(
     { id: 'Formal Gothic Script', parents: ['Proto-Gothic Script'] }
   ],
   [
-    { id: 'Cursive Gothic Script', parents: ['Formal Gothic Script'] }
+    { id: 'Gothica Textura Prescissa', parents: ['Formal Gothic Script'] },
+    { id: 'Gothica Textura Rotunda', parents: ['Formal Gothic Script'] },
+    { id: 'Cursive Gothic Script', parents: ['Formal Gothic Script'] },
+    { id: 'Gothica Glossularis', parents: ['Formal Gothic Script'] },
+    { id: 'Gothica Notularis', parents: ['Formal Gothic Script'] },
   ],
   [
+    { id: 'Gothica Textura Quadrata', parents: ['Gothica Textura Prescissa'] },
+    { id: 'Gothica Textura Semiquadrata', parents: ['Gothica Textura Prescissa'] },
+    { id: 'Italian Rotunda', parents: ['Gothica Textura Rotunda'] },
+    { id: 'Lettre de Somme', parents: ['Gothica Textura Rotunda'] },
+    { id: 'Spanish Round-hand', parents: ['Gothica Textura Rotunda'] },
+    { id: 'Italian Cursive Gothic', parents: ['Cursive Gothic Script'] },
+    { id: 'French Cursive Gothic', parents: ['Cursive Gothic Script'] },
+    { id: 'German/Flemish Cursive Gothic', parents: ['Cursive Gothic Script'] },
+    { id: 'English Cursive Gothic', parents: ['Cursive Gothic Script'] },
     { id: 'Bastard Gothic Script', parents: ['Formal Gothic Script', 'Cursive Gothic Script'] },
     { id: 'Humanist Minuscule', parents: ['Caroline Minuscule'] }
   ],
   [
-    { id: 'Venetian Type', parents: ['Humanist Minuscule', 'Roman Square Capitals'] }
-  ]
+    { id: 'Littera Bononiensis', parents: ['Italian Rotunda'] },
+    { id: 'Littera Oxoniensis', parents: ['Gothica Glossularis'] },
+    { id: 'Littera Parisiensis', parents: ['Gothica Glossularis'] },
+    { id: 'Anglicana', parents: ['English Cursive Gothic'] },
+    { id: 'Cancelleresca', parents: ['Italian Cursive Gothic'] },
+    { id: 'French Chancery Cursive', parents: ['French Cursive Gothic'] }
+  ],
+  [
+    { id: 'Anglicana Formata', parents: ['Anglicana', 'Formal Gothic Script'] },
+    { id: 'English Secretary Script', parents: ['English Cursive Gothic', 'Cancelleresca'] },
+    { id: 'Lettre Bâtarde', parents: ['Bastard Gothic Script', 'French Chancery Cursive', 'Cancelleresca'] },
+  ],
+  [
+
+    { id: 'Bastarda Anglicana', parents: ['Anglicana', 'English Secretary Script', 'Bastard Gothic Script'] },
+    { id: 'English Bastard Secretary', parents: ['Lettre Bâtarde'] },
+    { id: 'Lettre Bourguignone', parents: ['Lettre Bâtarde'] },
+    { id: 'Schwabacher', parents: ['Lettre Bâtarde', 'Gothica Textura Rotunda'] },
+    { id: 'Gotico-Antiqua', parents: ['Bastard Gothic Script', 'Humanist Minuscule'] }
+  ],
+  [
+    { id: 'Fraktur', parents: ['Schwabacher'] },
+    { id: 'Venetian Type', parents: ['Humanist Minuscule', 'Roman Square Capitals'] },
+    { id: 'Humanist Cursive', parents: ['Humanist Minuscule', 'Italian Cursive Gothic'] }
+  ],
+  [
+    { id: 'Roman Type (Antiqua)', parents: ['Venetian Type'] },
+    { id: 'Italic Type', parents: ['Humanist Cursive'] },
+    { id: 'Gaelic Type', parents: ['Insular Minuscule'] },
+  ],
+  [
+    { id: 'Aldino Italic Type (Italics)', parents: ['Italic Type'] },
+    { id: 'Parangon de Granjon', parents: ['Italic Type'] },
+    { id: 'French Roman Type', parents: ['Roman Type (Antiqua)'] }
+  ],
+  [
+    { id: 'Swiss/German Roman Type', parents: ['French Roman Type'] },
+    { id: 'De Colines', parents: ['French Roman Type'] },
+    { id: 'Augereau', parents: ['French Roman Type'] },
+    { id: 'Estienne', parents: ['French Roman Type'] },
+    { id: 'Garamond', parents: ['French Roman Type'] },
+    { id: 'Civilité Type', parents: ['Lettre Bâtarde'] },
+    { id: 'Dutch Roman Type', parents: ['French Roman Type'] }
+  ],
+  [
+    { id: 'Fell Type', parents: ['Dutch Roman Type'] },
+    { id: 'English Roundhand', parents: ['English Secretary Script'] },
+    { id: 'Italian Roundhand', parents: ['Cancelleresca'] },
+  ],
+  [
+    { id: 'Caslon Type', parents: ['Dutch Roman Type', 'Fell Type'] },
+    { id: 'Fleischmann Type', parents: ['Dutch Roman Type'] },
+    { id: 'English Copperplate', parents: ['English Roundhand'] },
+    { id: 'Italian Copperplate', parents: ['Italian Roundhand'] },
+  ],
+  [
+    { id: 'Baskerville Type', parents: ['Caslon Type'] },
+  ],
+  [
+    { id: 'Bodoni Type', parents: ['Baskerville Type'] },
+    { id: 'Didot Type', parents: ['Baskerville Type'] },
+    { id: 'Bulmer Type', parents: ['Baskerville Type'] },
+    { id: 'Mrs Eaves', parents: ['Baskerville Type'] },
+  ],
+  [
+    { id: 'Ibarra Type', parents: ['Baskerville Type', 'Bodoni Type', 'Didot Type'] },
+    { id: 'Slab Serif', parents: ['Bodoni Type', 'Didot Type'] },
+  ],
+  [
+    { id: 'Egyptienne', parents: ['Slab Serif'] },
+    { id: 'Clarendon', parents: ['Slab Serif'] },
+    { id: 'Rockwell', parents: ['Slab Serif'] },
+    { id: 'Courier', parents: ['Slab Serif'] },
+    { id: 'Grotesque Sans-Serif', parents: ['Bodoni Type', 'Didot Type', 'Slab Serif'] },
+  ],
+  [
+    { id: 'Akzidenz-Grotesk', parents: ['Grotesque Sans-Serif'] },
+    { id: 'Venus', parents: ['Grotesque Sans-Serif'] },
+    { id: 'News Gothic', parents: ['Grotesque Sans-Serif'] },
+    { id: 'Franklin Gothic', parents: ['Grotesque Sans-Serif'] },
+    { id: 'Geometric Sans-Serif', parents: ['Roman Square Capitals', 'Grotesque Sans-Serif'] },
+    { id: 'Humanist Sans-Serif', parents: ['Grotesque Sans-Serif', 'Humanist Minuscule'] },
+  ],
+  [
+    { id: 'Neo-Grotesque Sans-Serif', parents: ['Akzidenz-Grotesk'] },
+    { id: 'Futura', parents: ['Geometric Sans-Serif'] },
+    { id: 'Kabel', parents: ['Geometric Sans-Serif'] },
+    { id: 'Semplicità', parents: ['Geometric Sans-Serif'] },
+    { id: 'Gotham', parents: ['Geometric Sans-Serif'] },
+    { id: 'Johnston', parents: ['Humanist Sans-Serif'] },
+    { id: 'Gill Sans', parents: ['Humanist Sans-Serif'] },
+    { id: 'Optima', parents: ['Humanist Sans-Serif'] },
+    { id: 'Frutiger', parents: ['Humanist Sans-Serif'] },
+  ],
+  [
+    { id: 'Helvetica', parents: ['Neo-Grotesque Sans-Serif'] },
+    { id: 'Univers', parents: ['Neo-Grotesque Sans-Serif'] },
+    { id: 'Folio', parents: ['Neo-Grotesque Sans-Serif'] },
+  ],
 ]
 )}
 
