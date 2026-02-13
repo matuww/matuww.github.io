@@ -301,3 +301,12 @@ span.red {
 @font-face { font-family: InsularisMajuscula; src: url('../Fonts/InsularisMajuscula.ttf'); }
 @font-face { font-family: InsularisMinuscula; src: url('../Fonts/InsularisMinuscula.ttf'); }
 @font-face { font-family: CarolinaMinuscula; src: url('../Fonts/CarolinaMinuscula.ttf'); }
+@font-face { font-family: GothicaTexturaPrescissa; src: url('../Fonts/GothicaTexturaPrescissa.ttf'); }
+@font-face { font-family: GothicaTexturaQuadrata; src: url('../Fonts/GothicaTexturaQuadrata.ttf'); }
+@font-face { font-family: GothicaRotunda; src: url('../Fonts/GothicaRotunda.ttf'); }
+@font-face { font-family: GothicaCursiva; src: url('../Fonts/GothicaCursiva.ttf'); }
+@font-face { font-family: GothicaBastarda; src: url('../Fonts/GothicaBastarda.otf'); }
+@font-face { font-family: BastardaAnglicana; src: url('../Fonts/BastardaAnglicana.ttf'); }
+@font-face { font-family: AlteSchwabacher; src: url('../Fonts/AlteSchwabacher.ttf'); }
+@font-face { font-family: GebetbuchFraktur; src: url('../Fonts/GebetbuchFraktur.ttf'); }
+@font-face { font-family: HumanisticaAntiqua; src: url('../Fonts/HumanisticaAntiqua.ttf'); }
