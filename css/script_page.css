@@ -310,3 +310,18 @@ span.red {
 @font-face { font-family: AlteSchwabacher; src: url('../Fonts/AlteSchwabacher.ttf'); }
 @font-face { font-family: GebetbuchFraktur; src: url('../Fonts/GebetbuchFraktur.ttf'); }
 @font-face { font-family: HumanisticaAntiqua; src: url('../Fonts/HumanisticaAntiqua.ttf'); }
+
+.svg-window {
+  width: 100%;              /* or fixed width like 900px */
+  max-width: 100%;
+  height: 600px;            /* your viewport height */
+  overflow: auto;           /* enables scrolling */
+  border: 1px solid #ccc;    /* optional */
+  background: white;
+}
+
+.svg-window img {
+  display: block;
+  max-width: none;          /* IMPORTANT: prevents shrinking */
+  height: auto;
+}
