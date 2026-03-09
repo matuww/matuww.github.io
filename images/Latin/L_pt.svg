@@ -244,11 +244,11 @@
     <text class="selectable" data-id="Roman Half-Uncials" x="360" y="392" stroke="white" stroke-width="2">Roman Half-Uncials</text>
     <text x="360" y="392" style="pointer-events: none;">Roman Half-Uncials</text>
   
-    <path class="selectable node" data-id="Lombardic Minuscule" stroke="black" stroke-width="8" d="M356 426 L356 430"/>
+    <path class="selectable node" data-id="Lombardic Minuscules" stroke="black" stroke-width="8" d="M356 426 L356 430"/>
     <path class="node" stroke="white" stroke-width="4" d="M356 426 L356 430"/>
 
-    <text class="selectable" data-id="Lombardic Minuscule" x="360" y="422" stroke="white" stroke-width="2">Lombardic Minuscule</text>
-    <text x="360" y="422" style="pointer-events: none;">Lombardic Minuscule</text>
+    <text class="selectable" data-id="Lombardic Minuscules" x="360" y="422" stroke="white" stroke-width="2">Lombardic Minuscules</text>
+    <text x="360" y="422" style="pointer-events: none;">Lombardic Minuscules</text>
   
     <path class="selectable node" data-id="Insular Half-Uncials" stroke="black" stroke-width="8" d="M482 482 L482 482"/>
     <path class="node" stroke="white" stroke-width="4" d="M482 482 L482 482"/>
@@ -256,59 +256,59 @@
     <text class="selectable" data-id="Insular Half-Uncials" x="486" y="478" stroke="white" stroke-width="2">Insular Half-Uncials</text>
     <text x="486" y="478" style="pointer-events: none;">Insular Half-Uncials</text>
   
-    <path class="selectable node" data-id="Insular Minuscule" stroke="black" stroke-width="8" d="M482 504 L482 504"/>
+    <path class="selectable node" data-id="Insular Minuscules" stroke="black" stroke-width="8" d="M482 504 L482 504"/>
     <path class="node" stroke="white" stroke-width="4" d="M482 504 L482 504"/>
 
-    <text class="selectable" data-id="Insular Minuscule" x="486" y="500" stroke="white" stroke-width="2">Insular Minuscule</text>
-    <text x="486" y="500" style="pointer-events: none;">Insular Minuscule</text>
+    <text class="selectable" data-id="Insular Minuscules" x="486" y="500" stroke="white" stroke-width="2">Insular Minuscules</text>
+    <text x="486" y="500" style="pointer-events: none;">Insular Minuscules</text>
   
-    <path class="selectable node" data-id="Visigothic Minuscule" stroke="black" stroke-width="8" d="M482 526 L482 526"/>
+    <path class="selectable node" data-id="Visigothic Minuscules" stroke="black" stroke-width="8" d="M482 526 L482 526"/>
     <path class="node" stroke="white" stroke-width="4" d="M482 526 L482 526"/>
 
-    <text class="selectable" data-id="Visigothic Minuscule" x="486" y="522" stroke="white" stroke-width="2">Visigothic Minuscule</text>
-    <text x="486" y="522" style="pointer-events: none;">Visigothic Minuscule</text>
+    <text class="selectable" data-id="Visigothic Minuscules" x="486" y="522" stroke="white" stroke-width="2">Visigothic Minuscules</text>
+    <text x="486" y="522" style="pointer-events: none;">Visigothic Minuscules</text>
   
-    <path class="selectable node" data-id="Merovingian Minuscule" stroke="black" stroke-width="8" d="M482 548 L482 552"/>
+    <path class="selectable node" data-id="Merovingian Minuscules" stroke="black" stroke-width="8" d="M482 548 L482 552"/>
     <path class="node" stroke="white" stroke-width="4" d="M482 548 L482 552"/>
 
-    <text class="selectable" data-id="Merovingian Minuscule" x="486" y="544" stroke="white" stroke-width="2">Merovingian Minuscule</text>
-    <text x="486" y="544" style="pointer-events: none;">Merovingian Minuscule</text>
+    <text class="selectable" data-id="Merovingian Minuscules" x="486" y="544" stroke="white" stroke-width="2">Merovingian Minuscules</text>
+    <text x="486" y="544" style="pointer-events: none;">Merovingian Minuscules</text>
   
-    <path class="selectable node" data-id="Franco-Lombardic Minuscule" stroke="black" stroke-width="8" d="M482 574 L482 574"/>
+    <path class="selectable node" data-id="Franco-Lombardic Minuscules" stroke="black" stroke-width="8" d="M482 574 L482 574"/>
     <path class="node" stroke="white" stroke-width="4" d="M482 574 L482 574"/>
 
-    <text class="selectable" data-id="Franco-Lombardic Minuscule" x="486" y="570" stroke="white" stroke-width="2">Franco-Lombardic Minuscule</text>
-    <text x="486" y="570" style="pointer-events: none;">Franco-Lombardic Minuscule</text>
+    <text class="selectable" data-id="Franco-Lombardic Minuscules" x="486" y="570" stroke="white" stroke-width="2">Franco-Lombardic Minuscules</text>
+    <text x="486" y="570" style="pointer-events: none;">Franco-Lombardic Minuscules</text>
   
-    <path class="selectable node" data-id="Beneventan Minuscule" stroke="black" stroke-width="8" d="M482 596 L482 596"/>
+    <path class="selectable node" data-id="Beneventan Minuscules" stroke="black" stroke-width="8" d="M482 596 L482 596"/>
     <path class="node" stroke="white" stroke-width="4" d="M482 596 L482 596"/>
 
-    <text class="selectable" data-id="Beneventan Minuscule" x="486" y="592" stroke="white" stroke-width="2">Beneventan Minuscule</text>
-    <text x="486" y="592" style="pointer-events: none;">Beneventan Minuscule</text>
+    <text class="selectable" data-id="Beneventan Minuscules" x="486" y="592" stroke="white" stroke-width="2">Beneventan Minuscules</text>
+    <text x="486" y="592" style="pointer-events: none;">Beneventan Minuscules</text>
   
-    <path class="selectable node" data-id="Anglo-Saxon Minuscule" stroke="black" stroke-width="8" d="M580 648 L580 652"/>
+    <path class="selectable node" data-id="Anglo-Saxon Minuscules" stroke="black" stroke-width="8" d="M580 648 L580 652"/>
     <path class="node" stroke="white" stroke-width="4" d="M580 648 L580 652"/>
 
-    <text class="selectable" data-id="Anglo-Saxon Minuscule" x="584" y="644" stroke="white" stroke-width="2">Anglo-Saxon Minuscule</text>
-    <text x="584" y="644" style="pointer-events: none;">Anglo-Saxon Minuscule</text>
+    <text class="selectable" data-id="Anglo-Saxon Minuscules" x="584" y="644" stroke="white" stroke-width="2">Anglo-Saxon Minuscules</text>
+    <text x="584" y="644" style="pointer-events: none;">Anglo-Saxon Minuscules</text>
   
-    <path class="selectable node" data-id="Broken Lombardic Minuscule" stroke="black" stroke-width="8" d="M580 674 L580 674"/>
+    <path class="selectable node" data-id="Broken Lombardic Minuscules" stroke="black" stroke-width="8" d="M580 674 L580 674"/>
     <path class="node" stroke="white" stroke-width="4" d="M580 674 L580 674"/>
 
-    <text class="selectable" data-id="Broken Lombardic Minuscule" x="584" y="670" stroke="white" stroke-width="2">Broken Lombardic Minuscule</text>
-    <text x="584" y="670" style="pointer-events: none;">Broken Lombardic Minuscule</text>
+    <text class="selectable" data-id="Broken Lombardic Minuscules" x="584" y="670" stroke="white" stroke-width="2">Broken Lombardic Minuscules</text>
+    <text x="584" y="670" style="pointer-events: none;">Broken Lombardic Minuscules</text>
   
-    <path class="selectable node" data-id="East-Frankish Minuscule" stroke="black" stroke-width="8" d="M664 730 L664 730"/>
+    <path class="selectable node" data-id="East-Frankish Minuscules" stroke="black" stroke-width="8" d="M664 730 L664 730"/>
     <path class="node" stroke="white" stroke-width="4" d="M664 730 L664 730"/>
 
-    <text class="selectable" data-id="East-Frankish Minuscule" x="668" y="726" stroke="white" stroke-width="2">East-Frankish Minuscule</text>
-    <text x="668" y="726" style="pointer-events: none;">East-Frankish Minuscule</text>
+    <text class="selectable" data-id="East-Frankish Minuscules" x="668" y="726" stroke="white" stroke-width="2">East-Frankish Minuscules</text>
+    <text x="668" y="726" style="pointer-events: none;">East-Frankish Minuscules</text>
   
-    <path class="selectable node" data-id="Caroline Minuscule" stroke="black" stroke-width="8" d="M748 808 L748 808"/>
+    <path class="selectable node" data-id="Caroline Minuscules" stroke="black" stroke-width="8" d="M748 808 L748 808"/>
     <path class="node" stroke="white" stroke-width="4" d="M748 808 L748 808"/>
 
-    <text class="selectable" data-id="Caroline Minuscule" x="752" y="804" stroke="white" stroke-width="2">Caroline Minuscule</text>
-    <text x="752" y="804" style="pointer-events: none;">Caroline Minuscule</text>
+    <text class="selectable" data-id="Caroline Minuscules" x="752" y="804" stroke="white" stroke-width="2">Caroline Minuscules</text>
+    <text x="752" y="804" style="pointer-events: none;">Caroline Minuscules</text>
   
     <path class="selectable node" data-id="Proto-Gothic Script" stroke="black" stroke-width="8" d="M832 886 L832 886"/>
     <path class="node" stroke="white" stroke-width="4" d="M832 886 L832 886"/>
@@ -412,11 +412,11 @@
     <text class="selectable" data-id="Bastard Gothic Script" x="1144" y="1326" stroke="white" stroke-width="2">Bastard Gothic Script</text>
     <text x="1144" y="1326" style="pointer-events: none;">Bastard Gothic Script</text>
   
-    <path class="selectable node" data-id="Humanist Minuscule" stroke="black" stroke-width="8" d="M1140 1360 L1140 1372"/>
+    <path class="selectable node" data-id="Humanist Minuscules" stroke="black" stroke-width="8" d="M1140 1360 L1140 1372"/>
     <path class="node" stroke="white" stroke-width="4" d="M1140 1360 L1140 1372"/>
 
-    <text class="selectable" data-id="Humanist Minuscule" x="1144" y="1356" stroke="white" stroke-width="2">Humanist Minuscule</text>
-    <text x="1144" y="1356" style="pointer-events: none;">Humanist Minuscule</text>
+    <text class="selectable" data-id="Humanist Minuscules" x="1144" y="1356" stroke="white" stroke-width="2">Humanist Minuscules</text>
+    <text x="1144" y="1356" style="pointer-events: none;">Humanist Minuscules</text>
   
     <path class="selectable node" data-id="Littera Bononiensis" stroke="black" stroke-width="8" d="M1280 1318 L1280 1318"/>
     <path class="node" stroke="white" stroke-width="4" d="M1280 1318 L1280 1318"/>
