@@ -37,45 +37,75 @@
 </head>
 
   <body data-home-page="Script-Page-Template.html" data-home-page-title="Script Page Template" class="u-body u-xl-mode" data-lang="en">
-    <header class="u-black u-clearfix u-header u-sticky u-sticky-b53d u-header" id="sec-f7ff">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <a href="../index.html" class="u-image u-logo u-image-1" data-image-width="560" data-image-height="560" title="Home">
-          <img src="../images/logo-modified.png" class="u-logo-image u-logo-image-1">
+    <header class="u-black u-clearfix u-header u-sticky u-sticky-b53d" id="sec-f7ff">
+      <div class="u-clearfix u-sheet u-sheet-1 header-bar">
+
+        <!-- Logo -->
+        <a href="../index.html" class="u-image u-logo u-image-1" title="Home">
+          <img src="../images/logo-modified.png" class="u-logo-image u-logo-image-1" alt="Logo">
         </a>
-        <h2 class="u-text u-text-default u-text-1"> matuww</h2>
-        <h4 class="u-text u-text-default u-text-2" style="font-family: FormeraLight"> Writing Scripts Descended from Egyptian Hieroglyphs</h4>
+
+        <!-- Site Title -->
+        <h2 class="u-text u-text-default u-text-1">matuww</h2>
+
+        <!-- Subtitle -->
+        <h4 class="u-text u-text-default u-text-2" style="font-family: FormeraLight">
+          Writing Scripts Descended from Egyptian Hieroglyphs
+        </h4>
+
+        <!-- Right-side container: Toggle + Breadcrumb -->
+        <div class="header-right">
+          <button class="menu-toggle" onclick="openNav()" aria-label="Open navigation">
+            &#9776;
+          </button>
+
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../script_info/Egyptian.html" style="font-family: FormeraLight">Egyptian Hieroglyphs</a>
+            <span class="separator">></span>
+            <span class="current" style="font-family: FormeraLight">...</span>
+            <span class="separator">></span>
+            <a href="../script_info/Greek.html" style="font-family: FormeraLight">Byzantine Greek Uncials</a>
+            <span class="separator">></span>
+            <a href="../script_info/Greek.html" style="font-family: FormeraLight">Biblical Greek Uncials</a>
+            <span class="separator">></span>
+            <a href="../script_info/Greek.html" style="font-family: FormeraLight">Coptic Greek Uncials</a>
+            <span class="separator">></span>
+            <a href="../script_info/Coptic.html" style="font-family: FormeraLight">Coptic</a>
+            <span class="separator">></span>
+            <span class="current">Old Nubian</span>
+          </nav>
+        </div>
       </div>
 
+      <!-- Side Navigation -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="../about.html">About</a> <!-- Needs link -->
+        <a href="../about.html">About</a>
         <a href="../glossary.html">Glossary</a>
         <a href="../credits.html">Credits</a>
       </div>
-      <!-- Use any element to open the sidenav -->
-      <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
-
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      /* Create three equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-      }
-
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      </style>
     </header>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
 
     <section class="u-clearfix u-section-1" id="sec-a1ec">
       <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">

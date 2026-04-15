@@ -76,22 +76,53 @@
 </head>
 
   <body data-home-page="Script-Page-Template.html" data-home-page-title="Script Page Template" class="u-body u-xl-mode" data-lang="en">
-    <header class="u-black u-clearfix u-header u-sticky u-sticky-b53d u-header" id="sec-f7ff"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="../index.html" class="u-image u-logo u-image-1" data-image-width="560" data-image-height="560" title="Home">
-          <img src="../images/logo-modified.png" class="u-logo-image u-logo-image-1">
+    <header class="u-black u-clearfix u-header u-sticky u-sticky-b53d" id="sec-f7ff">
+      <div class="u-clearfix u-sheet u-sheet-1 header-bar">
+
+        <!-- Logo -->
+        <a href="../index.html" class="u-image u-logo u-image-1" title="Home">
+          <img src="../images/logo-modified.png" class="u-logo-image u-logo-image-1" alt="Logo">
         </a>
-        <h2 class="u-text u-text-default u-text-1"> matuww</h2>
-        <h4 class="u-text u-text-default u-text-2" style="font-family: FormeraLight"> Writing Scripts Descended from Egyptian Hieroglyphs</h4>
+
+        <!-- Site Title -->
+        <h2 class="u-text u-text-default u-text-1">matuww</h2>
+
+        <!-- Subtitle -->
+        <h4 class="u-text u-text-default u-text-2" style="font-family: FormeraLight">
+          Writing Scripts Descended from Egyptian Hieroglyphs
+        </h4>
+
+        <!-- Right-side container: Toggle + Breadcrumb -->
+        <div class="header-right">
+          <button class="menu-toggle" onclick="openNav()" aria-label="Open navigation">
+            &#9776;
+          </button>
+
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../script_info/Egyptian.html" style="font-family: FormeraLight">Egyptian Hieroglyphs</a>
+            <span class="separator">></span>
+            <a href="../script_info/Egyptian.html" style="font-family: FormeraLight">Hieratic Egyptian</a>
+            <span class="separator">></span>
+            <a href="../script_info/Proto-Sinaitic.html" style="font-family: FormeraLight">Proto-Sinaitic</a>
+            <span class="separator">></span>
+            <a href="../script_info/Phoenician.html" style="font-family: FormeraLight">Phoenician</a>
+            <span class="separator">></span>
+            <a href="../script_info/Archaic_Greek.html" style="font-family: FormeraLight">Archaic Greek</a>
+            <span class="separator">></span>
+            <span class="separator">...</span>
+            <span class="separator">></span>
+            <span class="current">Modern Greek</span>
+          </nav>
+        </div>
       </div>
 
+      <!-- Side Navigation -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="../about.html">About</a> <!-- Needs link -->
+        <a href="../about.html">About</a>
         <a href="../glossary.html">Glossary</a>
         <a href="../credits.html">Credits</a>
       </div>
-      <!-- Use any element to open the sidenav -->
-      <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
     </header>
 
     <section class="u-clearfix u-section-1" id="sec-a1ec">
@@ -11033,15 +11064,15 @@
             <p class="u-text u-text-3">Marble wall block from the temple of Athena at Priene, inscribed on two sides. The inscription on the front records the gift of funds from Alexander the Great to complete the temple. c. 334-330 BCE, Priene, Ionia. (description - <a href="https://www.britishmuseum.org/collection/object/G_1870-0320-88">here</a>)</p>
             <br>
           <h3 class="u-text u-text-3">Uncials</h3>
-            <h4 class="u-text u-text-3">Ptolemaic Papyral Greek Uncials<sup>8</sup></h4>
+            <h4 class="u-text u-text-3">Ptolemaic Greek Uncials<sup>8</sup></h4>
             <img src="../images/Ptolemaic_Greek/GrU_Pt_Epi01.jpg" alt="GrU_Pt_Epi01" class="epigraphy" width="900" height="816" loading="lazy">
             <p class="u-text u-text-3">Bacchylides, Epinicians, c. 2-3 c. CE. Oxyrhynchus, Egypt (description - <a href="https://doi.org/10.25446/oxford.21164029.v1">here</a>)</p>
             <br>
-            <h4 class="u-text u-text-3">Roman Papyral Greek Uncials<sup>9</sup></h4>
+            <h4 class="u-text u-text-3">Roman Greek Uncials<sup>9</sup></h4>
             <img src="../images/Roman_Greek/GrU_R_Epi01.jpg" alt="GrU_R_Epi01" class="epigraphy" width="900" height="530" loading="lazy">
             <p class="u-text u-text-3">P.Hawara 24-28 (Bodleian Libr., Gr. Class. A.1 (P)). Homer, Iliad I. c. 2 c. CE. Fayum, Egypt (description - <a href="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=Pack&vVol=&vNum=616">here</a>)</p>
             <br>
-            <h4 class="u-text u-text-3">Byzantine Papyral Greek Uncials<sup>10</sup></h4>
+            <h4 class="u-text u-text-3">Byzantine Greek Uncials<sup>10</sup></h4>
             <img src="../images/Byzantine_Greek/GrU_B_Epi01.png" alt="GrU_B_Epi01" class="epigraphy" width="900" height="1358" loading="lazy">
             <p class="u-text u-text-3">P.Bodmer XXIV (Rahlfs 2110). c. 225–325 CE. Egypt. (description - <a href="https://collections.museumofthebible.org/artifacts/42463-pbodmer-xxiv-rahlfs-2110">here</a>)</p>
             <br>
@@ -17714,7 +17745,7 @@
           <!-- Ptolemaic Greek Uncials-->
           <tr>
             <!-- 00 -->
-            <td class="Alphabet"><strong>Ptolemaic Papyral Greek Uncials</strong></td>
+            <td class="Alphabet"><strong>Ptolemaic Greek Uncials</strong></td>
             <td class="Alphabet"><br>Alphabet
             <br><i>323 - 30 BCE</i></pre></td>
             <!-- 01.0 -->
@@ -18405,7 +18436,7 @@
           <!-- Roman Greek Uncials-->
           <tr>
             <!-- 00 -->
-            <td class="Alphabet"><strong>Roman Papyral Greek Uncials</strong></td>
+            <td class="Alphabet"><strong>Roman Greek Uncials</strong></td>
             <td class="Alphabet"><br>Alphabet
             <br><i>30 BCE - c. 280 CE</i></pre></td>
             <!-- 01.0 -->
@@ -19117,7 +19148,7 @@
           <!-- Byzantine Greek Uncials-->
           <tr>
             <!-- 00 -->
-            <td class="Alphabet"><strong>Byzantine Papyral Greek Uncials</strong></td>
+            <td class="Alphabet"><strong>Byzantine Greek Uncials</strong></td>
             <td class="Alphabet"><br>Alphabet
             <br><i>c. 280 - 640 CE</i></pre></td>
             <!-- 01.0 -->
