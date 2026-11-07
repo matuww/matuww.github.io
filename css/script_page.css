@@ -310,6 +310,7 @@ span.red {
 @font-face { font-family: AlteSchwabacher; src: url('../Fonts/AlteSchwabacher.ttf'); }
 @font-face { font-family: GebetbuchFraktur; src: url('../Fonts/GebetbuchFraktur.ttf'); }
 @font-face { font-family: HumanisticaAntiqua; src: url('../Fonts/HumanisticaAntiqua.ttf'); }
+@font-face { font-family: Zakon-Regular; src: url('../Fonts/Zakon-Regular.ttf'); }
 
 .svg-window {
   width: 100%;              /* or fixed width like 900px */
